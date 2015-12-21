@@ -1,0 +1,4 @@
+<map id="EtatPieceDames" name="EtatPieceDames">
+<area shape="rect" id="node2" href="$class_dame_dames.html" title="Classe représentant l&#39;état dame d&#39;une pièce du jeu de dames. " alt="" coords="5,80,104,107"/>
+<area shape="rect" id="node3" href="$class_pion_dames.html" title="Classe représentant l&#39;état pion d&#39;une pièce du jeu de dames. " alt="" coords="128,80,219,107"/>
+</map>

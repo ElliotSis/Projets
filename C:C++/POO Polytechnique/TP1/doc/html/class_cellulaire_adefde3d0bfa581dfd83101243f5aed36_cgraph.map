@@ -1,0 +1,4 @@
+<map id="Cellulaire::estProche" name="Cellulaire::estProche">
+<area shape="rect" href="$class_g_p_s.html#acb33cb9feb5cdc3e12c8c6ffdce2a3ed" title="Évalue si le GPS est proche d&#39;une position. La notion de proximité est définie par une la variable co..." alt="" coords="224,5,352,32"/>
+<area shape="rect" href="$class_g_p_s.html#ac632b70697137886b8fcb60780bb5cf1" title="Permet de simuler le déplacement du GPS dans le temps et dans l&#39;espace. Cette méthode est appelée par..." alt="" coords="400,5,611,32"/>
+</map>

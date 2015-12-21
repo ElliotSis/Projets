@@ -1,0 +1,5 @@
+<map id="VueJeuGTK" name="VueJeuGTK">
+<area shape="rect" id="node4" href="$class_vue_jeu_g_t_k_dames.html" title="Classe dérivée de la classe VueJeuGTK pour jouer dans une fenêtre aux dames. " alt="" coords="5,155,140,181"/>
+<area shape="rect" id="node5" href="$class_vue_jeu_g_t_k_othello.html" title="Classe dérivée de la classe VueJeuGTK pour jouer dans une fenêtre à l&#39;othello. " alt="" coords="164,155,299,181"/>
+<area shape="rect" id="node2" href="$class_vue_jeu.html" title="Classe utilisée dans le cadre du patron de conception MVC. " alt="" coords="71,5,138,32"/>
+</map>

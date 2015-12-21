@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  form(name='create_player', method='post')
+    h2 Choose your name
+    p Name : 
+      input(type='text', name='name')
+
+    h2 Pick your Kai disciplines
+    - for(var n = 1; n <= 5; ++n)
+      p Select discipline #{n} :
+      select(name='discipline'+n)
+        each discipline in disciplines
+          option(value=discipline)=discipline
+
+    h2 Choose your equipment
+    - for(var n = 1; n <= 2; ++n)
+      p Select item #{n} :
+      select(name='item'+n)
+        each item in items
+          option(value=item)=item
+
+    p
+      button(type='submit') Start the game
+      
+     

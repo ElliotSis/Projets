@@ -1,0 +1,37 @@
+p Vous vous préparez en hâte et vous sortez de la tente. Le vent s'est intensifié et il emporte la neige poudreuse en petits tourbillons qui réduisent considérablement la visibilité. Une ombre sur votre droite trahit la présence du Bakanal qui bondit sur vous. Vous n'avez plus le temps d'éviter son Assaut, et il vous faut le combattre jusqu'à la mort.
+
+img(src="/images/p78.png" ,width="193px" ,height="330px")
+
+section(ng-init="initFight()")#combat
+    div#monstre
+        span#nomMonstre {{fight.nom}}:
+        | HABILETÉ
+        span#monstreAttaque {{fight.habilete}}
+        | ENDURANCE
+        span#monstreEndurance {{fight.endurance}}
+
+    div(ng-if="fightBegin",ng-repeat="round in rounds").rondeCombat
+        div(ng-if="!flee")
+            | Ronde combat:
+            span {{round.countRound}}
+        div(ng-if="!flee")
+            p Ratio de combat: {{round.ratio}}
+            p Chiffre aléatoire: {{round.random}}
+        div(ng-if="!flee")
+            p Ton ennemi subit {{round.degatJoueur}} dégâts !
+            p Il a maintenant {{round.ennemiLife}} points d'endurance.
+        div(ng-if="!flee")
+            p Loup Solitaire subit {{round.degatEnnemi}} dégâts !
+            p Tu as maintenant {{round.playerLife}} points d'endurance.
+        div(ng-if="flee")
+            p Tu fuis tel un lâche, tu peux continuer l'histoire mais tu perds {{round.degatEnnemi}} points d'endurance.
+    div#choixCombat
+        button(ng-click="roundFight(false)",ng-disable="disableFightButtons",ng-hide="disableFightButtons")#combattre.button  COMBATTRE
+        button(ng-click="fleeFight(false)",ng-disable="disableFightButtons",ng-hide="disableFightButtons")#fuir.button FUIR
+        button(ng-click="enablePsyField()",ng-disable="disableFightButtons",ng-show="psyField")#combattre.button  BOUCLIER PSY
+div(ng-if="win")#decision
+ h3 Bravo tu as gagné ce combat !
+div(ng-show="loose")#decision
+ p Vous avez perdu ce combat, votre aventure ce termine ici. Veuillez cliquer sur le bouton "Recommencer" pour refaire une partie
+ button(ng-click="restartGame()").button Recommencer
+

@@ -1,0 +1,41 @@
+I - Capture
+-----------
+Étant donné le support, par quels avions commencer ?
+- on commence par capturer le centre des sommets du support
+- fonction d'évaluation qui dépend du temps d'atteinte et du nombre de sommets
+voisins.
+- des avions sont attribués à la défense des sommets du support.
+
+
+II - Defense des sommets du support
+-----------------------------------
+Détection des sommets critiques
+on définit une fonction d'évaluation qui dépend de l'attaque adverse, du
+nombre d'unités présentes si le sommet est sur le front, de la quantité
+de fuel et du nombre d'avions attribués à ce sommet qui sont en difficulté.
+De cette fonction d'évaluation, on définit la proba d'attribution du
+prochain avion produit par la formule pi = f(i)/sum(f(j))
+
+III - Contrôle des avions
+-------------------------
+On définit le pourcentage d'avions de transport et de chasse à avoir.
+a - avions de transport
+À chaque fois qu'un avion est inactif sur le pays, on l'envoie ravitailler une
+base (en fonction de la proba déterminée par la fct d'évaluation). Une fois
+que l'avion est revenu au pays, on recommence.
+b - avions de défenseurs
+À chaque fois qu'un avion est inactif, on l'attribue (encore une fois,
+avec les probabilités) à un sommet. L'avion reste stationné sur ce sommet
+pour un temps t et revient ensuite au pays. S'il voit un enemi, il le
+pourchasse tant qu'il a assez de fuel pour revenir au sommet et tant qu'il
+n'est pas trop loin de ce sommet. Lorsque plusieurs chasseurs apparaissent,
+c'est le plus faible qui est attaqué.
+Les avions transportent des troupes à chaque phase.
+c - avions d'attaque
+On envoie ces avions parcourir les sommets du support qu'on ne possède pas,
+s'il sont attaquables, on bombarde, sinon, on passe au sommet suivant, 
+on revient à la base lorsqu'on a plus assez de fuel. On définit l'ordre de
+parcours avec une fct d'évaluation des sommets enemis : on attaque d'abord
+les supports voisins  de nos bases, puis les supports les plus proches
+L'attaque se déroule en combinant un chasseur avec un transport (les deux
+chargés d'unités). Le chasseur défend le transport.

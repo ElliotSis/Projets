@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>TP2:  Fichier source de TP2/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TP2
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_737949ac39eb398e0ccf9831c00bbe78.html">TP2</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="main_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="personne_8h.html">personne.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cellulaire_8h.html">cellulaire.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="maison_8h.html">maison.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">    9</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[]) {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">// Création des personnes</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="class_personne.html">Personne</a> jeanTil(<span class="stringliteral">&quot;Jean-Til&quot;</span>, <span class="stringliteral">&quot;Lafrite&quot;</span>, 14, <span class="stringliteral">&quot;514-430-7777&quot;</span>);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="class_personne.html">Personne</a> mathilde(<span class="stringliteral">&quot;Mathilde&quot;</span>, <span class="stringliteral">&quot;Lafrite&quot;</span>, 42, <span class="stringliteral">&quot;514-430-8888&quot;</span>);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_personne.html">Personne</a> philippe(<span class="stringliteral">&quot;Philippe&quot;</span>, <span class="stringliteral">&quot;Lafrite&quot;</span>, 55, <span class="stringliteral">&quot;514-430-9999&quot;</span>);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">// Création des cellulaires</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_cellulaire.html">Cellulaire</a> cellulaire1(<span class="stringliteral">&quot;514-430-7777&quot;</span>, &amp;jeanTil, 2.0f);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_cellulaire.html">Cellulaire</a> cellulaire2(<span class="stringliteral">&quot;514-430-8888&quot;</span>, &amp;mathilde, 4.0f);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_cellulaire.html">Cellulaire</a> cellulaire3(<span class="stringliteral">&quot;514-430-9999&quot;</span>, &amp;philippe, 8.0f);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// Création de la maison avec 4 chauffages</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_maison.html">Maison</a> maison(<span class="stringliteral">&quot;5032 Côte des Neiges&quot;</span>, 14.0f, 4);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// Ajout des occupants dans la maison</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    maison += &amp;jeanTil;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    maison.<a class="code" href="class_maison.html#ad8ac4513f328c4ea51c909bd80a6add8">ajouterOccupant</a>(&amp;mathilde);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    maison += &amp;philippe;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// Test de l&#39;opérateur d&#39;égalité de personne + non-ajout des personnes déjà occupantes</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">    maison.ajouterOccupant(&amp;philippe); // Affichage d&#39;un message d&#39;erreur</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">    Personne jeanTilCopie(&quot;Jean-Til&quot;, &quot;Lafrite&quot;, 27);</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">    maison += &amp;jeanTilCopie; // Affichage d&#39;un message d&#39;erreur</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// Ajout des cellulaires dans la maison</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    maison += &amp;cellulaire1;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    maison += &amp;cellulaire2;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    maison.<a class="code" href="class_maison.html#a4a4d6253e863d63ef24b352d17c7c8f4">ajouterCellulaire</a>(&amp;cellulaire3);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// Test de l&#39;opérateur d&#39;égalité de cellulaire + non-ajout des cellulaires déjà surveillés</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// Test du constructeur par copie de cellulaire</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// Test de l&#39;affectation de cellulaire</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">    maison.ajouterCellulaire(&amp;cellulaire1); // Affichage d&#39;un message d&#39;erreur</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">    Cellulaire cellulaire2Copie(cellulaire2);</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">    maison += &amp;cellulaire2Copie; // Affichage d&#39;un message d&#39;erreur</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">    cellulaire2Copie = cellulaire1;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">    maison.ajouterCellulaire(&amp;cellulaire2Copie); // Affichage d&#39;un message d&#39;erreur</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// Test de l&#39;affichage</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    maison.<a class="code" href="class_maison.html#a43045377eacac3f0b491695edbee4c88">afficherListeOccupants</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    maison.<a class="code" href="class_maison.html#a77d0e50b1de23f5f765196cb334e74ab">afficherListeCellulaires</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// Test du constructeur par copie de maison</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">    Maison maisonCopie(maison);</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">    maisonCopie.afficherListeOccupants();</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">    cout &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">    maisonCopie.afficherListeCellulaires();</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">    cout &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// Test de l&#39;affectation de maison</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">    Maison maisonAffectation;</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">    maisonAffectation = maison;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">    maisonAffectation.afficherListeOccupants();</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">    cout &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">    maisonAffectation.afficherListeCellulaires();</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">    cout &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// Ajout d&#39;autres personnes et cellulaires</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="class_personne.html">Personne</a> huguette(<span class="stringliteral">&quot;Huguette&quot;</span>, <span class="stringliteral">&quot;Fromage&quot;</span>, 88, <span class="stringliteral">&quot;514-430-6666&quot;</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_personne.html">Personne</a> florence(<span class="stringliteral">&quot;Florence&quot;</span>, <span class="stringliteral">&quot;Poutine&quot;</span>, 16, <span class="stringliteral">&quot;514-430-5555&quot;</span>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_cellulaire.html">Cellulaire</a> cellulaire4(<span class="stringliteral">&quot;514-430-6666&quot;</span>, &amp;huguette, 3.0f);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="class_cellulaire.html">Cellulaire</a> cellulaire5(<span class="stringliteral">&quot;514-430-5555&quot;</span>, &amp;florence, 1.0f);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    maison += &amp;huguette;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    maison += &amp;florence;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    maison += &amp;cellulaire4;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    maison += &amp;cellulaire5;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// Test de l&#39;affichage</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    maison.<a class="code" href="class_maison.html#a43045377eacac3f0b491695edbee4c88">afficherListeOccupants</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    cout &lt;&lt; endl;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    maison.<a class="code" href="class_maison.html#a77d0e50b1de23f5f765196cb334e74ab">afficherListeCellulaires</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    cout &lt;&lt; endl;    </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// Observation des cellulaires</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    maison.<a class="code" href="class_maison.html#a3ff6eda75f1fd0ca47f2d3aaa684bfb5">observerCellulaires</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// Désallocation de la mémoire</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// Automatique car on a travaillé qu&#39;avec des objets directement</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="ttc" id="class_maison_html_a3ff6eda75f1fd0ca47f2d3aaa684bfb5"><div class="ttname"><a href="class_maison.html#a3ff6eda75f1fd0ca47f2d3aaa684bfb5">Maison::observerCellulaires</a></div><div class="ttdeci">void observerCellulaires(float tempsObservation=60.0f)</div><div class="ttdoc">Analyse en boucle les cellulaires observés pour savoir si ils sont proches. Si un cellulaire est proc...</div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00142">maison.cpp:142</a></div></div>
+<div class="ttc" id="class_maison_html_a4a4d6253e863d63ef24b352d17c7c8f4"><div class="ttname"><a href="class_maison.html#a4a4d6253e863d63ef24b352d17c7c8f4">Maison::ajouterCellulaire</a></div><div class="ttdeci">void ajouterCellulaire(Cellulaire *cellulaire)</div><div class="ttdoc">Ajoute un cellulaire observé à la maison. Si il est impossible d&#39;ajouter un cellulaire, il ne sera pas ajouté. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00068">maison.cpp:68</a></div></div>
+<div class="ttc" id="class_personne_html"><div class="ttname"><a href="class_personne.html">Personne</a></div><div class="ttdoc">Classe représentant une Personne. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8h_source.html#l00012">personne.h:12</a></div></div>
+<div class="ttc" id="class_cellulaire_html"><div class="ttname"><a href="class_cellulaire.html">Cellulaire</a></div><div class="ttdoc">Classe représentant un Cellulaire. </div><div class="ttdef"><b>Definition:</b> <a href="cellulaire_8h_source.html#l00016">cellulaire.h:16</a></div></div>
+<div class="ttc" id="class_maison_html_a77d0e50b1de23f5f765196cb334e74ab"><div class="ttname"><a href="class_maison.html#a77d0e50b1de23f5f765196cb334e74ab">Maison::afficherListeCellulaires</a></div><div class="ttdeci">void afficherListeCellulaires() const </div><div class="ttdoc">Affiche la liste des cellulaires. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00262">maison.cpp:262</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="class_maison_html_a43045377eacac3f0b491695edbee4c88"><div class="ttname"><a href="class_maison.html#a43045377eacac3f0b491695edbee4c88">Maison::afficherListeOccupants</a></div><div class="ttdeci">void afficherListeOccupants()</div><div class="ttdoc">Trie et affiche la liste des occupants. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00248">maison.cpp:248</a></div></div>
+<div class="ttc" id="cellulaire_8h_html"><div class="ttname"><a href="cellulaire_8h.html">cellulaire.h</a></div></div>
+<div class="ttc" id="maison_8h_html"><div class="ttname"><a href="maison_8h.html">maison.h</a></div></div>
+<div class="ttc" id="class_maison_html"><div class="ttname"><a href="class_maison.html">Maison</a></div><div class="ttdoc">Classe représentant une Maison. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8h_source.html#l00018">maison.h:18</a></div></div>
+<div class="ttc" id="personne_8h_html"><div class="ttname"><a href="personne_8h.html">personne.h</a></div></div>
+<div class="ttc" id="main_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00009">main.cpp:9</a></div></div>
+<div class="ttc" id="class_maison_html_ad8ac4513f328c4ea51c909bd80a6add8"><div class="ttname"><a href="class_maison.html#ad8ac4513f328c4ea51c909bd80a6add8">Maison::ajouterOccupant</a></div><div class="ttdeci">void ajouterOccupant(Personne *personne)</div><div class="ttdoc">Ajoute un occupant à la maison. Si il est impossible d&#39;ajouter un occupant, il ne sera pas ajouté...</div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00057">maison.cpp:57</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

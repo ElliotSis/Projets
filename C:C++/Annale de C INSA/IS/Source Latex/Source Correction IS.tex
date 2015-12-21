@@ -1,0 +1,357 @@
+%%% Template originaly created by Karol Kozioł (mail@karol-koziol.net) and modified for ShareLaTeX use
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\usepackage[defaultmono]{droidmono}
+
+\usepackage{amsmath,amssymb,amsthm,textcomp}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{hyperref}
+
+\usepackage{geometry}
+\geometry{total={210mm,297mm},
+left=25mm,right=25mm,%
+bindingoffset=0mm, top=20mm,bottom=20mm}
+
+
+%\linespread{1.3}
+
+\newcommand{\linia}{\rule{\linewidth}{0.5pt}}
+
+% my own titles
+\makeatletter
+\renewcommand{\maketitle}{
+\begin{center}
+\vspace{2ex}
+{\huge \textsc{\@title}}
+\vspace{1ex}
+\\
+\linia\\
+\@author \hfill \@date
+\vspace{4ex}
+\end{center}
+}
+\makeatother
+%%%
+
+% custom footers and headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{Correction IS langage C}
+\cfoot{}
+\rfoot{Page \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+%
+
+% code listing settings
+\usepackage{listings}
+\lstset{
+    language=C,
+    basicstyle=\ttfamily\footnotesize,
+    aboveskip={1.0\baselineskip},
+    belowskip={1.0\baselineskip},
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    tabsize=4,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=lines,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    keywordstyle=\color[rgb]{0.627,0.126,0.941},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{01,0,0},
+    numbers=left,
+    numberstyle=\small,
+    stepnumber=1,
+    numbersep=10pt,
+    captionpos=t,
+    escapeinside={\%*}{*)}
+}
+\renewcommand\lstlistingname{Code source}
+%%%----------%%%----------%%%----------%%%----------%%%
+
+\begin{document}
+
+\title{Correction IS langage C}
+
+\author{Elliot S.}
+
+\date{2013/2014}
+
+\maketitle
+
+\section*{Question 1}
+
+Il était demandé de compléter le fichier "mots\_meles.h".
+
+\subsection*{1) Macros}
+
+\begin{lstlisting}[caption=Les macros TAILLEGRILLE et LGDICO]
+/* macro pour la taille de la grille */
+#define TAILLEGRILLE 5
+
+/* macro pour le nombre de mots a trouver */
+#define LGDICO 5
+\end{lstlisting}
+
+\subsection*{2) Type DIRECTION}
+
+\begin{lstlisting}[caption=Le type DIRECTION]
+/* type enumere pour choisir la direction : E=0, W=1, N=2, S=3, NE=4, SE=5, NW=6, SW=7 */
+typedef enum 
+{ E, W, N, S, NE, SE, NW, SW } DIRECTION;
+\end{lstlisting}
+
+\subsection*{3) Type typeMot}
+
+\begin{lstlisting}[caption=Le type typeMot]
+/* typeMot pour definir les mots a trouver ainsi que leur longueur et s'ils ont ete trouves ou non */
+typedef struct{ 
+	int tailleMot;
+	char mot[TAILLEGRILLE];
+	int trouve; 
+} typeMot;
+\end{lstlisting}
+
+\newpage{}
+
+\section*{Question 2}
+
+Il s'agissait ici d'écrire quelques fonctions dans le fichier "mots\_meles.c".
+
+\subsection*{1) Fonction verifCoord}
+\begin{lstlisting}[caption=La fonction verifCoord]
+int verifCoord(int x, int y, int tailleGrille){
+	return (x >= 0) && (x < tailleGrille) 
+	        && (y >= 0) && (y < tailleGrille);
+}
+\end{lstlisting}
+
+\subsection*{2) Fonction calculeDirection}
+\begin{lstlisting}[caption=La fonction calculeDirection]
+typeCoord calculeDirection(DIRECTION dir){
+	typeCoord res;
+	switch(dir){
+		case E : res.x = 0; res.y = 1;
+				break;
+		case W : res.x = 0; res.y = -1;
+				break;
+		case N : res.x = -1; res.y = 0;
+				break;
+		case S : res.x = 1; res.y = 0;
+				break;
+		case NE : res.x = -1; res.y = 1;
+				break;
+		case SE : res.x = 1; res.y = 1;
+				break;
+		case NW : res.x = -1; res.y = -1;
+				break;
+		case SW : res.x = 1; res.y = -1;
+				break;
+	}
+	return res;
+}
+\end{lstlisting}
+
+\newpage{}
+\subsection*{3) Fonction compareMots}
+\begin{lstlisting}[caption=La fonction compareMots]
+int compareMots(char mot1[TAILLEGRILLE], int lgMot1, char mot2[TAILLEGRILLE], int lgMot2){
+	if(lgMot1 != lgMot2)
+		return 0;
+	else{
+		int i = 0;
+		while (i < lgMot1 && mot1[i] == mot2[i])
+			i++;
+		return (i == lgMot1);
+	}
+}
+\end{lstlisting}
+
+\subsection*{4) Fonction rechercheMot}
+\begin{lstlisting}[caption=La fonction rechercheMot]
+int rechercheMot(typeMot motsATrouver[LGDICO], char mot[TAILLEGRILLE], int lgMot){
+	int i;
+	for(i = 0; i<LGDICO; i++)
+		if(compareMots(motsATrouver[i].mot, motsATrouver[i].tailleMot, mot, lgMot))
+			return i;
+	return LGDICO;
+}
+\end{lstlisting}
+
+\subsection*{5) Fonction extraireMot}
+\begin{lstlisting}[caption=La fonction extraireMot]
+int extraireMot(char grille[TAILLEGRILLE][TAILLEGRILLE], int x, int y , int dx, int dy, char mot[TAILLEGRILLE], int lgMot){
+	int i = 0;
+	while(i < lgMot && verifCoord(x + i*dx,y + i*dy,TAILLEGRILLE)){
+		mot[i] = grille[x + i*dx][y + i*dy];
+		i++;
+	}	
+	return i;
+}
+\end{lstlisting}
+
+\newpage{}
+
+\subsection*{6) Fonction afficheGrille}
+\begin{lstlisting}[caption=La fonction afficheGrille]
+void afficheGrille(char grille[TAILLEGRILLE][TAILLEGRILLE], int grilleTrouve[TAILLEGRILLE][TAILLEGRILLE], typeMot motsATrouver[LGDICO]){
+	int i,j;
+	printf("mot meles :\n");
+	printf("   X ");
+	for (i = 0; i < TAILLEGRILLE; i++)
+		printf("%d  ", i);
+	printf("\n");
+	for (i = 0; i < TAILLEGRILLE; i++){
+		printf("   %d", i);
+		for (j = 0; j < TAILLEGRILLE; j++)
+			if(grilleTrouve[i][j])
+				printf("(%c)", grille[i][j]);
+			else
+				printf(" %c ", grille[i][j]);
+		printf("\t\t");
+		if(!(motsATrouver[i].trouve))
+			afficheMot(motsATrouver[i].mot, motsATrouver[i].tailleMot);
+		printf("\n");
+	}
+}
+\end{lstlisting}
+
+\subsection*{7) Fonction toutTrouve}
+\begin{lstlisting}[caption=La fonction toutTrouve]
+int toutTrouve(typeMot motsATrouver[LGDICO]){
+	int i = 0;
+	while(i < LGDICO && motsATrouver[i].trouve)
+		i++;
+	return (i == LGDICO);
+}
+\end{lstlisting}
+
+\newpage{}
+
+\section*{Question 3}
+
+Il fallait corriger la fonction main dans le fichier "mots\_meles.c".
+
+\subsection*{1) Fonction main corrigée}
+\begin{lstlisting}[caption=La fonction main corrigée]
+#include <stdio.h>
+#include "mots_meles.h" /* Erreur : le mauvais fichier .h etait inclus */
+
+int main () {
+	int i, j;
+	int lg;
+	int encore;
+	typeCoup coup;
+	char grilleJeu[TAILLEGRILLE][TAILLEGRILLE]={ {'A','I','N','T','J'},
+												 {'R','F','H','S','E'},
+												 {'K','A','H','N','U'},
+												 {'P','A','H','O','T'},
+												 {'E','S','A','C','Y'} };
+	typeMot motsATrouver[LGDICO]={ {2, {'I', 'F'}, 0},
+								   {3, {'I', 'N', 'T'}, 0},
+								   {4, {'C', 'H', 'A', 'R'}, 0}, /* Erreur : il manquait une virgule */
+								   {4, {'C', 'A', 'S', 'E'}, 0},
+								   {5, {'C', 'O', 'N', 'S', 'T'}, 0} };
+	int grilleTrouve[TAILLEGRILLE][TAILLEGRILLE]; /* Erreur : pas de .. mais [][] */
+	char motATrouver[TAILLEGRILLE]; 
+
+	for (i=0; i<TAILLEGRILLE; i++) /* Erreur : on met des ; dans les for, pas des virgules */
+		for (j=0; j<TAILLEGRILLE; j++) /* Erreur : pas de ; a la fin de la ligne */
+			grilleTrouve[i][j]=0;
+
+	afficheGrille(grilleJeu, grilleTrouve, motsATrouver);
+	
+	do {
+		coup=saisirCoup();
+		lg=extraireMot(grilleJeu, coup.x, coup.y, coup.dx, coup.dy, motATrouver, coup.lg);
+		i=rechercheMot(motsATrouver, motATrouver, lg);
+
+		if (i<LGDICO)
+		{
+			printf("\nBravo, ");
+			afficheMot(motATrouver, lg);
+			printf(" trouve !!!\n\n");
+			motTrouve(grilleTrouve, coup.x, coup.y, coup.dx, coup.dy, lg);
+			motsATrouver[i].trouve=1;
+		}
+		else { /* Erreur : il manquait des accolades */
+			afficheMot(motATrouver, lg);
+			printf(" pas dans la grille\n");
+		}
+
+		afficheGrille(grilleJeu, grilleTrouve, motsATrouver);
+
+		if (toutTrouve(motsATrouver)) {
+			printf("BRAVO !!! Vous avez trouve tous les mots\n");
+			encore=0;
+		}
+		else { 
+			printf("continue ? (oui 1/ non 0) : ");
+			scanf("%d", &encore); /* 2 Erreurs : c'est un %d et il manquait un & devant encore */
+		}
+	} while (encore!=0);
+}
+\end{lstlisting}
+
+\lstset{
+    language=Make,
+    basicstyle=\ttfamily\footnotesize,
+    aboveskip={1.0\baselineskip},
+    belowskip={1.0\baselineskip},
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    tabsize=4,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=lines,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    keywordstyle=\color[rgb]{0.627,0.126,0.941},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{01,0,0},
+    numbers=left,
+    numberstyle=\small,
+    stepnumber=1,
+    numbersep=10pt,
+    captionpos=t,
+    escapeinside={\%*}{*)}
+}
+
+
+\section*{Remarques}
+En corrigeant, pour vérifier mes résultats, j'ai codé complétement le programme de l'IS (qui, normalement, fonctionne sans problème).
+Si vous voulez, vous pouvez modifier des fonctions dans la source pour tester vos propres solutions.
+Normalement, les fichiers "mots\_meles.h" et "mots\_meles.c" vous sont fournis avec la correction.
+Pour compiler, il suffit d'utiliser gcc sur linux :
+\begin{lstlisting}[caption=Compiler le programme]
+gcc mots_meles.c -o mots_meles
+\end{lstlisting}
+Puis, pour lancer le programme en console linux :
+\begin{lstlisting}[caption=Lancer le programme]
+./mots_meles
+\end{lstlisting}
+
+N'hésitez pas à me contacter pour des questions/remarques (à l'adresse \href{mailto:elliot.sisteron@insa-rouen.fr}{elliot.sisteron@insa-rouen.fr}).
+Bonne révisions et bonne chance pour votre futur examen,\\
+
+Elliot.
+
+
+\end{document}

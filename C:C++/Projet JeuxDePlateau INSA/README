@@ -1,0 +1,60 @@
+JeuxDePlateau -- Version 0.5.2
+10 Juin 2015
+
+Changelog :
+
+0.1 : Jeu de dames Humain VS Humain dans un terminal
+0.2 : Ajout de l'IA Min-Max
+0.2.1 : Ajout de l'IA Alpha-Beta
+0.3 : Jeu de dames GTK
+0.3.1 : Améliorations et stabilité
+0.4 : Ajout du menu principal, ajout du mode IA VS IA
+0.4.1 : Améliorations et stabilité
+0.5 : Ajout du jeu d'othello
+0.5.1, 0.5.2 : Améliorations et stabilité
+
+----------------
+Packages requis :
+cmake (version 3.1 minimum)
+pkg-config
+libgtkmm (version 3.14 minimum)
+
+sur ubuntu : 
+1) ajouter le repo suivant :
+sudo add-apt-repository ppa:george-edison55/cmake-3.x
+sudo apt-get update
+2) installer les packages suivant :
+sudo apt-get install libgtkmm-3.0 libgtkmm-3.0-dev cmake pkg-config
+
+/!\ POUR LIBGTKMM, SI VOUS UTILISEZ UNE VERSION D'UBUNTU ANTÉRIEURE À 15.04, VEILLEZ À BIEN INSTALLER LA VERSION 3.14 OU SUPÉRIEURE DE LIBGTKMM, QUI N'EST PAS DANS LE REPO OFFICIEL.
+SINON, UNE ERREUR À L'EXECUTION DE LA VERSION GRAPHIQUE AURA LIEU.
+(La méthode Gtk::Application::create nécessite des arguments pour les versions de gtkmm antérieures à 3.14).
+Si vous n'arrivez pas à installer la version 3.14 ou supérieure, vous pouvez décommenter ce qui se trouve dans le fichier ControlleurGTK.cpp et supprimer la ligne app = Gtk::Application::create();
+
+---------------
+Pour compiler :
+1) cmake CMakeLists.txt
+2) make
+
+Pour exécuter en mode graphique GTK :
+./JeuxDePlateau
+
+Pour exécuter en mode console :
+./JeuxDePlateau -c
+ou
+./JeuxDePlateau --console
+ou
+./JeuxDePlateau salutMoiCestWillyEtJeVoudraiLancerLeProgrammeEnModeConsole
+ou
+./JeuxDePlateau taComprisLePrincipe
+
+---------------
+Copyleft :
+Elliot Sisteron
+Paul Lanthier
+
+INSA Rouen 2014/2015
+
+Contact :
+elliot.sisteron@insa-rouen.fr
+paul.lanthier@insa-rouen.fr

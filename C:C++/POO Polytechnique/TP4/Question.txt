@@ -1,0 +1,12 @@
+Question : Dans les classes ObjetConnecte, Observable et Observateur, quelles méthodes avez-vous définies comme étant virtuelles? Pourquoi?
+
+ObjetConnecte: recevoirMessage()
+Observable: obtenirNomClasse()
+Observateur: mettreAJour() (virtuelle pure)
+
+Ces méthodes ont été déclarées virtuelles pour pouvoir profiter du polymorphisme.
+Leur comportement doit s'adapter dépendamment de la classe utilisée.
+
+Dans le cas d'Observateur, instancier cette classe n'a pas de sens : la méthode mettreAJour doit forcément être appelée sur les classes filles, d'où la virtualité pure.
+
+

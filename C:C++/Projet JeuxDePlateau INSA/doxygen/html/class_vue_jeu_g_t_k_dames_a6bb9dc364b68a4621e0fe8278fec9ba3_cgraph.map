@@ -1,0 +1,5 @@
+<map id="VueJeuGTKDames::afficherJoueurDevantJouer" name="VueJeuGTKDames::afficherJoueurDevantJouer">
+<area shape="rect" id="node2" href="$class_jeu.html#a4856a0b6b9b5007dca14be8944cab1ab" title="Accède au joueur ayant le trait. " alt="" coords="266,5,426,32"/>
+<area shape="rect" id="node3" href="$class_joueur.html#ace515f29e4462bde12a4efac9e4a174b" title="Indique si le joueur est artificiel. " alt="" coords="279,56,413,83"/>
+<area shape="rect" id="node4" href="$class_joueur.html#ac70054bfad1d93fdc8a070b7a1c43bdb" title="Accède à la variable couleurDeSesPieces. " alt="" coords="240,107,452,133"/>
+</map>

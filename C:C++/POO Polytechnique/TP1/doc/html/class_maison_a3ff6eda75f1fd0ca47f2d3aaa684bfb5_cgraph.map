@@ -1,0 +1,12 @@
+<map id="Maison::observerCellulaires" name="Maison::observerCellulaires">
+<area shape="rect" href="$class_cellulaire.html#aac88456657601be9cdfa9f8c2e6f46c7" title="Accède à la variable personne_. " alt="" coords="287,5,503,32"/>
+<area shape="rect" href="$class_maison.html#a26269a0e50b0befba1e0ff7294e19871" title="Évalue si une personne est un occupant de la maison. " alt="" coords="309,56,480,83"/>
+<area shape="rect" href="$class_personne.html#abd4783c93846250df8272740b935b968" title="Accède à la variable estALaMaison_. " alt="" coords="272,107,517,133"/>
+<area shape="rect" href="$class_personne.html#a030f5db86207928d728cc34cacd84303" title="Accède à la variable prenom_. " alt="" coords="293,157,496,184"/>
+<area shape="rect" href="$class_personne.html#afe5d9c8329e628054abce4b2bac513d2" title="Accède à la variable nom_. " alt="" coords="304,208,485,235"/>
+<area shape="rect" href="$class_personne.html#a630f3e3490330350f42a7f74aebd58cd" title="Modifie la variable estALaMaison_. " alt="" coords="293,259,496,304"/>
+<area shape="rect" href="$class_chauffage.html#af58f75c1e38bec4dc8f19a017613d380" title="Accède à la variable estAllume_. " alt="" coords="280,328,509,355"/>
+<area shape="rect" href="$class_chauffage.html#a0e8ad3a5f8fe802304cc10149c5220ba" title="Allume le chauffage. Ne change rien si le chauffage est déjà allumé. " alt="" coords="316,379,473,405"/>
+<area shape="rect" href="$class_maison.html#a88acdd6f6bb1c2ca29032d443f71482b" title="Évalue si la maison est vide. " alt="" coords="328,429,461,456"/>
+<area shape="rect" href="$class_chauffage.html#afec7ea57e645f67ed00eab210c2b2b83" title="Éteint le chauffage. Ne change rien si le chauffage est déjà éteint. " alt="" coords="311,480,479,507"/>
+</map>

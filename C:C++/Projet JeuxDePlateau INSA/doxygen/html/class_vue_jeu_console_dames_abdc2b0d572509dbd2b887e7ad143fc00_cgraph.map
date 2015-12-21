@@ -1,0 +1,4 @@
+<map id="VueJeuConsoleDames::afficherPiece" name="VueJeuConsoleDames::afficherPiece">
+<area shape="rect" id="node2" href="$class_piece.html#a3521f3c147260fd0c7610d6d9b8bbf1c" title="Accède à la variable joueurPossedant. " alt="" coords="224,5,407,32"/>
+<area shape="rect" id="node3" href="$class_joueur.html#ac70054bfad1d93fdc8a070b7a1c43bdb" title="Accède à la variable couleurDeSesPieces. " alt="" coords="209,56,421,83"/>
+</map>

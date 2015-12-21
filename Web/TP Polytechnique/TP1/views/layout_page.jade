@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  block page_content
+
+  h2 #{name}, before you make any decision, here's a quick reminder of your stats :
+  p Combat skill : #{combat_skill} - Endurance : #{endurance} - Gold : #{gold} 
+  p Your Kai disciplines : 
+    ul
+      each discipline in player_disciplines
+        li #{discipline}
+  p Your weapons :
+    ul
+      each item in player_weapons
+        li #{item}
+  p Your backpack :
+    ul
+      each item in player_backpack
+        li #{item}
+  p Your special items :
+    ul
+      each item in player_special_items
+        li #{item}
+  p Your previous combats :
+    ul
+      each combat in combats
+        li #{combat}

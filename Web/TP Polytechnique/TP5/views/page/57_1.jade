@@ -1,0 +1,14 @@
+p Vous cachez le cadavre sous l'escalier et vous vous hâtez de le fouiller. Vous y découvrez une Épée d'Os et un Disque de Pierre Bleue. Si vous souhaitez conserver l'un ou l'autre de ces objets (ou les deux), inscrivez-les sur votre Feuille d'Aventure dans la case Objets Spéciaux.
+
+- var ajoutObjets = [{ name: "Épée d'Os", select: false }, { name: "Disque Pierre Bleue", select: false }]
+
+div(ng-init="initSpecialObjects(#{JSON.stringify(ajoutObjets)})")#ajouterObjets
+    fieldset
+        legend Choisir le(s) objet(s) à conserver
+        div(ng-repeat="sp in specialObjs")
+         label
+          input(type="checkbox",ng-model="sp.select",name="sp.name") 
+         | {{sp.name}} 
+    button(ng-click="addToBackpack()").button Ajouter!
+    button(ng-click="cancelChoiceSpecialObject()").button Annuler choix
+

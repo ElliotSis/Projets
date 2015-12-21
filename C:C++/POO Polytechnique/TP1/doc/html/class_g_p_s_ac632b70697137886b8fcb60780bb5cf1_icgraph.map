@@ -1,0 +1,4 @@
+<map id="GPS::simulateurDePosition" name="GPS::simulateurDePosition">
+<area shape="rect" href="$class_g_p_s.html#acb33cb9feb5cdc3e12c8c6ffdce2a3ed" title="Évalue si le GPS est proche d&#39;une position. La notion de proximité est définie par une la variable co..." alt="" coords="264,5,392,32"/>
+<area shape="rect" href="$class_cellulaire.html#adefde3d0bfa581dfd83101243f5aed36" title="Évalue si le cellulaire est proche d&#39;une position. " alt="" coords="441,5,609,32"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="VueJeuGTKDames" name="VueJeuGTKDames">
+<area shape="rect" id="node2" href="$class_vue_jeu_g_t_k.html" title="Classe dérivée de la classe VueJeu pour jouer dans une fenêtre avec la librairie GTKmm. " alt="" coords="26,273,119,300"/>
+<area shape="rect" id="node3" href="$class_vue_jeu.html" title="Classe utilisée dans le cadre du patron de conception MVC. " alt="" coords="147,184,214,211"/>
+<area shape="rect" id="node10" href="$class_controlleur.html" title="Classe utilisée dans le cadre du patron de conception MVC. " alt="" coords="195,273,281,300"/>
+<area shape="rect" id="node4" href="$class_jeu.html" title="Classe représentant un état de jeu de plateau. " alt="" coords="318,5,361,32"/>
+<area shape="rect" id="node5" href="$class_joueur.html" title="Classe représentant un joueur du jeu. " alt="" coords="347,95,409,121"/>
+<area shape="rect" id="node7" href="$class_piece.html" title="Classe représentant une pièce du jeu. " alt="" coords="540,184,595,211"/>
+<area shape="rect" id="node6" href="$class_coup.html" title="Classe représentant un coup du jeu. " alt="" coords="541,363,594,389"/>
+<area shape="rect" id="node8" href="$class_case.html" title="Classe représentant une case du plateau du jeu. " alt="" coords="689,273,742,300"/>
+<area shape="rect" id="node9" href="$class_plateau.html" title="Classe représentant le plateau du jeu. " alt="" coords="759,363,826,389"/>
+<area shape="rect" id="node11" href="$class_vue_principale.html" title="Classe utilisée dans le cadre du patron de conception MVC. " alt="" coords="192,363,295,389"/>
+</map>

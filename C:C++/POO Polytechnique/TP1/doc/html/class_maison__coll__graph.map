@@ -1,0 +1,6 @@
+<map id="Maison" name="Maison">
+<area shape="rect" href="$class_chauffage.html" title="Classe représentant le Chauffage d&#39;une Maison. " alt="" coords="5,103,104,129"/>
+<area shape="rect" href="$class_cellulaire.html" title="Classe représentant un Cellulaire. " alt="" coords="128,103,219,129"/>
+<area shape="rect" href="$class_g_p_s.html" title="Classe représentant un système GPS. Elle permet de localiser une personne dans l&#39;espace, grâce à un simulateur de position. " alt="" coords="87,7,135,33"/>
+<area shape="rect" href="$class_personne.html" title="Classe représentant une Personne. " alt="" coords="195,7,283,33"/>
+</map>

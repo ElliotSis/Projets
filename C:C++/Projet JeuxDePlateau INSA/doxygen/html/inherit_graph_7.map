@@ -1,0 +1,5 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_plateau.html" title="Classe représentant le plateau du jeu. " alt="" coords="5,31,72,57"/>
+<area shape="rect" id="node2" href="$class_plateau_dames.html" title="Classe représentant un plateau du jeu de dames. " alt="" coords="120,5,228,32"/>
+<area shape="rect" id="node3" href="$class_plateau_othello.html" title="Classe représentant un plateau du jeu d&#39;othello. " alt="" coords="121,56,227,83"/>
+</map>

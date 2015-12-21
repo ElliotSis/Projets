@@ -1,0 +1,56 @@
+extends layout_page
+
+block page_content
+ #history
+  h2 Ready to fight #{enemy_name} ?
+  -var s = '/images/' + images[enemy_name]
+  img(src=s)
+  table.combat_info
+   tr
+    th#combat_th Combat Skill
+    th#stamina_th Stamina
+   tr
+     td #{enemies_combat_skill[enemy_name]}
+     td #{enemies_endurance[enemy_name]}
+  
+  a(href='/combat' + enemy_name) 
+   button.combat_button
+    img(src="images/attack.png")#attack_button
+    p Attack ! 
+  a(href='/') 
+   button.combat_button
+    img(src="images/flee.png")#flee_button
+    p Flee ! 
+  #info_combat
+   header
+    img(src = "images/punch.png").image_left
+    img(src = "images/punch.png").image_right
+    h2 Round : 1 
+   .line-separator
+   ul.menu_without_puce
+    li
+     img(src="images/Kai/Weaponskill.png")
+     span Nombre de conbats : 0
+    li
+      img(src="images/dice.png")
+      span Nombre aléatoire : 4
+    li
+     h3 Lone Wolf
+     img(src="images/wolf.png")
+     span   
+      strong.endurance -2
+      |  Endurance
+     span
+      strong.damage 3
+      |  Degats
+    li
+     h3 #{enemy_name}
+     img(src="images/baknar.png")
+     span   
+      strong.endurance -5 
+      | Endurance
+     span
+      strong.damage 6 
+      | Degats
+
+   

@@ -1,0 +1,5 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_etat_piece_dames.html" title="Classe représentant un état d&#39;une pièce aux dames. " alt="" coords="5,31,127,57"/>
+<area shape="rect" id="node2" href="$class_dame_dames.html" title="Classe représentant l&#39;état dame d&#39;une pièce du jeu de dames. " alt="" coords="175,5,273,32"/>
+<area shape="rect" id="node3" href="$class_pion_dames.html" title="Classe représentant l&#39;état pion d&#39;une pièce du jeu de dames. " alt="" coords="179,56,269,83"/>
+</map>

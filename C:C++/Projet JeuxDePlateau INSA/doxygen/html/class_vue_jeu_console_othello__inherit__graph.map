@@ -1,0 +1,4 @@
+<map id="VueJeuConsoleOthello" name="VueJeuConsoleOthello">
+<area shape="rect" id="node2" href="$class_vue_jeu_console.html" title="Classe dérivée de la classe VueJeu pour jouer dans un terminal. " alt="" coords="25,80,140,107"/>
+<area shape="rect" id="node3" href="$class_vue_jeu.html" title="Classe utilisée dans le cadre du patron de conception MVC. " alt="" coords="49,5,116,32"/>
+</map>

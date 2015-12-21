@@ -1,0 +1,8 @@
+<map id="VueJeu" name="VueJeu">
+<area shape="rect" id="node2" href="$class_vue_jeu_console.html" title="Classe dérivée de la classe VueJeu pour jouer dans un terminal. " alt="" coords="206,80,321,107"/>
+<area shape="rect" id="node5" href="$class_vue_jeu_g_t_k.html" title="Classe dérivée de la classe VueJeu pour jouer dans une fenêtre avec la librairie GTKmm. " alt="" coords="386,80,479,107"/>
+<area shape="rect" id="node3" href="$class_vue_jeu_console_dames.html" title="Classe dérivée de la classe VueJeuConsole pour jouer aux dames dans un terminal. " alt="" coords="5,155,161,181"/>
+<area shape="rect" id="node4" href="$class_vue_jeu_console_othello.html" title="Classe dérivée de la classe VueJeuConsole pour jouer à l&#39;othello dans un terminal. " alt="" coords="186,155,341,181"/>
+<area shape="rect" id="node6" href="$class_vue_jeu_g_t_k_dames.html" title="Classe dérivée de la classe VueJeuGTK pour jouer dans une fenêtre aux dames. " alt="" coords="365,155,500,181"/>
+<area shape="rect" id="node7" href="$class_vue_jeu_g_t_k_othello.html" title="Classe dérivée de la classe VueJeuGTK pour jouer dans une fenêtre à l&#39;othello. " alt="" coords="524,155,659,181"/>
+</map>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="/PlaneSimCommon"/>
+	<classpathentry kind="src" path="/PlaneSimThriftGeneration"/>
+	<classpathentry kind="lib" path="C:/Users/Asus/Source/Repos/cod-insa-2014/cod-insa-2014/lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Asus/Source/Repos/cod-insa-2014/cod-insa-2014/lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Asus/Source/Repos/cod-insa-2014/cod-insa-2014/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Asus/Source/Repos/cod-insa-2014/cod-insa-2014/lib/httpclient-4.2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Asus/Source/Repos/cod-insa-2014/cod-insa-2014/lib/httpcore-4.2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Asus/Source/Repos/cod-insa-2014/cod-insa-2014/lib/junit-4.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Asus/Source/Repos/cod-insa-2014/cod-insa-2014/lib/libthrift-0.9.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Asus/Source/Repos/cod-insa-2014/cod-insa-2014/lib/libthrift-0.9.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Asus/Source/Repos/cod-insa-2014/cod-insa-2014/lib/log4j-1.2.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Asus/Source/Repos/cod-insa-2014/cod-insa-2014/lib/servlet-api-2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Asus/Source/Repos/cod-insa-2014/cod-insa-2014/lib/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Asus/Source/Repos/cod-insa-2014/cod-insa-2014/lib/slf4j-log4j12-1.5.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Asus/Source/Repos/cod-insa-2014/cod-insa-2014/lib/utils.json.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

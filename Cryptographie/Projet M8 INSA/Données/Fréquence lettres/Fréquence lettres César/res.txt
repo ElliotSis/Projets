@@ -1,0 +1,54 @@
+	\textbf{A} &       0 &  0.00\\
+	\hline
+	\textbf{B} &       0 &  0.00\\
+	\hline
+	\textbf{C} &       1 &  2.70\\
+	\hline
+	\textbf{D} &       0 &  0.00\\
+	\hline
+	\textbf{E} &       0 &  0.00\\
+	\hline
+	\textbf{F} &       5 &  13.51\\
+	\hline
+	\textbf{G} &       1 &  2.70\\
+	\hline
+	\textbf{H} &       2 &  5.41\\
+	\hline
+	\textbf{I} &       2 &  5.41\\
+	\hline
+	\textbf{J} &       0 &  0.00\\
+	\hline
+	\textbf{K} &       1 &  2.70\\
+	\hline
+	\textbf{L} &       4 &  10.81\\
+	\hline
+	\textbf{M} &       3 &  8.11\\
+	\hline
+	\textbf{N} &       4 &  10.81\\
+	\hline
+	\textbf{O} &       2 &  5.41\\
+	\hline
+	\textbf{P} &       1 &  2.70\\
+	\hline
+	\textbf{Q} &       0 &  0.00\\
+	\hline
+	\textbf{R} &       0 &  0.00\\
+	\hline
+	\textbf{S} &       0 &  0.00\\
+	\hline
+	\textbf{T} &       0 &  0.00\\
+	\hline
+	\textbf{U} &       1 &  2.70\\
+	\hline
+	\textbf{V} &       0 &  0.00\\
+	\hline
+	\textbf{W} &       1 &  2.70\\
+	\hline
+	\textbf{X} &       1 &  2.70\\
+	\hline
+	\textbf{Y} &       8 &  21.62\\
+	\hline
+	\textbf{Z} &       0 &  0.00\\
+	\hline
+	\textbf{Total} &      37 &  100.00\\
+	\hline

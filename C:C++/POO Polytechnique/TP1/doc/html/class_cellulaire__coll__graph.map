@@ -1,0 +1,4 @@
+<map id="Cellulaire" name="Cellulaire">
+<area shape="rect" href="$class_g_p_s.html" title="Classe représentant un système GPS. Elle permet de localiser une personne dans l&#39;espace, grâce à un simulateur de position. " alt="" coords="5,7,53,33"/>
+<area shape="rect" href="$class_personne.html" title="Classe représentant une Personne. " alt="" coords="77,7,165,33"/>
+</map>

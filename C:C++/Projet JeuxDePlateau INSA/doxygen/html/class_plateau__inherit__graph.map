@@ -1,0 +1,4 @@
+<map id="Plateau" name="Plateau">
+<area shape="rect" id="node2" href="$class_plateau_dames.html" title="Classe représentant un plateau du jeu de dames. " alt="" coords="5,80,113,107"/>
+<area shape="rect" id="node3" href="$class_plateau_othello.html" title="Classe représentant un plateau du jeu d&#39;othello. " alt="" coords="138,80,245,107"/>
+</map>

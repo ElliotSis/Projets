@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>TP3:  Fichier source de TP3/include/maison.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TP3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f882c94ee092464a8e9f1652b786007.html">TP3</a></li><li class="navelem"><a class="el" href="dir_f0f05470ec9e4d11475af2574fc7ef47.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">maison.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="maison_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MAISON_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MAISON_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="message_8h.html">message.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="routeur_8h.html">routeur.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="objet_connecte_8h.html">objetConnecte.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Forward declarations</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_cellulaire.html">Cellulaire</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_personne.html">Personne</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_maison.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_maison.html">Maison</a> : <span class="keyword">public</span> <a class="code" href="class_objet_connecte.html">ObjetConnecte</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="class_maison.html#a7ae0e8eba53a4b0265ddb1ab14ffb51f">Maison</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keywordtype">id</span>, std::string adresse = <span class="stringliteral">&quot;inconnue&quot;</span>, <span class="keywordtype">float</span> position = 0.0);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_maison.html#a1d2a5b01e950c5d0a094f79bcdffab78">~Maison</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        std::string <a class="code" href="class_maison.html#a918a2d3912e54647bad1c0f796af6a11">obtenirAdresse</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_maison.html#a67b299468c63c7d8474c9bcb381254a1">modifierAdresse</a>(std::string adresse);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="class_maison.html#aa13f066abac782b896d636a4862d02a2">obtenirPosition</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_maison.html#a84e3cc2267fd54a5600e55111a80f3b9">modifierPosition</a>(<span class="keywordtype">float</span> position);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_maison.html#ad8ac4513f328c4ea51c909bd80a6add8">ajouterOccupant</a>(<a class="code" href="class_personne.html">Personne</a>* personne);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_maison.html#a4a4d6253e863d63ef24b352d17c7c8f4">ajouterCellulaire</a>(<a class="code" href="class_cellulaire.html">Cellulaire</a>* cellulaire);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_maison.html#a26269a0e50b0befba1e0ff7294e19871">estOccupant</a>(<a class="code" href="class_personne.html">Personne</a>* personne) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_maison.html#a88acdd6f6bb1c2ca29032d443f71482b">estVide</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_maison.html#a3ff6eda75f1fd0ca47f2d3aaa684bfb5">observerCellulaires</a>(<span class="keywordtype">float</span> tempsObservation = 60.0f);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_maison.html#a43045377eacac3f0b491695edbee4c88">afficherListeOccupants</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_maison.html#a77d0e50b1de23f5f765196cb334e74ab">afficherListeCellulaires</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="class_maison.html">Maison</a>&amp; <a class="code" href="class_maison.html#a9fbe0feb0a1f26628def279890ac151c">operator+=</a>(<a class="code" href="class_personne.html">Personne</a>* personne);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="class_maison.html">Maison</a>&amp; <a class="code" href="class_maison.html#a9fbe0feb0a1f26628def279890ac151c">operator+=</a>(<a class="code" href="class_cellulaire.html">Cellulaire</a>* cellulaire);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_maison.html#ad97d4ac274c7e9767457a37aaecc01d9">seConnecter</a>(<a class="code" href="class_routeur.html">Routeur</a>* routeur);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_maison.html#accf8a18bda168c9133a3244929d46ff8">afficherTirets</a>(<span class="keywordtype">int</span> nbTirets = 80);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_maison.html#a34b2fbef1cc29c7726df4ab42ab13d44">trierOccupants</a>();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="class_maison.html#a24dbeed9d29bf67fa14c6cc3ebcb8702">  125</a></span>&#160;        std::string <a class="code" href="class_maison.html#a24dbeed9d29bf67fa14c6cc3ebcb8702">adresse_</a>; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        </div>
+<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="class_maison.html#ab676f5dcf35df0e71237c80335ef7eec">  127</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="class_maison.html#ab676f5dcf35df0e71237c80335ef7eec">position_</a>; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno"><a class="line" href="class_maison.html#a8880ce0b8644d0fb6683a59917d5f575">  129</a></span>&#160;        std::vector&lt;Personne*&gt; <a class="code" href="class_maison.html#a8880ce0b8644d0fb6683a59917d5f575">personnes_</a>; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    </div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="line" href="class_maison.html#afb6b438056a204580ad1c92141fc1ada">  131</a></span>&#160;        std::vector&lt;Cellulaire*&gt; <a class="code" href="class_maison.html#afb6b438056a204580ad1c92141fc1ada">cellulaires_</a>; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;};</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif // MAISON_H</span></div>
+<div class="ttc" id="class_maison_html_a3ff6eda75f1fd0ca47f2d3aaa684bfb5"><div class="ttname"><a href="class_maison.html#a3ff6eda75f1fd0ca47f2d3aaa684bfb5">Maison::observerCellulaires</a></div><div class="ttdeci">void observerCellulaires(float tempsObservation=60.0f)</div><div class="ttdoc">Analyse en boucle les cellulaires observés pour savoir si ils sont proches. Si un cellulaire est proc...</div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00079">maison.cpp:79</a></div></div>
+<div class="ttc" id="class_maison_html_a7ae0e8eba53a4b0265ddb1ab14ffb51f"><div class="ttname"><a href="class_maison.html#a7ae0e8eba53a4b0265ddb1ab14ffb51f">Maison::Maison</a></div><div class="ttdeci">Maison(unsigned int id, std::string adresse=&quot;inconnue&quot;, float position=0.0)</div><div class="ttdoc">Constructeur de Maison. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00020">maison.cpp:20</a></div></div>
+<div class="ttc" id="class_maison_html_a88acdd6f6bb1c2ca29032d443f71482b"><div class="ttname"><a href="class_maison.html#a88acdd6f6bb1c2ca29032d443f71482b">Maison::estVide</a></div><div class="ttdeci">bool estVide() const </div><div class="ttdoc">Évalue si la maison est vide. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00074">maison.cpp:74</a></div></div>
+<div class="ttc" id="class_maison_html_a24dbeed9d29bf67fa14c6cc3ebcb8702"><div class="ttname"><a href="class_maison.html#a24dbeed9d29bf67fa14c6cc3ebcb8702">Maison::adresse_</a></div><div class="ttdeci">std::string adresse_</div><div class="ttdoc">Adresse de la maison. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8h_source.html#l00125">maison.h:125</a></div></div>
+<div class="ttc" id="class_maison_html_accf8a18bda168c9133a3244929d46ff8"><div class="ttname"><a href="class_maison.html#accf8a18bda168c9133a3244929d46ff8">Maison::afficherTirets</a></div><div class="ttdeci">static void afficherTirets(int nbTirets=80)</div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00145">maison.cpp:145</a></div></div>
+<div class="ttc" id="class_maison_html_a918a2d3912e54647bad1c0f796af6a11"><div class="ttname"><a href="class_maison.html#a918a2d3912e54647bad1c0f796af6a11">Maison::obtenirAdresse</a></div><div class="ttdeci">std::string obtenirAdresse() const </div><div class="ttdoc">Accède à la variable adresse_. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00026">maison.cpp:26</a></div></div>
+<div class="ttc" id="class_maison_html_aa13f066abac782b896d636a4862d02a2"><div class="ttname"><a href="class_maison.html#aa13f066abac782b896d636a4862d02a2">Maison::obtenirPosition</a></div><div class="ttdeci">float obtenirPosition() const </div><div class="ttdoc">Accède à la variable position_. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00034">maison.cpp:34</a></div></div>
+<div class="ttc" id="routeur_8h_html"><div class="ttname"><a href="routeur_8h.html">routeur.h</a></div></div>
+<div class="ttc" id="class_maison_html_a4a4d6253e863d63ef24b352d17c7c8f4"><div class="ttname"><a href="class_maison.html#a4a4d6253e863d63ef24b352d17c7c8f4">Maison::ajouterCellulaire</a></div><div class="ttdeci">void ajouterCellulaire(Cellulaire *cellulaire)</div><div class="ttdoc">Ajoute un cellulaire observé à la maison. Si il est impossible d&#39;ajouter un cellulaire, il ne sera pas ajouté. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00053">maison.cpp:53</a></div></div>
+<div class="ttc" id="class_personne_html"><div class="ttname"><a href="class_personne.html">Personne</a></div><div class="ttdoc">Classe représentant une Personne. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8h_source.html#l00012">personne.h:12</a></div></div>
+<div class="ttc" id="class_cellulaire_html"><div class="ttname"><a href="class_cellulaire.html">Cellulaire</a></div><div class="ttdoc">Classe représentant un Cellulaire. </div><div class="ttdef"><b>Definition:</b> <a href="cellulaire_8h_source.html#l00019">cellulaire.h:19</a></div></div>
+<div class="ttc" id="class_maison_html_a77d0e50b1de23f5f765196cb334e74ab"><div class="ttname"><a href="class_maison.html#a77d0e50b1de23f5f765196cb334e74ab">Maison::afficherListeCellulaires</a></div><div class="ttdeci">void afficherListeCellulaires() const </div><div class="ttdoc">Affiche la liste des cellulaires. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00166">maison.cpp:166</a></div></div>
+<div class="ttc" id="class_maison_html_afb6b438056a204580ad1c92141fc1ada"><div class="ttname"><a href="class_maison.html#afb6b438056a204580ad1c92141fc1ada">Maison::cellulaires_</a></div><div class="ttdeci">std::vector&lt; Cellulaire * &gt; cellulaires_</div><div class="ttdoc">Liste des cellulaires observés par la maison. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8h_source.html#l00131">maison.h:131</a></div></div>
+<div class="ttc" id="class_maison_html_a8880ce0b8644d0fb6683a59917d5f575"><div class="ttname"><a href="class_maison.html#a8880ce0b8644d0fb6683a59917d5f575">Maison::personnes_</a></div><div class="ttdeci">std::vector&lt; Personne * &gt; personnes_</div><div class="ttdoc">Liste des occupants de la maison. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8h_source.html#l00129">maison.h:129</a></div></div>
+<div class="ttc" id="message_8h_html"><div class="ttname"><a href="message_8h.html">message.h</a></div></div>
+<div class="ttc" id="class_maison_html_a43045377eacac3f0b491695edbee4c88"><div class="ttname"><a href="class_maison.html#a43045377eacac3f0b491695edbee4c88">Maison::afficherListeOccupants</a></div><div class="ttdeci">void afficherListeOccupants()</div><div class="ttdoc">Trie et affiche la liste des occupants. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00152">maison.cpp:152</a></div></div>
+<div class="ttc" id="class_maison_html_a9fbe0feb0a1f26628def279890ac151c"><div class="ttname"><a href="class_maison.html#a9fbe0feb0a1f26628def279890ac151c">Maison::operator+=</a></div><div class="ttdeci">Maison &amp; operator+=(Personne *personne)</div><div class="ttdoc">Opérateur d&#39;ajout de personne. Ajoute un occupant. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00179">maison.cpp:179</a></div></div>
+<div class="ttc" id="class_maison_html_ad97d4ac274c7e9767457a37aaecc01d9"><div class="ttname"><a href="class_maison.html#ad97d4ac274c7e9767457a37aaecc01d9">Maison::seConnecter</a></div><div class="ttdeci">void seConnecter(Routeur *routeur)</div><div class="ttdoc">Méthode de connection. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00189">maison.cpp:189</a></div></div>
+<div class="ttc" id="class_objet_connecte_html"><div class="ttname"><a href="class_objet_connecte.html">ObjetConnecte</a></div><div class="ttdoc">Classe représentant un Objet Connecté. </div><div class="ttdef"><b>Definition:</b> <a href="objet_connecte_8h_source.html#l00012">objetConnecte.h:12</a></div></div>
+<div class="ttc" id="class_maison_html"><div class="ttname"><a href="class_maison.html">Maison</a></div><div class="ttdoc">Classe représentant une Maison. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8h_source.html#l00021">maison.h:21</a></div></div>
+<div class="ttc" id="class_maison_html_a84e3cc2267fd54a5600e55111a80f3b9"><div class="ttname"><a href="class_maison.html#a84e3cc2267fd54a5600e55111a80f3b9">Maison::modifierPosition</a></div><div class="ttdeci">void modifierPosition(float position)</div><div class="ttdoc">Modifie la variable position_. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00038">maison.cpp:38</a></div></div>
+<div class="ttc" id="class_routeur_html"><div class="ttname"><a href="class_routeur.html">Routeur</a></div><div class="ttdoc">Classe représentant un Routeur. </div><div class="ttdef"><b>Definition:</b> <a href="routeur_8h_source.html#l00018">routeur.h:18</a></div></div>
+<div class="ttc" id="class_maison_html_a34b2fbef1cc29c7726df4ab42ab13d44"><div class="ttname"><a href="class_maison.html#a34b2fbef1cc29c7726df4ab42ab13d44">Maison::trierOccupants</a></div><div class="ttdeci">void trierOccupants()</div><div class="ttdoc">Trie la liste des occupants dans l&#39;ordre alphabétique des noms (et des prénoms si les noms sont ident...</div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00127">maison.cpp:127</a></div></div>
+<div class="ttc" id="class_maison_html_a26269a0e50b0befba1e0ff7294e19871"><div class="ttname"><a href="class_maison.html#a26269a0e50b0befba1e0ff7294e19871">Maison::estOccupant</a></div><div class="ttdeci">bool estOccupant(Personne *personne) const </div><div class="ttdoc">Évalue si une personne est un occupant de la maison. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00064">maison.cpp:64</a></div></div>
+<div class="ttc" id="class_maison_html_a1d2a5b01e950c5d0a094f79bcdffab78"><div class="ttname"><a href="class_maison.html#a1d2a5b01e950c5d0a094f79bcdffab78">Maison::~Maison</a></div><div class="ttdeci">virtual ~Maison()</div><div class="ttdoc">Destructeur par défaut. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00023">maison.cpp:23</a></div></div>
+<div class="ttc" id="class_maison_html_a67b299468c63c7d8474c9bcb381254a1"><div class="ttname"><a href="class_maison.html#a67b299468c63c7d8474c9bcb381254a1">Maison::modifierAdresse</a></div><div class="ttdeci">void modifierAdresse(std::string adresse)</div><div class="ttdoc">Modifie la variable adresse_. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00030">maison.cpp:30</a></div></div>
+<div class="ttc" id="class_maison_html_ab676f5dcf35df0e71237c80335ef7eec"><div class="ttname"><a href="class_maison.html#ab676f5dcf35df0e71237c80335ef7eec">Maison::position_</a></div><div class="ttdeci">float position_</div><div class="ttdoc">Position de la maison. </div><div class="ttdef"><b>Definition:</b> <a href="maison_8h_source.html#l00127">maison.h:127</a></div></div>
+<div class="ttc" id="objet_connecte_8h_html"><div class="ttname"><a href="objet_connecte_8h.html">objetConnecte.h</a></div></div>
+<div class="ttc" id="class_maison_html_ad8ac4513f328c4ea51c909bd80a6add8"><div class="ttname"><a href="class_maison.html#ad8ac4513f328c4ea51c909bd80a6add8">Maison::ajouterOccupant</a></div><div class="ttdeci">void ajouterOccupant(Personne *personne)</div><div class="ttdoc">Ajoute un occupant à la maison. Si il est impossible d&#39;ajouter un occupant, il ne sera pas ajouté...</div><div class="ttdef"><b>Definition:</b> <a href="maison_8cpp_source.html#l00042">maison.cpp:42</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

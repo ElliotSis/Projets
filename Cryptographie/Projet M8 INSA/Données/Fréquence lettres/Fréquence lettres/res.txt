@@ -1,0 +1,48 @@
+\textbf{A} &  279823 &  33102.00\\
+\hline
+\textbf{} &  120611 &  557202.00\\
+\hline
+\textbf{豚衶罶} &  239698 &  13668.00\\
+\hline
+\textbf{Ǽ} &  192759 &  90806.00\\
+\hline
+\textbf{} &  173499 &  88040.00\\
+\hline
+\textbf{闬} &  213830 &  257287.00\\
+\hline
+\textbf{} &  207131 &  51963.00\\
+\hline
+\textbf{Ŝ㘙ⵒᗮ} &  3256832 &  8.59\\
+\hline
+\textbf{1.016386e+00} &       3 &  3.70\\
+\hline
+\textbf{1.710871e+01} &       1 &  1.07\\
+\hline
+\textbf{1.001894e+00} &       7 &  0.42\\
+\hline
+\textbf{1.559798e-02} &       6 &  2.79\\
+\hline
+\textbf{6.914142e+00} &       5 &  2.70\\
+\hline
+\textbf{1.178446e+00} &       7 &  7.90\\
+\hline
+\textbf{7.315882e+00} &       6 &  1.60\\
+\hline
+\textbf{1.068523e-02} &       0 &  0.36\\
+\hline
+\textbf{1.723761e-01} &     100 & 266 &  7.32\\
+	\hline
+	\textbf{U} &  207131 &  6.36\\
+	\hline
+	\textbf{V} &   51963 &  1.60\\
+	\hline
+	\textbf{W} &     348 &  0.01\\
+	\hline
+	\textbf{X} &   13849 &  0.43\\
+	\hline
+	\textbf{Y} &   11602 &  0.36\\
+	\hline
+	\textbf{Z} &    5614 &  0.17\\
+	\hline
+	\textbf{Total} &  3256832 &  100.00\\
+	\hline

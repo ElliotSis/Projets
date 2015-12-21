@@ -1,0 +1,5 @@
+<map id="JeuOthello::joueurGagnant" name="JeuOthello::joueurGagnant">
+<area shape="rect" id="node2" href="$class_jeu.html#a4856a0b6b9b5007dca14be8944cab1ab" title="Accède au joueur ayant le trait. " alt="" coords="229,5,389,32"/>
+<area shape="rect" id="node3" href="$class_jeu.html#a8686146030e153c6e51e7ee3e5ff6889" title="Accède au joueur suivant. " alt="" coords="244,56,375,83"/>
+<area shape="rect" id="node4" href="$class_joueur.html#a85cf4b28cac20e9bd0daee765cdc48fc" title="Accède à la variable pieces. " alt="" coords="246,107,373,133"/>
+</map>

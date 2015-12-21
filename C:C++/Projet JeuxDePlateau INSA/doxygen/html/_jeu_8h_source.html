@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>JeuxDePlateau:  Fichier source de Jeu.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">JeuxDePlateau
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_jeu_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Jeu.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_jeu_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef JEU_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define JEU_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;unordered_set&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_coup.html">Coup</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="class_joueur.html">Joueur</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_piece.html">Piece</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_plateau.html">Plateau</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_jeu.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_jeu.html">Jeu</a>{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_jeu.html#a08b35ab7ebc772806408ba4f84fd555a">   18</a></span>&#160;                <a class="code" href="class_plateau.html">Plateau</a>* <a class="code" href="class_jeu.html#a08b35ab7ebc772806408ba4f84fd555a">plateau</a>; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_jeu.html#a0c59e430215dc78ca6d6d99dbb5cef35">   19</a></span>&#160;                <a class="code" href="class_joueur.html">Joueur</a>* <a class="code" href="class_jeu.html#a0c59e430215dc78ca6d6d99dbb5cef35">joueurs</a>[2]; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_jeu.html#ae0f707b47d1c3b483c775f6776d3763f">   20</a></span>&#160;                std::list&lt;Coup*&gt; <a class="code" href="class_jeu.html#ae0f707b47d1c3b483c775f6776d3763f">coupsPossibles</a>; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_jeu.html#a47d18205a9c59e945f05ce7ae55d1247">   21</a></span>&#160;                std::unordered_set&lt;Piece*&gt; <a class="code" href="class_jeu.html#a47d18205a9c59e945f05ce7ae55d1247">piecesNonAttribuees</a>; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_jeu.html#a146d10fcfe2b376a9932d866aa0fcd02">   22</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="class_jeu.html#a146d10fcfe2b376a9932d866aa0fcd02">nbToursJoues</a>; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <a class="code" href="class_jeu.html#acc5795ee00edf75516d3dfe65be3e6d6">Jeu</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                <span class="keyword">virtual</span> <a class="code" href="class_jeu.html#a9cd19e73df169d7f09397be61ba8548c">~Jeu</a>();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <a class="code" href="class_plateau.html">Plateau</a>* <a class="code" href="class_jeu.html#acbb8c2881f2cc328ef940bb2dd0dd345">getPlateau</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">const</span> std::list&lt;Coup*&gt;&amp; <a class="code" href="class_jeu.html#ab7070b65e6cad1ef2f6e09e3cc3e3225">getCoupsPossibles</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keywordtype">int</span> <a class="code" href="class_jeu.html#a074c4921b43dd7436d746e310bace1db">getNbToursJoues</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#a7e6345e10a75cc7783798cf3a0faa959">ajouterPieceNonAttribuee</a>(<a class="code" href="class_piece.html">Piece</a>* pieceAAjouter);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#a4a2f5f014cd33c6a3749e3c96d0929a4">enleverPieceNonAttribuee</a>(<a class="code" href="class_piece.html">Piece</a>* pieceAEnlever);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <a class="code" href="class_joueur.html">Joueur</a>* <a class="code" href="class_jeu.html#a4856a0b6b9b5007dca14be8944cab1ab">joueurAyantLeTrait</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <a class="code" href="class_joueur.html">Joueur</a>* <a class="code" href="class_jeu.html#a8686146030e153c6e51e7ee3e5ff6889">joueurSuivant</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#a1a680e38cad7aa63c5b5bc121083decc">mettreAJourLesCoupsPossibles</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#a3cd332c8d57aa634a100452161d0a781">passerALEtatSuivant</a>(<a class="code" href="class_coup.html">Coup</a>* coupAJouer);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_jeu.html#ae65d8d88d81cdb0e259a6d2b0ddf64f4">revenirALEtatPrecedent</a>(<a class="code" href="class_coup.html">Coup</a>* coupJoue);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordtype">bool</span> <a class="code" href="class_jeu.html#af9ffff371139284b5fdc5cf0e8f720e9">estGagne</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keyword">virtual</span> <span class="keyword">const</span> std::set&lt;Piece*&gt;&amp; <a class="code" href="class_jeu.html#ad091d4d4cfb59a261ff2cf418ea9a286">piecesAMettreAJour</a>() = 0;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="keyword">virtual</span> <a class="code" href="class_piece.html">Piece</a>* <a class="code" href="class_jeu.html#acc2558d3c0673afbf36078c17c1b8e1e">pieceDeplaceeParDefaut</a>() = 0;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_jeu.html#ae841ac0a277a6def6dd12e6e4a1da295">estNul</a>() = 0;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                <span class="keyword">virtual</span> <a class="code" href="class_joueur.html">Joueur</a>* <a class="code" href="class_jeu.html#a8b505c04821b6db6b174703b3172168d">joueurGagnant</a>() = 0;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif // JEU_H</span></div>
+<div class="ttc" id="class_jeu_html_a3cd332c8d57aa634a100452161d0a781"><div class="ttname"><a href="class_jeu.html#a3cd332c8d57aa634a100452161d0a781">Jeu::passerALEtatSuivant</a></div><div class="ttdeci">void passerALEtatSuivant(Coup *coupAJouer)</div><div class="ttdoc">Passe à l&#39;état suivant du jeu. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:61</div></div>
+<div class="ttc" id="class_jeu_html"><div class="ttname"><a href="class_jeu.html">Jeu</a></div><div class="ttdoc">Classe représentant un état de jeu de plateau. </div><div class="ttdef"><b>Definition:</b> Jeu.h:16</div></div>
+<div class="ttc" id="class_jeu_html_acc2558d3c0673afbf36078c17c1b8e1e"><div class="ttname"><a href="class_jeu.html#acc2558d3c0673afbf36078c17c1b8e1e">Jeu::pieceDeplaceeParDefaut</a></div><div class="ttdeci">virtual Piece * pieceDeplaceeParDefaut()=0</div><div class="ttdoc">Donne la pièce déplacée par défaut. </div></div>
+<div class="ttc" id="class_jeu_html_ae65d8d88d81cdb0e259a6d2b0ddf64f4"><div class="ttname"><a href="class_jeu.html#ae65d8d88d81cdb0e259a6d2b0ddf64f4">Jeu::revenirALEtatPrecedent</a></div><div class="ttdeci">void revenirALEtatPrecedent(Coup *coupJoue)</div><div class="ttdoc">Revient à l&#39;état précédent du jeu. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:67</div></div>
+<div class="ttc" id="class_jeu_html_a0c59e430215dc78ca6d6d99dbb5cef35"><div class="ttname"><a href="class_jeu.html#a0c59e430215dc78ca6d6d99dbb5cef35">Jeu::joueurs</a></div><div class="ttdeci">Joueur * joueurs[2]</div><div class="ttdoc">Les joueurs du jeu. </div><div class="ttdef"><b>Definition:</b> Jeu.h:19</div></div>
+<div class="ttc" id="class_joueur_html"><div class="ttname"><a href="class_joueur.html">Joueur</a></div><div class="ttdoc">Classe représentant un joueur du jeu. </div><div class="ttdef"><b>Definition:</b> Joueur.h:12</div></div>
+<div class="ttc" id="class_jeu_html_acbb8c2881f2cc328ef940bb2dd0dd345"><div class="ttname"><a href="class_jeu.html#acbb8c2881f2cc328ef940bb2dd0dd345">Jeu::getPlateau</a></div><div class="ttdeci">Plateau * getPlateau() const </div><div class="ttdoc">Accède à la variable plateau. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:20</div></div>
+<div class="ttc" id="class_jeu_html_a4856a0b6b9b5007dca14be8944cab1ab"><div class="ttname"><a href="class_jeu.html#a4856a0b6b9b5007dca14be8944cab1ab">Jeu::joueurAyantLeTrait</a></div><div class="ttdeci">Joueur * joueurAyantLeTrait()</div><div class="ttdoc">Accède au joueur ayant le trait. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:41</div></div>
+<div class="ttc" id="class_jeu_html_a47d18205a9c59e945f05ce7ae55d1247"><div class="ttname"><a href="class_jeu.html#a47d18205a9c59e945f05ce7ae55d1247">Jeu::piecesNonAttribuees</a></div><div class="ttdeci">std::unordered_set&lt; Piece * &gt; piecesNonAttribuees</div><div class="ttdoc">Pieces n&#39;appartenant à aucun joueur. </div><div class="ttdef"><b>Definition:</b> Jeu.h:21</div></div>
+<div class="ttc" id="class_jeu_html_a7e6345e10a75cc7783798cf3a0faa959"><div class="ttname"><a href="class_jeu.html#a7e6345e10a75cc7783798cf3a0faa959">Jeu::ajouterPieceNonAttribuee</a></div><div class="ttdeci">void ajouterPieceNonAttribuee(Piece *pieceAAjouter)</div><div class="ttdoc">Ajoute une pièce aux pièces non attribuées. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:37</div></div>
+<div class="ttc" id="class_jeu_html_ab7070b65e6cad1ef2f6e09e3cc3e3225"><div class="ttname"><a href="class_jeu.html#ab7070b65e6cad1ef2f6e09e3cc3e3225">Jeu::getCoupsPossibles</a></div><div class="ttdeci">const std::list&lt; Coup * &gt; &amp; getCoupsPossibles() const </div><div class="ttdoc">Accède à la variable coupsPossibles. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:24</div></div>
+<div class="ttc" id="class_jeu_html_a4a2f5f014cd33c6a3749e3c96d0929a4"><div class="ttname"><a href="class_jeu.html#a4a2f5f014cd33c6a3749e3c96d0929a4">Jeu::enleverPieceNonAttribuee</a></div><div class="ttdeci">void enleverPieceNonAttribuee(Piece *pieceAEnlever)</div><div class="ttdoc">Enlève une pièce aux pièces non attribuées. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:32</div></div>
+<div class="ttc" id="class_jeu_html_ae841ac0a277a6def6dd12e6e4a1da295"><div class="ttname"><a href="class_jeu.html#ae841ac0a277a6def6dd12e6e4a1da295">Jeu::estNul</a></div><div class="ttdeci">virtual bool estNul()=0</div><div class="ttdoc">Indique si l&#39;état du jeu est un match nul. </div></div>
+<div class="ttc" id="class_coup_html"><div class="ttname"><a href="class_coup.html">Coup</a></div><div class="ttdoc">Classe représentant un coup du jeu. </div><div class="ttdef"><b>Definition:</b> Coup.h:11</div></div>
+<div class="ttc" id="class_jeu_html_ad091d4d4cfb59a261ff2cf418ea9a286"><div class="ttname"><a href="class_jeu.html#ad091d4d4cfb59a261ff2cf418ea9a286">Jeu::piecesAMettreAJour</a></div><div class="ttdeci">virtual const std::set&lt; Piece * &gt; &amp; piecesAMettreAJour()=0</div><div class="ttdoc">Donne la liste des pièces à mettre à jour pour passer à l&#39;état suivant du jeu. </div></div>
+<div class="ttc" id="class_jeu_html_a1a680e38cad7aa63c5b5bc121083decc"><div class="ttname"><a href="class_jeu.html#a1a680e38cad7aa63c5b5bc121083decc">Jeu::mettreAJourLesCoupsPossibles</a></div><div class="ttdeci">void mettreAJourLesCoupsPossibles()</div><div class="ttdoc">Met à jour la liste des coups possibles. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:49</div></div>
+<div class="ttc" id="class_jeu_html_ae0f707b47d1c3b483c775f6776d3763f"><div class="ttname"><a href="class_jeu.html#ae0f707b47d1c3b483c775f6776d3763f">Jeu::coupsPossibles</a></div><div class="ttdeci">std::list&lt; Coup * &gt; coupsPossibles</div><div class="ttdoc">Les coups possibles pour passer à l&#39;état de jeu suivant. </div><div class="ttdef"><b>Definition:</b> Jeu.h:20</div></div>
+<div class="ttc" id="class_jeu_html_a08b35ab7ebc772806408ba4f84fd555a"><div class="ttname"><a href="class_jeu.html#a08b35ab7ebc772806408ba4f84fd555a">Jeu::plateau</a></div><div class="ttdeci">Plateau * plateau</div><div class="ttdoc">Le plateau du jeu. </div><div class="ttdef"><b>Definition:</b> Jeu.h:18</div></div>
+<div class="ttc" id="class_jeu_html_a074c4921b43dd7436d746e310bace1db"><div class="ttname"><a href="class_jeu.html#a074c4921b43dd7436d746e310bace1db">Jeu::getNbToursJoues</a></div><div class="ttdeci">int getNbToursJoues() const </div><div class="ttdoc">Accède à la variable nbToursJoues. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:28</div></div>
+<div class="ttc" id="class_jeu_html_af9ffff371139284b5fdc5cf0e8f720e9"><div class="ttname"><a href="class_jeu.html#af9ffff371139284b5fdc5cf0e8f720e9">Jeu::estGagne</a></div><div class="ttdeci">bool estGagne()</div><div class="ttdoc">Indique si le jeu est gagné par le joueur ayant le trait. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:73</div></div>
+<div class="ttc" id="class_jeu_html_a8b505c04821b6db6b174703b3172168d"><div class="ttname"><a href="class_jeu.html#a8b505c04821b6db6b174703b3172168d">Jeu::joueurGagnant</a></div><div class="ttdeci">virtual Joueur * joueurGagnant()=0</div><div class="ttdoc">Indique le joueur gagnant. </div></div>
+<div class="ttc" id="class_plateau_html"><div class="ttname"><a href="class_plateau.html">Plateau</a></div><div class="ttdoc">Classe représentant le plateau du jeu. </div><div class="ttdef"><b>Definition:</b> Plateau.h:8</div></div>
+<div class="ttc" id="class_jeu_html_a8686146030e153c6e51e7ee3e5ff6889"><div class="ttname"><a href="class_jeu.html#a8686146030e153c6e51e7ee3e5ff6889">Jeu::joueurSuivant</a></div><div class="ttdeci">Joueur * joueurSuivant()</div><div class="ttdoc">Accède au joueur suivant. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:45</div></div>
+<div class="ttc" id="class_jeu_html_a9cd19e73df169d7f09397be61ba8548c"><div class="ttname"><a href="class_jeu.html#a9cd19e73df169d7f09397be61ba8548c">Jeu::~Jeu</a></div><div class="ttdeci">virtual ~Jeu()</div><div class="ttdoc">Destructeur par défaut. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:14</div></div>
+<div class="ttc" id="class_jeu_html_acc5795ee00edf75516d3dfe65be3e6d6"><div class="ttname"><a href="class_jeu.html#acc5795ee00edf75516d3dfe65be3e6d6">Jeu::Jeu</a></div><div class="ttdeci">Jeu()</div><div class="ttdoc">Constructeur par défaut. </div><div class="ttdef"><b>Definition:</b> Jeu.cpp:10</div></div>
+<div class="ttc" id="class_piece_html"><div class="ttname"><a href="class_piece.html">Piece</a></div><div class="ttdoc">Classe représentant une pièce du jeu. </div><div class="ttdef"><b>Definition:</b> Piece.h:14</div></div>
+<div class="ttc" id="class_jeu_html_a146d10fcfe2b376a9932d866aa0fcd02"><div class="ttname"><a href="class_jeu.html#a146d10fcfe2b376a9932d866aa0fcd02">Jeu::nbToursJoues</a></div><div class="ttdeci">int nbToursJoues</div><div class="ttdoc">Le nombre de tours joués depuis le début du jeu. </div><div class="ttdef"><b>Definition:</b> Jeu.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_jeu_8h.html">Jeu.h</a></li>
+    <li class="footer">Généré le Mercredi 10 Juin 2015 12:26:49 pour JeuxDePlateau par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

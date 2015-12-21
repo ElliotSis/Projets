@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>JeuxDePlateau:  Fichier source de Case.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">JeuxDePlateau
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_case_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Case.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_case_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CASE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CASE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_direction_8h.html">Direction.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span><a class="code" href="class_plateau.html">Plateau</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_piece.html">Piece</a>;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_case.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_case.html">Case</a>{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_case.html#a1c27a79c8b7075dd43a1ded87d00e11f">   13</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="class_case.html#a1c27a79c8b7075dd43a1ded87d00e11f">ligne</a>; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_case.html#ac521e18ffdd41834914c7bc3ac895240">   14</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="class_case.html#ac521e18ffdd41834914c7bc3ac895240">colonne</a>; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_case.html#a71388126788d0d555d897af15d01b397">   15</a></span>&#160;                <a class="code" href="class_plateau.html">Plateau</a>* <a class="code" href="class_case.html#a71388126788d0d555d897af15d01b397">plateau</a>; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_case.html#a87d4f1864a5d823cdb81fe0e5de49a0d">   16</a></span>&#160;                <span class="keywordtype">int</span> <a class="code" href="class_case.html#a87d4f1864a5d823cdb81fe0e5de49a0d">couleur</a>; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_case.html#ae77aa6269f9deebba648934209fa0839">   17</a></span>&#160;                <a class="code" href="class_piece.html">Piece</a>* <a class="code" href="class_case.html#ae77aa6269f9deebba648934209fa0839">piecePosee</a>; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <a class="code" href="class_case.html#ac9ba99d377916fab431671ccb47c936a">Case</a>(<span class="keywordtype">int</span> pLigne, <span class="keywordtype">int</span> pColonne, <a class="code" href="class_plateau.html">Plateau</a>* pPlateau, <span class="keywordtype">int</span> pCouleur, <a class="code" href="class_piece.html">Piece</a>* pPiecePosee = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                <span class="keywordtype">int</span> <a class="code" href="class_case.html#a1c535ae46dc31fa7606709969a79a193">getLigne</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <span class="keywordtype">int</span> <a class="code" href="class_case.html#ab868177d5048aa94a6bdd409c96a4bf5">getColonne</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <a class="code" href="class_plateau.html">Plateau</a>* <a class="code" href="class_case.html#a9829feeb290ead0addce627a38c8c5a3">getPlateau</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <span class="keywordtype">int</span> <a class="code" href="class_case.html#ad2bc359c85c5a529a5f84d099e1bd58d">getCouleur</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <a class="code" href="class_piece.html">Piece</a>* <a class="code" href="class_case.html#abaa6684a0e8458d61ce181082e368964">getPiecePosee</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="class_case.html#a5553d9ac758a7acc2a508e0e0a6e0ec1">setCouleur</a>(<span class="keywordtype">int</span> pCouleur);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="class_case.html#aad00d67d15f20be65e54abc9f356c846">setPiecePosee</a>(<a class="code" href="class_piece.html">Piece</a>* pPiecePosee);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="keywordtype">bool</span> <a class="code" href="class_case.html#a7bb3995518c43d2e96a689facb2ac287">estLibre</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <a class="code" href="class_case.html">Case</a>* <a class="code" href="class_case.html#a514e905a88691e3beb8767070efe2f74">caseAdjacente</a>(<a class="code" href="_direction_8h.html#ab942569c56fd2567c64d15a0a9093f74">Direction</a>&amp; direction);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif // CASE_H</span></div>
+<div class="ttc" id="class_case_html_ac521e18ffdd41834914c7bc3ac895240"><div class="ttname"><a href="class_case.html#ac521e18ffdd41834914c7bc3ac895240">Case::colonne</a></div><div class="ttdeci">int colonne</div><div class="ttdoc">Colonne où est située la case. </div><div class="ttdef"><b>Definition:</b> Case.h:14</div></div>
+<div class="ttc" id="class_case_html"><div class="ttname"><a href="class_case.html">Case</a></div><div class="ttdoc">Classe représentant une case du plateau du jeu. </div><div class="ttdef"><b>Definition:</b> Case.h:11</div></div>
+<div class="ttc" id="class_case_html_a7bb3995518c43d2e96a689facb2ac287"><div class="ttname"><a href="class_case.html#a7bb3995518c43d2e96a689facb2ac287">Case::estLibre</a></div><div class="ttdeci">bool estLibre() const </div><div class="ttdoc">Indique si la case est libre. </div><div class="ttdef"><b>Definition:</b> Case.cpp:36</div></div>
+<div class="ttc" id="class_case_html_a87d4f1864a5d823cdb81fe0e5de49a0d"><div class="ttname"><a href="class_case.html#a87d4f1864a5d823cdb81fe0e5de49a0d">Case::couleur</a></div><div class="ttdeci">int couleur</div><div class="ttdoc">Couleur de la case. </div><div class="ttdef"><b>Definition:</b> Case.h:16</div></div>
+<div class="ttc" id="class_case_html_a9829feeb290ead0addce627a38c8c5a3"><div class="ttname"><a href="class_case.html#a9829feeb290ead0addce627a38c8c5a3">Case::getPlateau</a></div><div class="ttdeci">Plateau * getPlateau() const </div><div class="ttdoc">Accède à la variable plateau. </div><div class="ttdef"><b>Definition:</b> Case.cpp:16</div></div>
+<div class="ttc" id="_direction_8h_html"><div class="ttname"><a href="_direction_8h.html">Direction.h</a></div></div>
+<div class="ttc" id="class_case_html_ad2bc359c85c5a529a5f84d099e1bd58d"><div class="ttname"><a href="class_case.html#ad2bc359c85c5a529a5f84d099e1bd58d">Case::getCouleur</a></div><div class="ttdeci">int getCouleur() const </div><div class="ttdoc">Accède à la variable couleur. </div><div class="ttdef"><b>Definition:</b> Case.cpp:20</div></div>
+<div class="ttc" id="_direction_8h_html_ab942569c56fd2567c64d15a0a9093f74"><div class="ttname"><a href="_direction_8h.html#ab942569c56fd2567c64d15a0a9093f74">Direction</a></div><div class="ttdeci">std::pair&lt; int, int &gt; Direction</div><div class="ttdoc">Représente une direction pour un déplacement sur le plateau. </div><div class="ttdef"><b>Definition:</b> Direction.h:8</div></div>
+<div class="ttc" id="class_case_html_ac9ba99d377916fab431671ccb47c936a"><div class="ttname"><a href="class_case.html#ac9ba99d377916fab431671ccb47c936a">Case::Case</a></div><div class="ttdeci">Case(int pLigne, int pColonne, Plateau *pPlateau, int pCouleur, Piece *pPiecePosee=nullptr)</div><div class="ttdoc">Constructeur de Case. </div><div class="ttdef"><b>Definition:</b> Case.cpp:5</div></div>
+<div class="ttc" id="class_case_html_ae77aa6269f9deebba648934209fa0839"><div class="ttname"><a href="class_case.html#ae77aa6269f9deebba648934209fa0839">Case::piecePosee</a></div><div class="ttdeci">Piece * piecePosee</div><div class="ttdoc">Pièce posée sur la case (peut être nullptr : pas de pièce posée). </div><div class="ttdef"><b>Definition:</b> Case.h:17</div></div>
+<div class="ttc" id="class_case_html_abaa6684a0e8458d61ce181082e368964"><div class="ttname"><a href="class_case.html#abaa6684a0e8458d61ce181082e368964">Case::getPiecePosee</a></div><div class="ttdeci">Piece * getPiecePosee() const </div><div class="ttdoc">Accède à la variable piecePosee. </div><div class="ttdef"><b>Definition:</b> Case.cpp:24</div></div>
+<div class="ttc" id="class_case_html_a1c27a79c8b7075dd43a1ded87d00e11f"><div class="ttname"><a href="class_case.html#a1c27a79c8b7075dd43a1ded87d00e11f">Case::ligne</a></div><div class="ttdeci">int ligne</div><div class="ttdoc">Ligne où est située la case. </div><div class="ttdef"><b>Definition:</b> Case.h:13</div></div>
+<div class="ttc" id="class_case_html_aad00d67d15f20be65e54abc9f356c846"><div class="ttname"><a href="class_case.html#aad00d67d15f20be65e54abc9f356c846">Case::setPiecePosee</a></div><div class="ttdeci">void setPiecePosee(Piece *pPiecePosee)</div><div class="ttdoc">Modifie la variable piecePosee. </div><div class="ttdef"><b>Definition:</b> Case.cpp:32</div></div>
+<div class="ttc" id="class_case_html_a71388126788d0d555d897af15d01b397"><div class="ttname"><a href="class_case.html#a71388126788d0d555d897af15d01b397">Case::plateau</a></div><div class="ttdeci">Plateau * plateau</div><div class="ttdoc">Plateau sur lequel se trouve la case. </div><div class="ttdef"><b>Definition:</b> Case.h:15</div></div>
+<div class="ttc" id="class_case_html_ab868177d5048aa94a6bdd409c96a4bf5"><div class="ttname"><a href="class_case.html#ab868177d5048aa94a6bdd409c96a4bf5">Case::getColonne</a></div><div class="ttdeci">int getColonne() const </div><div class="ttdoc">Accède à la variable colonne. </div><div class="ttdef"><b>Definition:</b> Case.cpp:12</div></div>
+<div class="ttc" id="class_plateau_html"><div class="ttname"><a href="class_plateau.html">Plateau</a></div><div class="ttdoc">Classe représentant le plateau du jeu. </div><div class="ttdef"><b>Definition:</b> Plateau.h:8</div></div>
+<div class="ttc" id="class_case_html_a1c535ae46dc31fa7606709969a79a193"><div class="ttname"><a href="class_case.html#a1c535ae46dc31fa7606709969a79a193">Case::getLigne</a></div><div class="ttdeci">int getLigne() const </div><div class="ttdoc">Accède à la variable ligne. </div><div class="ttdef"><b>Definition:</b> Case.cpp:8</div></div>
+<div class="ttc" id="class_piece_html"><div class="ttname"><a href="class_piece.html">Piece</a></div><div class="ttdoc">Classe représentant une pièce du jeu. </div><div class="ttdef"><b>Definition:</b> Piece.h:14</div></div>
+<div class="ttc" id="class_case_html_a514e905a88691e3beb8767070efe2f74"><div class="ttname"><a href="class_case.html#a514e905a88691e3beb8767070efe2f74">Case::caseAdjacente</a></div><div class="ttdeci">Case * caseAdjacente(Direction &amp;direction)</div><div class="ttdoc">Calcule la case adjacente dans une direction donnée. </div><div class="ttdef"><b>Definition:</b> Case.cpp:40</div></div>
+<div class="ttc" id="class_case_html_a5553d9ac758a7acc2a508e0e0a6e0ec1"><div class="ttname"><a href="class_case.html#a5553d9ac758a7acc2a508e0e0a6e0ec1">Case::setCouleur</a></div><div class="ttdeci">void setCouleur(int pCouleur)</div><div class="ttdoc">Modifie la variable couleur. </div><div class="ttdef"><b>Definition:</b> Case.cpp:28</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_case_8h.html">Case.h</a></li>
+    <li class="footer">Généré le Mercredi 10 Juin 2015 12:26:49 pour JeuxDePlateau par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

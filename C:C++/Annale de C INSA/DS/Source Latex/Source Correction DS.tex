@@ -1,0 +1,369 @@
+%%% Template originaly created by Karol Kozioł (mail@karol-koziol.net) and modified for ShareLaTeX use
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\usepackage[defaultmono]{droidmono}
+
+\usepackage{amsmath,amssymb,amsthm,textcomp}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{hyperref}
+
+\usepackage{geometry}
+\geometry{total={210mm,297mm},
+left=25mm,right=25mm,%
+bindingoffset=0mm, top=20mm,bottom=20mm}
+
+
+%\linespread{1.3}
+
+\newcommand{\linia}{\rule{\linewidth}{0.5pt}}
+
+% my own titles
+\makeatletter
+\renewcommand{\maketitle}{
+\begin{center}
+\vspace{2ex}
+{\huge \textsc{\@title}}
+\vspace{1ex}
+\\
+\linia\\
+\@author \hfill \@date
+\vspace{4ex}
+\end{center}
+}
+\makeatother
+%%%
+
+% custom footers and headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{Correction DS langage C}
+\cfoot{}
+\rfoot{Page \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+%
+
+% code listing settings
+\usepackage{listings}
+\lstset{
+    language=C,
+    basicstyle=\ttfamily\footnotesize,
+    aboveskip={1.0\baselineskip},
+    belowskip={1.0\baselineskip},
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    tabsize=4,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=lines,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    keywordstyle=\color[rgb]{0.627,0.126,0.941},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{01,0,0},
+    numbers=left,
+    numberstyle=\small,
+    stepnumber=1,
+    numbersep=10pt,
+    captionpos=t,
+    escapeinside={\%*}{*)}
+}
+\renewcommand\lstlistingname{Code source}
+%%%----------%%%----------%%%----------%%%----------%%%
+
+\begin{document}
+
+\title{Correction DS langage C}
+
+\author{Elliot S.}
+
+\date{2013/2014}
+
+\maketitle
+
+\section*{Question 1}
+
+Il était demandé de compléter le fichier "mots\_meles.h".
+
+\subsection*{1) Macro max(a,b)}
+
+\begin{lstlisting}[caption=La macro max]
+/* macro pour le maximum de a et b */
+#define max(a,b) (((a)<(b))?(b):(a))
+\end{lstlisting}
+
+\subsection*{2) Type typeJeu}
+
+\begin{lstlisting}[caption=Le type typeJeu]
+/* type pour definir un jeu de mots meles */
+typedef struct {
+	int tailleGrille; // taille de la grille
+	char** grille; // matrice dynamique de caracteres
+	int** grilleTrouve; // matrice dynamique de booleens
+	int tailleDico; // nombre de mots a trouver
+	typeMot* motsATrouver; // tableau dynamique des mots a trouver
+} typeJeu;
+\end{lstlisting}
+
+\newpage{}
+
+\section*{Question 2}
+
+Il s'agissait ici d'écrire quelques fonctions dans le fichier "mots\_meles.c".
+
+\subsection*{1) Fonction coupValide}
+\begin{lstlisting}[caption=La fonction coupValide]
+int coupValide(typeCoup coup, int tailleGrille){
+	int xi = coup.cinit.x, yi = coup.cinit.y, xf = coup.cfinal.x, yf = coup.cfinal.y;
+	int dansGrille = (xi >= 0) && (xi < tailleGrille) && (yi >= 0) && (yi < tailleGrille) && (xf >= 0) && (xf < tailleGrille) && (yf >= 0) && (yf < tailleGrille);
+	int memeHorizontale = (yi == yf);
+	int memeVerticale = (xi == xf);
+	int memeDiagonale = (max(xf - xi, xi - xf) == max(yf - yi, yi - yf));
+	return (dansGrille && (memeVerticale || memeHorizontale || memeDiagonale));
+}
+\end{lstlisting}
+
+\subsection*{2) Fonction saisirCoup}
+\begin{lstlisting}[caption=La fonction saisirCoup]
+typeCoup saisirCoup(int tailleGrille){
+	typeCoup res;
+	do{
+		printf("Debut du mot (x,y) : ");
+		scanf("%d,%d", &(res.cinit.x), &(res.cinit.y));
+		printf("fin du mot (x,y) : ");
+		scanf("%d,%d", &(res.cfinal.x), &(res.cfinal.y));
+	}while(!coupValide(res, tailleGrille));
+	return res;
+}
+\end{lstlisting}
+
+\subsection*{3) Fonction extraireMot}
+\begin{lstlisting}[caption=La fonction extraireMot]
+char* extraireMot(char **grille, typeCoup coup){
+	int i;
+	int xi = coup.cinit.x, yi = coup.cinit.y, xf = coup.cfinal.x, yf = coup.cfinal.y;
+	int dx = xf - xi, dy = yf - yi;
+	int lgRes = max(max(dx, -dx), max(dy, -dy)) + 1;
+	char* res = (char*)malloc((lgRes+1)*sizeof(char));
+
+	if (dx != 0)
+		dx = ((dx<0)?(-1):1);
+	if (dy != 0)
+		dy = ((dy<0)?(-1):1);
+
+	for(i = 0 ; i < lgRes ; i++)
+		res[i] = grille[xi + i*dx][yi + i*dy];
+
+	res[lgRes] = '\0';
+
+	return res;
+}
+\end{lstlisting}
+
+\newpage{}
+\subsection*{4) Fonction toutTrouve}
+\begin{lstlisting}[caption=La fonction toutTrouve]
+int toutTrouve(typeMot *motsATrouver, int nbMots){
+	int i = 0;
+	while(i < nbMots && motsATrouver[i].trouve)
+		i++;
+	return (i == nbMots);
+}
+\end{lstlisting}
+
+\section*{Question 3}
+
+Il fallait coder la fonction d'allocation de la matrice de char.
+
+\subsection*{1) Fonction alloueGrilleChar}
+\begin{lstlisting}[caption=La fonction alloueGrilleChar]
+char ** alloueGrilleChar(int tailleGrille){
+	int i;
+	char** res = (char**)malloc(tailleGrille*sizeof(char*));
+	char* tmp = (char*)malloc(tailleGrille*tailleGrille*sizeof(char));
+	if (res == NULL || tmp == NULL)
+		return NULL;
+	for(i = 0 ; i < tailleGrille ; i++)
+		res[i] = &tmp[i*tailleGrille];
+	return res;
+}
+\end{lstlisting}
+
+\section*{Question 4}
+
+Il était demandé de coder la fonction d'affichage du jeu.
+
+\subsection*{1) Fonction afficheJeu}
+\begin{lstlisting}[caption=La fonction afficheJeu]
+void afficheJeu(typeJeu unJeu){
+	int i,j;
+	printf("mot meles :\n");
+	printf("   X ");
+	for (i = 0; i < unJeu.tailleGrille; i++)
+		printf("%d  ", i);
+	printf("\n");
+	for (i = 0; i < unJeu.tailleGrille; i++){
+		printf("   %d", i);
+		for (j = 0; j < unJeu.tailleGrille; j++)
+			if(unJeu.grilleTrouve[i][j])
+				printf("(%c)", unJeu.grille[i][j]);
+			else
+				printf(" %c ", unJeu.grille[i][j]);
+		printf("\t\t");
+		if(!(unJeu.motsATrouver[i].trouve)){
+			j = 0;
+			while (unJeu.motsATrouver[i].mot[j]){
+				printf("%c", unJeu.motsATrouver[i].mot[j]);
+				j++;
+			}
+		}
+		printf("\n");
+	}
+}
+\end{lstlisting}
+
+\section*{Question 5}
+
+Il fallait ici s'occuper de fonctions relatives à la persistance du jeu.
+
+\subsection*{1) Fonction chargeJeu}
+\begin{lstlisting}[caption=La fonction chargeJeu]
+int chargeJeu(typeJeu *unJeu){
+	int trouve;
+	FILE* fic = fopen("GRILLE.DATA", "r");
+	if (fic != NULL){
+		unJeu->grille = lireGrille(fic, &(unJeu->tailleGrille));
+		fscanf(fic, "[TROUVE=%d]\n", &trouve);
+		unJeu->grilleTrouve = alloueGrilleInt(unJeu->tailleGrille);
+		int i,j;
+		if (trouve){
+			for(i = 0; i < unJeu->tailleGrille ; i++){
+				for (j = 0; j < unJeu->tailleGrille ; j++)
+						fscanf(fic, "%d ", &(unJeu->grilleTrouve[i][j]));
+				fscanf(fic, "\n");
+			}
+		}
+		else{
+			for(i = 0; i < unJeu->tailleGrille ; i++)
+				for (j = 0; j < unJeu->tailleGrille ; j++)
+						unJeu->grilleTrouve[i][j] = 0;
+		}
+		unJeu->motsATrouver = lireMotsATrouver(fic, unJeu->tailleGrille, &(unJeu->tailleDico));
+	}
+	else return 0;
+	fclose(fic);
+	return 1;
+}
+\end{lstlisting}
+
+\subsection*{2) Fonction lireMotsATrouver}
+\begin{lstlisting}[caption=La fonction lireMotsATrouver]
+typeMot * lireMotsATrouver(FILE *fic, int tailleGrille, int *tailleDico){
+	typeMot* res;
+	int i,j;
+	fscanf(fic, "[TAILLEDICO=%d]\n", tailleDico);
+	res = (typeMot*)malloc((*tailleDico)*sizeof(typeMot));
+	for (i = 0 ; i < *tailleDico ; i++){
+		res[i].mot = (char*)malloc(tailleGrille*sizeof(char));
+		fscanf(fic, "%s %d\n", res[i].mot, &(res[i].trouve));
+	}
+	return res;
+}
+\end{lstlisting}
+
+\subsection*{3) Fonction sauveJeu}
+\begin{lstlisting}[caption=La fonction sauveJeu]
+int sauveJeu(typeJeu unJeu){
+	FILE* fic = fopen("GRILLE.DATA", "w");
+	if (fic != NULL){
+		int i, j, trouve = 0;
+		fprintf(fic, "[TAILLEGRILLE=%d]\n", unJeu.tailleGrille);
+		for(i = 0 ; i < unJeu.tailleGrille ; i++){
+			for(j = 0 ; j < unJeu.tailleGrille ; j++)
+				fprintf(fic, "%c ", unJeu.grille[i][j]);
+			fprintf(fic, "\n");
+		}
+		i = 0;
+		while (i < unJeu.tailleDico && !trouve){
+			trouve = trouve || unJeu.motsATrouver[i].trouve;
+			i++;
+		}
+		fprintf(fic, "[TROUVE=%d]\n", trouve);
+		if (trouve){
+			for(i = 0; i < unJeu.tailleGrille ; i++){
+				for (j = 0; j < unJeu.tailleGrille ; j++)
+					fprintf(fic, "%d ", unJeu.grilleTrouve[i][j]);
+				fprintf(fic, "\n");
+			}
+		}
+		fprintf(fic, "[TAILLEDICO=%d]\n", unJeu.tailleDico);
+		for (i = 0; i < unJeu.tailleDico; i++){
+			fprintf(fic, "%s %d\n", unJeu.motsATrouver[i].mot, unJeu.motsATrouver[i].trouve);
+		}
+	}
+	else return 0;
+	fclose(fic);
+	return 1;
+}
+\end{lstlisting}
+
+\lstset{
+    language=Make,
+    basicstyle=\ttfamily\footnotesize,
+    aboveskip={1.0\baselineskip},
+    belowskip={1.0\baselineskip},
+    columns=fixed,
+    extendedchars=true,
+    breaklines=true,
+    tabsize=4,
+    prebreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+    frame=lines,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    keywordstyle=\color[rgb]{0.627,0.126,0.941},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{01,0,0},
+    numbers=left,
+    numberstyle=\small,
+    stepnumber=1,
+    numbersep=10pt,
+    captionpos=t,
+    escapeinside={\%*}{*)}
+}
+
+
+\section*{Remarques}
+En corrigeant, pour vérifier mes résultats, j'ai codé complétement le programme du DS (qui, normalement, fonctionne sans problème).
+Si vous voulez, vous pouvez modifier des fonctions dans la source pour tester vos propres solutions.
+Normalement, les fichiers "mots\_meles.h" et "mots\_meles.c" vous sont fournis avec la correction.
+Pour compiler, il suffit d'utiliser gcc sur linux :
+\begin{lstlisting}[caption=Compiler le programme]
+gcc mots_meles.c -o mots_meles
+\end{lstlisting}
+Puis, pour lancer le programme en console linux :
+\begin{lstlisting}[caption=Lancer le programme]
+./mots_meles
+\end{lstlisting}
+
+N'hésitez pas à me contacter pour des questions/remarques (à l'adresse \href{mailto:elliot.sisteron@insa-rouen.fr}{elliot.sisteron@insa-rouen.fr}).
+Bonne révisions et bonne chance pour votre futur examen,\\
+
+Elliot.
+
+
+\end{document}

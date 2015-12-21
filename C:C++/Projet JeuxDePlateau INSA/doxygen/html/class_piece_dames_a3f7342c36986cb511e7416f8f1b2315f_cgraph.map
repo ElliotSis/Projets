@@ -1,0 +1,24 @@
+<map id="PieceDames::creerLesCoups" name="PieceDames::creerLesCoups">
+<area shape="rect" id="node2" href="$class_etat_piece_dames.html#a255293f6cb3c96f7eac82532e5feae54" title="Donne le vecteur des cases où l&#39;on peut se poser après une prise dans une direction. " alt="" coords="558,5,757,47"/>
+<area shape="rect" id="node3" href="$class_coup_dames.html#aff63a62a8e9845c8537a4fa9fc04f72f" title="Ajoute une pièce de aux pièces à supprimer. " alt="" coords="536,71,779,98"/>
+<area shape="rect" id="node4" href="$class_piece.html#ac960c5fc6381f78c0c0939de227a5f1c" title="Fait disparaitre la pièce du plateau et du joueur. " alt="" coords="596,274,719,301"/>
+<area shape="rect" id="node12" href="$class_piece.html#a9761a06a2acdb71543c803e3308a6f7b" title="Pose la pièce sur une case. " alt="" coords="600,325,715,351"/>
+<area shape="rect" id="node14" href="$class_piece_dames.html#adb4d463e414aed6ab288ff4645668b2d" title="Méthode récursive utilisée par la méthode mettreAJourLesCoups. " alt="" coords="276,173,459,199"/>
+<area shape="rect" id="node17" href="$class_piece.html#a54e6dd62a1b62778148baf3ac62ab0b9" title="Fait réapparaitre la pièce sur le plateau et pour le joueur. " alt="" coords="592,223,723,250"/>
+<area shape="rect" id="node22" href="$class_etat_piece_dames.html#ad27590b77b79090d23b5362ddebebd3c" title="Renvoie les directions que la pièce peut prendre au départ. " alt="" coords="275,376,460,417"/>
+<area shape="rect" id="node23" href="$class_etat_piece_dames.html#a6b0f3a8887fef98c93ccf61145705053" title="Donne le vecteur des cases où l&#39;on peut se poser pour un déplacement dans une direction. " alt="" coords="247,442,488,469"/>
+<area shape="rect" id="node5" href="$class_piece.html#aaa40473e760f4c7df7ede8de4a38e169" title="Indique si la pièce est appartient à un joueur. " alt="" coords="1077,147,1262,174"/>
+<area shape="rect" id="node6" href="$class_joueur.html#ae8c66a1fb8f4dbddb72a15309220d4e7" title="Enlève une pièce au joueur. " alt="" coords="854,375,993,402"/>
+<area shape="rect" id="node10" href="$class_piece.html#a16068df00be96adc98641c38f0a223a6" title="Indique si la pièce est posée sur une case. " alt="" coords="827,274,1020,301"/>
+<area shape="rect" id="node11" href="$class_case.html#aad00d67d15f20be65e54abc9f356c846" title="Modifie la variable piecePosee. " alt="" coords="849,325,998,351"/>
+<area shape="rect" id="node7" href="$class_piece.html#a3521f3c147260fd0c7610d6d9b8bbf1c" title="Accède à la variable joueurPossedant. " alt="" coords="1078,350,1261,377"/>
+<area shape="rect" id="node8" href="$class_piece.html#aec777dcf8bc9f58a0d62272cabd77cd7" title="Modifie la variable joueurPossedant. " alt="" coords="1078,299,1261,326"/>
+<area shape="rect" id="node9" href="$class_jeu.html#a7e6345e10a75cc7783798cf3a0faa959" title="Ajoute une pièce aux pièces non attribuées. " alt="" coords="1070,401,1269,427"/>
+<area shape="rect" id="node13" href="$class_case.html#a7bb3995518c43d2e96a689facb2ac287" title="Indique si la case est libre. " alt="" coords="870,426,977,453"/>
+<area shape="rect" id="node15" href="$class_coup_dames.html#a1409d48a440dd8acd324072420fab63d" title="Renvoie une copie du coup. " alt="" coords="590,122,725,149"/>
+<area shape="rect" id="node21" href="$class_coup.html#ab4db29cbc87843c1dd59c3a40306e7a1" title="Modifie la variable caseArrivee. " alt="" coords="582,173,733,199"/>
+<area shape="rect" id="node16" href="$class_coup_dames.html#a98a52f4927c4cf380a7b6ed589a1d884" title="Constructeur de CoupDames. " alt="" coords="835,71,1011,98"/>
+<area shape="rect" id="node18" href="$class_joueur.html#a408edc6dc1285f43da6dcb931cf70cee" title="Fait gagner une pièce au joueur. " alt="" coords="853,223,994,250"/>
+<area shape="rect" id="node19" href="$class_joueur.html#a85cf4b28cac20e9bd0daee765cdc48fc" title="Accède à la variable pieces. " alt="" coords="1106,198,1233,225"/>
+<area shape="rect" id="node20" href="$class_jeu.html#a4a2f5f014cd33c6a3749e3c96d0929a4" title="Enlève une pièce aux pièces non attribuées. " alt="" coords="1068,249,1271,275"/>
+</map>

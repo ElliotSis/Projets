@@ -1,0 +1,75 @@
+extends layout
+
+block head
+    link(rel="stylesheet", href="/stylesheets/creationJoueur.css")
+    script(type='text/javascript').
+     var disciplines = !{JSON.stringify(c.discipline)}
+     var objets = !{JSON.stringify(c.objetCreationJoueur)}
+
+block content
+    img(src="/images/loup_solitaire.png")
+    section(ng-controller="CreatePlayer",ng-init="initPlayers(#{JSON.stringify(joueurs)})")#players
+     h1 Historique des personnages
+     p Si vous n'avez pas encore créé de personnage veuillez passer directement à la section création.
+     div 
+      fieldset
+       legend Joueurs enregistrés : 
+       p Cliquez sur le pseudo d'un des joueurs suivant pour continuer leur histoire : 
+       div#gauche
+        ul#choosePlayer
+         if joueurs
+           li(ng-repeat="joueur in joueurs")
+            h3 {{joueur.pseudo}}
+            p Ce joueur est rendu dans l'histoire à la page #[span#idPage {{joueur.page_av}}]
+            div.deletePlayer
+             span(class="trash", ng-click="deletePlayer(joueur._id)")
+              img(src="/images/trash.png")
+              | Supprimer profil
+           form(name="choosePlayer",action="/jeu/continue",method="post")
+            label(for="playerSelect") Choisissez votre joueur : 
+             select(name="playerSelect",id="playerSelect")
+              option(ng-repeat="joueur in joueurs", name="{{joueur._id}}", value="{{joueur._id}}") {{joueur.pseudo}}
+            input.button(type="submit" , value="Continuer histoire!")
+      
+         else
+          p Il n'y a pas de joueurs enregistrés
+          
+
+    section(ng-controller="CreatePlayer")
+        h1 Création du personnage
+
+        div#erreurs
+            ul
+                each e in erreursMsg
+                    li=e
+
+        
+        form(action="/jeu/1", method="post", name="createForm" )
+            fieldset
+             legend
+              p Ton pseudo : 
+               input(type='text', name='pseudo', required)
+            fieldset
+                legend Disciplines
+                p Choisir 5 disciplines:
+                div#gauche
+                 ul
+                  li(ng-repeat="disc in disciplines")
+                   label
+                    input(type="checkbox",ng-model="disc.selected", name="discipline",value= "{{disc.title}}" ,ng-change="updateDisc(disc);updateButton()")
+                    | {{disc.title}}
+            p Nombre de disciplines selectionnes : {{selectedItems}}
+            fieldset
+                legend Équipement
+                p Choisir 2 items:
+                div#gauche
+                 ul
+                  li(ng-repeat="obj in objets")
+                   label
+                    input(type="checkbox",  ng-model="obj.selected", name="{{obj.type}}", value="{{obj.title}}",ng-change="updateObj(obj);updateButton()")
+                    | {{obj.title}} - ({{obj.type}})
+            p Nombre d'items selectionnes : {{selectedObj}}
+            input.button(type="submit" ng-disabled="disable" value="Commencer la partie!")
+            p(ng-if="disable === true")#erreurs Vous avez choisi seulement {{selectedItems}}/5 disciplines et {{selectedObj}}/2 objets !
+            p(ng-if="disable === false")#success Vous pouvez demarrer le jeu !
+        

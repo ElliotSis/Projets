@@ -1,0 +1,12 @@
+/home/elliot/Documents/C++/JeuxDePlateau/include/Couleurs.h:10: warning: argument 'La' of command @param is not found in the argument list of intToRGB(int couleur, double &r, double &g, double &b)
+/home/elliot/Documents/C++/JeuxDePlateau/include/Couleurs.h:10: warning: The following parameters of intToRGB(int couleur, double &r, double &g, double &b) are not documented:
+  parameter 'couleur'
+/home/elliot/Documents/C++/JeuxDePlateau/include/Couleurs.h:10: warning: argument 'La' of command @param is not found in the argument list of intToRGB(int couleur, double &r, double &g, double &b)
+/home/elliot/Documents/C++/JeuxDePlateau/include/Couleurs.h:10: warning: The following parameters of intToRGB(int couleur, double &r, double &g, double &b) are not documented:
+  parameter 'couleur'
+/home/elliot/Documents/C++/JeuxDePlateau/include/Controlleur.h:49: warning: argument 'choix' of command @param is not found in the argument list of Controlleur::traiterChoixMenuPrincipal(int choixJeu, int choixJ1, int choixJ2)
+/home/elliot/Documents/C++/JeuxDePlateau/include/Controlleur.h:49: warning: The following parameters of Controlleur::traiterChoixMenuPrincipal(int choixJeu, int choixJ1, int choixJ2) are not documented:
+  parameter 'choixJeu'
+/home/elliot/Documents/C++/JeuxDePlateau/include/PieceDames.h:18: warning: argument 'coupAModifier' of command @param is not found in the argument list of PieceDames::remplirCoups(CoupDames *coupTraite, Direction &directionChoisie)
+/home/elliot/Documents/C++/JeuxDePlateau/include/PieceDames.h:18: warning: The following parameters of PieceDames::remplirCoups(CoupDames *coupTraite, Direction &directionChoisie) are not documented:
+  parameter 'coupTraite'

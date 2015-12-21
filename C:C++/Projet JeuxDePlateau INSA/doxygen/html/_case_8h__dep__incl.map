@@ -1,0 +1,20 @@
+<map id="Case.h" name="Case.h">
+<area shape="rect" id="node2" href="$_vue_jeu_g_t_k_8cpp.html" title="VueJeuGTK.cpp" alt="" coords="5,80,124,107"/>
+<area shape="rect" id="node3" href="$_controlleur_8cpp.html" title="Controlleur.cpp" alt="" coords="148,80,259,107"/>
+<area shape="rect" id="node4" href="$_coup_othello_8cpp.html" title="CoupOthello.cpp" alt="" coords="283,80,401,107"/>
+<area shape="rect" id="node5" href="$_vue_jeu_console_8cpp.html" title="VueJeuConsole.cpp" alt="" coords="426,80,565,107"/>
+<area shape="rect" id="node6" href="$_vue_jeu_console_othello_8cpp.html" title="VueJeuConsoleOthello.cpp" alt="" coords="589,80,769,107"/>
+<area shape="rect" id="node7" href="$_plateau_8cpp.html" title="Plateau.cpp" alt="" coords="794,80,885,107"/>
+<area shape="rect" id="node8" href="$_pion_dames_8cpp.html" title="PionDames.cpp" alt="" coords="909,80,1023,107"/>
+<area shape="rect" id="node9" href="$_case_8cpp.html" title="Case.cpp" alt="" coords="1048,80,1127,107"/>
+<area shape="rect" id="node10" href="$_vue_jeu_g_t_k_dames_8cpp.html" title="VueJeuGTKDames.cpp" alt="" coords="1151,80,1311,107"/>
+<area shape="rect" id="node11" href="$_plateau_dames_8cpp.html" title="PlateauDames.cpp" alt="" coords="1335,80,1469,107"/>
+<area shape="rect" id="node12" href="$_piece_othello_8cpp.html" title="PieceOthello.cpp" alt="" coords="1493,80,1615,107"/>
+<area shape="rect" id="node13" href="$_vue_jeu_g_t_k_othello_8cpp.html" title="VueJeuGTKOthello.cpp" alt="" coords="1639,80,1797,107"/>
+<area shape="rect" id="node14" href="$_dame_dames_8cpp.html" title="DameDames.cpp" alt="" coords="1821,80,1945,107"/>
+<area shape="rect" id="node15" href="$_vue_jeu_console_dames_8cpp.html" title="VueJeuConsoleDames.cpp" alt="" coords="1970,80,2151,107"/>
+<area shape="rect" id="node16" href="$_coup_dames_8cpp.html" title="CoupDames.cpp" alt="" coords="2175,80,2295,107"/>
+<area shape="rect" id="node17" href="$_plateau_othello_8cpp.html" title="PlateauOthello.cpp" alt="" coords="2320,80,2452,107"/>
+<area shape="rect" id="node18" href="$_piece_dames_8cpp.html" title="PieceDames.cpp" alt="" coords="2477,80,2599,107"/>
+<area shape="rect" id="node19" href="$_piece_8cpp.html" title="Piece.cpp" alt="" coords="2623,80,2703,107"/>
+</map>

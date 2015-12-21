@@ -1,0 +1,13 @@
+<map id="Controlleur.cpp" name="Controlleur.cpp">
+<area shape="rect" id="node2" href="$_controlleur_8h.html" title="Controlleur.h" alt="" coords="5,80,101,107"/>
+<area shape="rect" id="node3" href="$_case_8h.html" title="Case.h" alt="" coords="125,80,189,107"/>
+<area shape="rect" id="node6" href="$_coup_8h.html" title="Coup.h" alt="" coords="595,80,659,107"/>
+<area shape="rect" id="node7" href="$_jeu_dames_8h.html" title="JeuDames.h" alt="" coords="304,80,400,107"/>
+<area shape="rect" id="node13" href="$_jeu_othello_8h.html" title="JeuOthello.h" alt="" coords="425,80,519,107"/>
+<area shape="rect" id="node14" href="$_joueur_8h.html" title="Joueur.h" alt="" coords="517,155,589,181"/>
+<area shape="rect" id="node15" href="$_piece_8h.html" title="Piece.h" alt="" coords="213,80,280,107"/>
+<area shape="rect" id="node16" href="$_vue_jeu_8h.html" title="VueJeu.h" alt="" coords="683,80,760,107"/>
+<area shape="rect" id="node17" href="$_vue_principale_8h.html" title="VuePrincipale.h" alt="" coords="785,80,898,107"/>
+<area shape="rect" id="node4" href="$_direction_8h.html" title="Direction.h" alt="" coords="121,155,207,181"/>
+<area shape="rect" id="node8" href="$_jeu_8h.html" title="Jeu.h" alt="" coords="377,155,431,181"/>
+</map>

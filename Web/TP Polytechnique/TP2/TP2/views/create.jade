@@ -1,0 +1,31 @@
+extends layout
+
+block extraHeader
+ link(rel='stylesheet', href='/stylesheets/create.css')
+
+block content
+ #history
+  form(name='create_player', method='post')
+   #form_content
+    h2 Choose your name
+    .center_block
+     p Name : 
+      input(type='text', name='name')
+
+    h2 Pick your Kai disciplines
+    .center_block
+     - for(var n = 1; n <= 5; ++n)
+       select(name='discipline'+n)
+         each discipline in disciplines
+          option(value=discipline)=discipline
+
+    h2 Choose your equipment
+    .center_block
+     - for(var n = 1; n <= 2; ++n)
+      select(name='item'+n)
+        each item in items
+          option(value=item)=item
+    .center_block
+     button(type='submit') Start the game
+      
+     

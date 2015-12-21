@@ -1,0 +1,55 @@
+extends layout_page
+
+block page_content
+ #history
+  h2 Ready to fight #{enemy_name} ?
+  img(src=game_objects.enemies[enemy_name].image)
+  table.combat_info
+   tr
+    th#combat_th Combat Skill
+    th#stamina_th Stamina
+   tr
+     td #{game_objects.enemies[enemy_name].combat_skill}
+     td #{game_objects.enemies[enemy_name].stamina}
+  
+  a(href='/combat/' + enemy_name) 
+   button.combat_button
+    img(src="/images/ui/attack.png")#attack_button
+    p Attack ! 
+  a(href='/') 
+   button.combat_button
+    img(src="/images/ui/flee.png")#flee_button
+    p Flee ! 
+  #info_combat
+   header
+    img(src = "/images/ui/punch.png").image_left
+    img(src = "/images/ui/punch.png").image_right
+    h2 Round : 1 
+   .line-separator
+   ul.menu_without_puce
+    li
+     img(src="/images/kai/Weaponskill.png")
+     span Number of rounds : 0
+    li
+      img(src="/images/ui/dice.png")
+      span Random number : 4
+    li
+     h3 Lone Wolf
+     img(src="/images/ui/wolf.png")
+     span   
+      strong.endurance -2
+      |  Stamina
+     span
+      strong.damage 3
+      |  Damage
+    li
+     h3 #{enemy_name}
+     img(src=game_objects.enemies[enemy_name].image)
+     span   
+      strong.endurance -5 
+      | Stamina
+     span
+      strong.damage 6 
+      | Damage
+
+   

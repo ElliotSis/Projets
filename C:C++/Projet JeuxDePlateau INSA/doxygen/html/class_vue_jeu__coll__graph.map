@@ -1,0 +1,10 @@
+<map id="VueJeu" name="VueJeu">
+<area shape="rect" id="node8" href="$class_controlleur.html" title="Classe utilisée dans le cadre du patron de conception MVC. " alt="" coords="34,273,120,300"/>
+<area shape="rect" id="node2" href="$class_jeu.html" title="Classe représentant un état de jeu de plateau. " alt="" coords="173,5,216,32"/>
+<area shape="rect" id="node3" href="$class_joueur.html" title="Classe représentant un joueur du jeu. " alt="" coords="214,95,276,121"/>
+<area shape="rect" id="node5" href="$class_piece.html" title="Classe représentant une pièce du jeu. " alt="" coords="395,184,450,211"/>
+<area shape="rect" id="node4" href="$class_coup.html" title="Classe représentant un coup du jeu. " alt="" coords="396,363,449,389"/>
+<area shape="rect" id="node6" href="$class_case.html" title="Classe représentant une case du plateau du jeu. " alt="" coords="544,273,597,300"/>
+<area shape="rect" id="node7" href="$class_plateau.html" title="Classe représentant le plateau du jeu. " alt="" coords="614,363,681,389"/>
+<area shape="rect" id="node9" href="$class_vue_principale.html" title="Classe utilisée dans le cadre du patron de conception MVC. " alt="" coords="26,363,128,389"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Controlleur" name="Controlleur">
+<area shape="rect" id="node2" href="$class_controlleur_console.html" title="Un controlleur pour jouer dans un terminal. " alt="" coords="5,80,139,107"/>
+<area shape="rect" id="node3" href="$class_controlleur_g_t_k.html" title="Un controlleur pour jouer dans une fenêtre, en utilisant la librairie GTKmm. " alt="" coords="163,80,275,107"/>
+</map>

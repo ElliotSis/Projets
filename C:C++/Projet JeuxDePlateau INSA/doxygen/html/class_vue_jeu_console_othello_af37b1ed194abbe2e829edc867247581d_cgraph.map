@@ -1,0 +1,4 @@
+<map id="VueJeuConsoleOthello::afficherPiece" name="VueJeuConsoleOthello::afficherPiece">
+<area shape="rect" id="node2" href="$class_piece.html#a3521f3c147260fd0c7610d6d9b8bbf1c" title="Accède à la variable joueurPossedant. " alt="" coords="223,5,405,32"/>
+<area shape="rect" id="node3" href="$class_joueur.html#ac70054bfad1d93fdc8a070b7a1c43bdb" title="Accède à la variable couleurDeSesPieces. " alt="" coords="208,56,420,83"/>
+</map>

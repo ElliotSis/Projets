@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>TP1:  Fichier source de src/personne.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TP1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">personne.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="personne_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="personne_8h.html">personne.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_personne.html#a948b45a8ee0fdf69548a2adf4f42e827">    3</a></span>&#160;<a class="code" href="class_personne.html#a948b45a8ee0fdf69548a2adf4f42e827">Personne::Personne</a>(<span class="keyword">const</span> std::string prenom, <span class="keyword">const</span> std::string nom,</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;                    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> age, <span class="keyword">const</span> std::string numeroCellulaire, <span class="keywordtype">bool</span> estMaison) : prenom_(prenom), </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;                    nom_(nom), numeroCellulaire_(numeroCellulaire), age_(age),</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;                    estALaMaison_(estMaison) {}</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_personne.html#ade025a76a716e44fd924ef93b91cb9d2">    8</a></span>&#160;<a class="code" href="class_personne.html#ade025a76a716e44fd924ef93b91cb9d2">Personne::~Personne</a>() {}</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_personne.html#a030f5db86207928d728cc34cacd84303">   10</a></span>&#160;<span class="keyword">const</span> std::string <a class="code" href="class_personne.html#a030f5db86207928d728cc34cacd84303">Personne::obtenirPrenom</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_personne.html#aff76e308ae9f3b54a1708805bb9c68cc">prenom_</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_personne.html#aadd3fc39d0958cca866d167e00a0ae58">   14</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_personne.html#aadd3fc39d0958cca866d167e00a0ae58">Personne::modifierPrenom</a>(<span class="keyword">const</span> std::string prenom) {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_personne.html#aff76e308ae9f3b54a1708805bb9c68cc">prenom_</a> = prenom;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_personne.html#afe5d9c8329e628054abce4b2bac513d2">   18</a></span>&#160;<span class="keyword">const</span> std::string <a class="code" href="class_personne.html#afe5d9c8329e628054abce4b2bac513d2">Personne::obtenirNom</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_personne.html#a761df392b9b1c360a8bf21db9a3ae80b">nom_</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_personne.html#abb228be23895ef25b7dbeca8b824e60a">   22</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_personne.html#abb228be23895ef25b7dbeca8b824e60a">Personne::modifierNom</a>(<span class="keyword">const</span> std::string nom) {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_personne.html#a761df392b9b1c360a8bf21db9a3ae80b">nom_</a> = nom;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_personne.html#a8a206567e29cd57645c44075ba27f77e">   26</a></span>&#160;<span class="keyword">const</span> std::string <a class="code" href="class_personne.html#a8a206567e29cd57645c44075ba27f77e">Personne::obtenirNumeroCelullaire</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_personne.html#a95b7594705fd91fad60f00c2badb51e4">numeroCellulaire_</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_personne.html#a820ac20eec3db6cf073d91d30480ab02">   30</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_personne.html#a820ac20eec3db6cf073d91d30480ab02">Personne::modifierNumeroCelullaire</a>(<span class="keyword">const</span> std::string numeroCellulaire) {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_personne.html#a95b7594705fd91fad60f00c2badb51e4">numeroCellulaire_</a> = numeroCellulaire;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_personne.html#a05eb99d819d2438b7a144d6485032122">   34</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="class_personne.html#a05eb99d819d2438b7a144d6485032122">Personne::obtenirAge</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_personne.html#af66d74e350e1c3c84a7d9765d9de61f8">age_</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_personne.html#a36d2f5391cb9a81ef68a915b426a72be">   38</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_personne.html#a36d2f5391cb9a81ef68a915b426a72be">Personne::modifierAge</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> age) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_personne.html#af66d74e350e1c3c84a7d9765d9de61f8">age_</a> = age;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_personne.html#abd4783c93846250df8272740b935b968">   42</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_personne.html#abd4783c93846250df8272740b935b968">Personne::obtenirEstALaMaison</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_personne.html#abd5df46f915259743e82bb0558ca86f5">estALaMaison_</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_personne.html#a630f3e3490330350f42a7f74aebd58cd">   46</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_personne.html#a630f3e3490330350f42a7f74aebd58cd">Personne::modifierEstALaMaison</a>(<span class="keywordtype">bool</span> estALaMaison) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_personne.html#abd5df46f915259743e82bb0558ca86f5">estALaMaison_</a> = estALaMaison;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="ttc" id="class_personne_html_a95b7594705fd91fad60f00c2badb51e4"><div class="ttname"><a href="class_personne.html#a95b7594705fd91fad60f00c2badb51e4">Personne::numeroCellulaire_</a></div><div class="ttdeci">std::string numeroCellulaire_</div><div class="ttdoc">Numéro du cellulaire de la personne. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8h_source.html#l00083">personne.h:83</a></div></div>
+<div class="ttc" id="class_personne_html_a761df392b9b1c360a8bf21db9a3ae80b"><div class="ttname"><a href="class_personne.html#a761df392b9b1c360a8bf21db9a3ae80b">Personne::nom_</a></div><div class="ttdeci">std::string nom_</div><div class="ttdoc">Nom de la personne. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8h_source.html#l00081">personne.h:81</a></div></div>
+<div class="ttc" id="class_personne_html_af66d74e350e1c3c84a7d9765d9de61f8"><div class="ttname"><a href="class_personne.html#af66d74e350e1c3c84a7d9765d9de61f8">Personne::age_</a></div><div class="ttdeci">unsigned int age_</div><div class="ttdoc">Âge de la personne. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8h_source.html#l00085">personne.h:85</a></div></div>
+<div class="ttc" id="class_personne_html_a8a206567e29cd57645c44075ba27f77e"><div class="ttname"><a href="class_personne.html#a8a206567e29cd57645c44075ba27f77e">Personne::obtenirNumeroCelullaire</a></div><div class="ttdeci">const std::string obtenirNumeroCelullaire() const </div><div class="ttdoc">Accède à la variable numeroCellulaire_. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8cpp_source.html#l00026">personne.cpp:26</a></div></div>
+<div class="ttc" id="class_personne_html_ade025a76a716e44fd924ef93b91cb9d2"><div class="ttname"><a href="class_personne.html#ade025a76a716e44fd924ef93b91cb9d2">Personne::~Personne</a></div><div class="ttdeci">virtual ~Personne()</div><div class="ttdoc">Destructeur par défaut. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8cpp_source.html#l00008">personne.cpp:8</a></div></div>
+<div class="ttc" id="class_personne_html_abb228be23895ef25b7dbeca8b824e60a"><div class="ttname"><a href="class_personne.html#abb228be23895ef25b7dbeca8b824e60a">Personne::modifierNom</a></div><div class="ttdeci">void modifierNom(const std::string prenom)</div><div class="ttdoc">Modifie la variable nom_. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8cpp_source.html#l00022">personne.cpp:22</a></div></div>
+<div class="ttc" id="class_personne_html_aff76e308ae9f3b54a1708805bb9c68cc"><div class="ttname"><a href="class_personne.html#aff76e308ae9f3b54a1708805bb9c68cc">Personne::prenom_</a></div><div class="ttdeci">std::string prenom_</div><div class="ttdoc">Prénom de la personne. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8h_source.html#l00079">personne.h:79</a></div></div>
+<div class="ttc" id="class_personne_html_aadd3fc39d0958cca866d167e00a0ae58"><div class="ttname"><a href="class_personne.html#aadd3fc39d0958cca866d167e00a0ae58">Personne::modifierPrenom</a></div><div class="ttdeci">void modifierPrenom(const std::string prenom)</div><div class="ttdoc">Modifie la variable prenom_. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8cpp_source.html#l00014">personne.cpp:14</a></div></div>
+<div class="ttc" id="class_personne_html_a820ac20eec3db6cf073d91d30480ab02"><div class="ttname"><a href="class_personne.html#a820ac20eec3db6cf073d91d30480ab02">Personne::modifierNumeroCelullaire</a></div><div class="ttdeci">void modifierNumeroCelullaire(const std::string numeroCellulaire)</div><div class="ttdoc">Modifie la variable numeroCellulaire_. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8cpp_source.html#l00030">personne.cpp:30</a></div></div>
+<div class="ttc" id="class_personne_html_afe5d9c8329e628054abce4b2bac513d2"><div class="ttname"><a href="class_personne.html#afe5d9c8329e628054abce4b2bac513d2">Personne::obtenirNom</a></div><div class="ttdeci">const std::string obtenirNom() const </div><div class="ttdoc">Accède à la variable nom_. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8cpp_source.html#l00018">personne.cpp:18</a></div></div>
+<div class="ttc" id="class_personne_html_a630f3e3490330350f42a7f74aebd58cd"><div class="ttname"><a href="class_personne.html#a630f3e3490330350f42a7f74aebd58cd">Personne::modifierEstALaMaison</a></div><div class="ttdeci">void modifierEstALaMaison(bool estALaMaison)</div><div class="ttdoc">Modifie la variable estALaMaison_. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8cpp_source.html#l00046">personne.cpp:46</a></div></div>
+<div class="ttc" id="class_personne_html_abd4783c93846250df8272740b935b968"><div class="ttname"><a href="class_personne.html#abd4783c93846250df8272740b935b968">Personne::obtenirEstALaMaison</a></div><div class="ttdeci">bool obtenirEstALaMaison() const </div><div class="ttdoc">Accède à la variable estALaMaison_. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8cpp_source.html#l00042">personne.cpp:42</a></div></div>
+<div class="ttc" id="class_personne_html_a030f5db86207928d728cc34cacd84303"><div class="ttname"><a href="class_personne.html#a030f5db86207928d728cc34cacd84303">Personne::obtenirPrenom</a></div><div class="ttdeci">const std::string obtenirPrenom() const </div><div class="ttdoc">Accède à la variable prenom_. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8cpp_source.html#l00010">personne.cpp:10</a></div></div>
+<div class="ttc" id="class_personne_html_a948b45a8ee0fdf69548a2adf4f42e827"><div class="ttname"><a href="class_personne.html#a948b45a8ee0fdf69548a2adf4f42e827">Personne::Personne</a></div><div class="ttdeci">Personne(const std::string prenom=&quot;inconnu&quot;, const std::string nom=&quot;inconnu&quot;, unsigned int age=0, const std::string numeroCellulaire=&quot;inconnu&quot;, bool estALaMaison=false)</div><div class="ttdoc">Constructeur de Personne. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8cpp_source.html#l00003">personne.cpp:3</a></div></div>
+<div class="ttc" id="class_personne_html_abd5df46f915259743e82bb0558ca86f5"><div class="ttname"><a href="class_personne.html#abd5df46f915259743e82bb0558ca86f5">Personne::estALaMaison_</a></div><div class="ttdeci">bool estALaMaison_</div><div class="ttdoc">Booléen indiquant si la personne est chez elle. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8h_source.html#l00087">personne.h:87</a></div></div>
+<div class="ttc" id="class_personne_html_a36d2f5391cb9a81ef68a915b426a72be"><div class="ttname"><a href="class_personne.html#a36d2f5391cb9a81ef68a915b426a72be">Personne::modifierAge</a></div><div class="ttdeci">void modifierAge(unsigned int age)</div><div class="ttdoc">Modifie la variable age_. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8cpp_source.html#l00038">personne.cpp:38</a></div></div>
+<div class="ttc" id="personne_8h_html"><div class="ttname"><a href="personne_8h.html">personne.h</a></div></div>
+<div class="ttc" id="class_personne_html_a05eb99d819d2438b7a144d6485032122"><div class="ttname"><a href="class_personne.html#a05eb99d819d2438b7a144d6485032122">Personne::obtenirAge</a></div><div class="ttdeci">unsigned int obtenirAge() const </div><div class="ttdoc">Accède à la variable age_. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8cpp_source.html#l00034">personne.cpp:34</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_vue_principale.html" title="Classe utilisée dans le cadre du patron de conception MVC. " alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node2" href="$class_vue_principale_console.html" title="Classe dérivée de la classe VuePrincipale pour une utilisation dans un terminal. " alt="" coords="156,5,307,32"/>
+<area shape="rect" id="node3" href="$class_vue_principale_g_t_k.html" title="Classe dérivée de la classe VuePrincipale pour une utilisation dans une fenêtre. " alt="" coords="167,56,296,83"/>
+</map>

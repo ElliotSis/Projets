@@ -1,0 +1,34 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+nav {
+  background-color: #B8B8B8;
+}
+
+ul {
+ padding:30px;
+ margin-left: 200px;
+ list-style-type:none;
+}
+
+ul li { 
+ margin-left: 50px;
+ display : inline;
+ padding : 0 0.5em; /* Pour espacer les boutons entre eux */
+}
+
+ul li a {
+ text-decoration:none;
+ text-align:center;
+ font-size: 1.5em;
+ color: #000;
+}
+
+a:active {
+ color: #fff;
+}
+
+
+

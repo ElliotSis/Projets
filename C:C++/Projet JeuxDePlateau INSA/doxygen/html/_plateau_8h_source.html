@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>JeuxDePlateau:  Fichier source de Plateau.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">JeuxDePlateau
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_plateau_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Plateau.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_plateau_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PLATEAU_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define PLATEAU_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">class </span><a class="code" href="class_case.html">Case</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_plateau.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_plateau.html">Plateau</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_plateau.html#ad4befb5df343a020072734726d5d540c">   11</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_plateau.html#ad4befb5df343a020072734726d5d540c">nbLignes</a>; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_plateau.html#ad4918938378c795367c8601efa73ff5b">   12</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_plateau.html#ad4918938378c795367c8601efa73ff5b">nbColonnes</a>; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_plateau.html#a4920babcfa8f37289ec95c2b8b5d00a0">   13</a></span>&#160;        <a class="code" href="class_case.html">Case</a>*** <a class="code" href="class_plateau.html#a4920babcfa8f37289ec95c2b8b5d00a0">plateau</a>; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_plateau.html#abbab0ec459fe81b572d7e0caa8868aad">Plateau</a>(<span class="keywordtype">int</span> pNbLignes, <span class="keywordtype">int</span> pNbColonnes);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_plateau.html#a0e6ae72e4d7e9923f996c1247e6a6c8b">~Plateau</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_plateau.html#a0b3b6907401c840ad0ed4a16e94b7ebd">getNbLignes</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_plateau.html#af702bae82bf3d9faa07070ccb441d1aa">getNbColonnes</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="class_case.html">Case</a>** <a class="code" href="class_plateau.html#aa9c9544b435e83e3e0294da7874156fc">operator[]</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <span class="keywordtype">bool</span> <a class="code" href="class_plateau.html#ae9c8350cced8ed91d443c42148d41088">estValide</a>(<span class="keywordtype">int</span> ligne, <span class="keywordtype">int</span> colonne) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif // PLATEAU_H</span></div>
+<div class="ttc" id="class_case_html"><div class="ttname"><a href="class_case.html">Case</a></div><div class="ttdoc">Classe représentant une case du plateau du jeu. </div><div class="ttdef"><b>Definition:</b> Case.h:11</div></div>
+<div class="ttc" id="class_plateau_html_ad4918938378c795367c8601efa73ff5b"><div class="ttname"><a href="class_plateau.html#ad4918938378c795367c8601efa73ff5b">Plateau::nbColonnes</a></div><div class="ttdeci">int nbColonnes</div><div class="ttdoc">Nombre de colonnes du plateau. </div><div class="ttdef"><b>Definition:</b> Plateau.h:12</div></div>
+<div class="ttc" id="class_plateau_html_a0b3b6907401c840ad0ed4a16e94b7ebd"><div class="ttname"><a href="class_plateau.html#a0b3b6907401c840ad0ed4a16e94b7ebd">Plateau::getNbLignes</a></div><div class="ttdeci">int getNbLignes() const </div><div class="ttdoc">Accède à la variable nbLignes. </div><div class="ttdef"><b>Definition:</b> Plateau.cpp:23</div></div>
+<div class="ttc" id="class_plateau_html_ae9c8350cced8ed91d443c42148d41088"><div class="ttname"><a href="class_plateau.html#ae9c8350cced8ed91d443c42148d41088">Plateau::estValide</a></div><div class="ttdeci">bool estValide(int ligne, int colonne) const </div><div class="ttdoc">Vérifie qu&#39;une coordonnée soit incluse dans les bornes du plateau. </div><div class="ttdef"><b>Definition:</b> Plateau.cpp:35</div></div>
+<div class="ttc" id="class_plateau_html_aa9c9544b435e83e3e0294da7874156fc"><div class="ttname"><a href="class_plateau.html#aa9c9544b435e83e3e0294da7874156fc">Plateau::operator[]</a></div><div class="ttdeci">Case ** operator[](int i)</div><div class="ttdoc">Accède à une ligne de l&#39;aire de jeu. </div><div class="ttdef"><b>Definition:</b> Plateau.cpp:31</div></div>
+<div class="ttc" id="class_plateau_html_a4920babcfa8f37289ec95c2b8b5d00a0"><div class="ttname"><a href="class_plateau.html#a4920babcfa8f37289ec95c2b8b5d00a0">Plateau::plateau</a></div><div class="ttdeci">Case *** plateau</div><div class="ttdoc">Aire rectangulaire de pointeurs sur Case, de taille nbLignes*nbColonnes. </div><div class="ttdef"><b>Definition:</b> Plateau.h:13</div></div>
+<div class="ttc" id="class_plateau_html_a0e6ae72e4d7e9923f996c1247e6a6c8b"><div class="ttname"><a href="class_plateau.html#a0e6ae72e4d7e9923f996c1247e6a6c8b">Plateau::~Plateau</a></div><div class="ttdeci">virtual ~Plateau()</div><div class="ttdoc">Destructeur par défaut. </div><div class="ttdef"><b>Definition:</b> Plateau.cpp:13</div></div>
+<div class="ttc" id="class_plateau_html_abbab0ec459fe81b572d7e0caa8868aad"><div class="ttname"><a href="class_plateau.html#abbab0ec459fe81b572d7e0caa8868aad">Plateau::Plateau</a></div><div class="ttdeci">Plateau(int pNbLignes, int pNbColonnes)</div><div class="ttdoc">Constructeur de Plateau. </div><div class="ttdef"><b>Definition:</b> Plateau.cpp:5</div></div>
+<div class="ttc" id="class_plateau_html_ad4befb5df343a020072734726d5d540c"><div class="ttname"><a href="class_plateau.html#ad4befb5df343a020072734726d5d540c">Plateau::nbLignes</a></div><div class="ttdeci">int nbLignes</div><div class="ttdoc">Nombre de lignes du plateau. </div><div class="ttdef"><b>Definition:</b> Plateau.h:11</div></div>
+<div class="ttc" id="class_plateau_html"><div class="ttname"><a href="class_plateau.html">Plateau</a></div><div class="ttdoc">Classe représentant le plateau du jeu. </div><div class="ttdef"><b>Definition:</b> Plateau.h:8</div></div>
+<div class="ttc" id="class_plateau_html_af702bae82bf3d9faa07070ccb441d1aa"><div class="ttname"><a href="class_plateau.html#af702bae82bf3d9faa07070ccb441d1aa">Plateau::getNbColonnes</a></div><div class="ttdeci">int getNbColonnes() const </div><div class="ttdoc">Accède à la variable nbColonnes. </div><div class="ttdef"><b>Definition:</b> Plateau.cpp:27</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_plateau_8h.html">Plateau.h</a></li>
+    <li class="footer">Généré le Mercredi 10 Juin 2015 12:26:49 pour JeuxDePlateau par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

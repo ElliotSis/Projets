@@ -1,0 +1,7 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_joueur.html" title="Classe représentant un joueur du jeu. " alt="" coords="5,56,67,83"/>
+<area shape="rect" id="node2" href="$class_artificiel.html" title="Classe représentant un joueur artificiel. " alt="" coords="115,31,184,57"/>
+<area shape="rect" id="node5" href="$class_humain.html" title="Classe représentant un joueur humain. " alt="" coords="116,81,183,108"/>
+<area shape="rect" id="node3" href="$class_artificiel_dames.html" title="Classe représentant un joueur artificiel au jeu de dames. " alt="" coords="232,5,343,32"/>
+<area shape="rect" id="node4" href="$class_artificiel_othello.html" title="Classe représentant un joueur artificiel au jeu d&#39;othello. " alt="" coords="232,56,343,83"/>
+</map>

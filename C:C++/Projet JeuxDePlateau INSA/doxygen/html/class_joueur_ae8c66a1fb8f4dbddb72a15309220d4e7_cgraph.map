@@ -1,0 +1,5 @@
+<map id="Joueur::perdrePiece" name="Joueur::perdrePiece">
+<area shape="rect" id="node2" href="$class_piece.html#a3521f3c147260fd0c7610d6d9b8bbf1c" title="Accède à la variable joueurPossedant. " alt="" coords="200,5,383,32"/>
+<area shape="rect" id="node3" href="$class_piece.html#aec777dcf8bc9f58a0d62272cabd77cd7" title="Modifie la variable joueurPossedant. " alt="" coords="200,56,383,83"/>
+<area shape="rect" id="node4" href="$class_jeu.html#a7e6345e10a75cc7783798cf3a0faa959" title="Ajoute une pièce aux pièces non attribuées. " alt="" coords="192,107,391,133"/>
+</map>

@@ -1,0 +1,8 @@
+digraph "Graphe hiÃ©rarchique des classes"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Message",height=0.2,width=0.4,color="black",URL="$class_message.html",tooltip="Classe représentant un Message. "];
+}

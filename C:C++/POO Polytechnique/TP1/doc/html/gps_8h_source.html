@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>TP1:  Fichier source de include/gps.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TP1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">gps.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="gps_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GPS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GPS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="gps_8h.html#a576b741e0a8c4a77ca8e97fac1236b71">    6</a></span>&#160;<span class="keyword">const</span> <span class="keywordtype">float</span> <a class="code" href="gps_8h.html#a576b741e0a8c4a77ca8e97fac1236b71">PROXIMITE</a> = 3.0f; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_g_p_s.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_g_p_s.html">GPS</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:    </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_g_p_s.html#a2c02c8ae1e506785cccf5e3c95a4127e">GPS</a>(<span class="keywordtype">float</span> position = 0.0);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_g_p_s.html#afe84b00ea93254fcb8b84a0f2b240c9d">~GPS</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_g_p_s.html#acb33cb9feb5cdc3e12c8c6ffdce2a3ed">estProche</a>(<span class="keywordtype">float</span> position);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="class_g_p_s.html#ac35a1f1e2ffa9f9b243490a60c587f67">obtenirPosition</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_g_p_s.html#abb5727e7ef3018d92d542f4e0f81f648">modifierPosition</a>(<span class="keywordtype">float</span> position);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_g_p_s.html#a4d13ba6facdc630a69ffae7be61126ff">   39</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="class_g_p_s.html#a4d13ba6facdc630a69ffae7be61126ff">position_</a>; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_g_p_s.html#a1d66af21a82fef7f594b68a8a1f389e6">   41</a></span>&#160;        time_t <a class="code" href="class_g_p_s.html#a1d66af21a82fef7f594b68a8a1f389e6">temps_</a>; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_g_p_s.html#ac632b70697137886b8fcb60780bb5cf1">simulateurDePosition</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif // GPS_H</span></div>
+<div class="ttc" id="class_g_p_s_html"><div class="ttname"><a href="class_g_p_s.html">GPS</a></div><div class="ttdoc">Classe représentant un système GPS. Elle permet de localiser une personne dans l&#39;espace, grâce à un simulateur de position. </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00013">gps.h:13</a></div></div>
+<div class="ttc" id="gps_8h_html_a576b741e0a8c4a77ca8e97fac1236b71"><div class="ttname"><a href="gps_8h.html#a576b741e0a8c4a77ca8e97fac1236b71">PROXIMITE</a></div><div class="ttdeci">const float PROXIMITE</div><div class="ttdoc">Notion de proximité pour le GPS. </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00006">gps.h:6</a></div></div>
+<div class="ttc" id="class_g_p_s_html_a4d13ba6facdc630a69ffae7be61126ff"><div class="ttname"><a href="class_g_p_s.html#a4d13ba6facdc630a69ffae7be61126ff">GPS::position_</a></div><div class="ttdeci">float position_</div><div class="ttdoc">Position du GPS. </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00039">gps.h:39</a></div></div>
+<div class="ttc" id="class_g_p_s_html_acb33cb9feb5cdc3e12c8c6ffdce2a3ed"><div class="ttname"><a href="class_g_p_s.html#acb33cb9feb5cdc3e12c8c6ffdce2a3ed">GPS::estProche</a></div><div class="ttdeci">bool estProche(float position)</div><div class="ttdoc">Évalue si le GPS est proche d&#39;une position. La notion de proximité est définie par une la variable co...</div><div class="ttdef"><b>Definition:</b> <a href="gps_8cpp_source.html#l00026">gps.cpp:26</a></div></div>
+<div class="ttc" id="class_g_p_s_html_abb5727e7ef3018d92d542f4e0f81f648"><div class="ttname"><a href="class_g_p_s.html#abb5727e7ef3018d92d542f4e0f81f648">GPS::modifierPosition</a></div><div class="ttdeci">void modifierPosition(float position)</div><div class="ttdef"><b>Definition:</b> <a href="gps_8cpp_source.html#l00022">gps.cpp:22</a></div></div>
+<div class="ttc" id="class_g_p_s_html_afe84b00ea93254fcb8b84a0f2b240c9d"><div class="ttname"><a href="class_g_p_s.html#afe84b00ea93254fcb8b84a0f2b240c9d">GPS::~GPS</a></div><div class="ttdeci">virtual ~GPS()</div><div class="ttdoc">Destructeur par défaut. </div><div class="ttdef"><b>Definition:</b> <a href="gps_8cpp_source.html#l00016">gps.cpp:16</a></div></div>
+<div class="ttc" id="class_g_p_s_html_ac35a1f1e2ffa9f9b243490a60c587f67"><div class="ttname"><a href="class_g_p_s.html#ac35a1f1e2ffa9f9b243490a60c587f67">GPS::obtenirPosition</a></div><div class="ttdeci">float obtenirPosition() const </div><div class="ttdoc">Accède à la variable position_. </div><div class="ttdef"><b>Definition:</b> <a href="gps_8cpp_source.html#l00018">gps.cpp:18</a></div></div>
+<div class="ttc" id="class_g_p_s_html_ac632b70697137886b8fcb60780bb5cf1"><div class="ttname"><a href="class_g_p_s.html#ac632b70697137886b8fcb60780bb5cf1">GPS::simulateurDePosition</a></div><div class="ttdeci">void simulateurDePosition()</div><div class="ttdoc">Permet de simuler le déplacement du GPS dans le temps et dans l&#39;espace. Cette méthode est appelée par...</div><div class="ttdef"><b>Definition:</b> <a href="gps_8cpp_source.html#l00031">gps.cpp:31</a></div></div>
+<div class="ttc" id="class_g_p_s_html_a2c02c8ae1e506785cccf5e3c95a4127e"><div class="ttname"><a href="class_g_p_s.html#a2c02c8ae1e506785cccf5e3c95a4127e">GPS::GPS</a></div><div class="ttdeci">GPS(float position=0.0)</div><div class="ttdoc">Constructeur de GPS. </div><div class="ttdef"><b>Definition:</b> <a href="gps_8cpp_source.html#l00009">gps.cpp:9</a></div></div>
+<div class="ttc" id="class_g_p_s_html_a1d66af21a82fef7f594b68a8a1f389e6"><div class="ttname"><a href="class_g_p_s.html#a1d66af21a82fef7f594b68a8a1f389e6">GPS::temps_</a></div><div class="ttdeci">time_t temps_</div><div class="ttdoc">Notion de temps, qui permet au simulateur de position de fonctionner. </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00041">gps.h:41</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

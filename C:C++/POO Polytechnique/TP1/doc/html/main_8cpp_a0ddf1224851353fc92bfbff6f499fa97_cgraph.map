@@ -1,0 +1,19 @@
+<map id="main" name="main">
+<area shape="rect" href="$class_personne.html#a820ac20eec3db6cf073d91d30480ab02" title="Modifie la variable numeroCellulaire_. " alt="" coords="125,5,341,51"/>
+<area shape="rect" href="$class_cellulaire.html#aa60d9614f002ca8d2037c524ec586edd" title="Modifie la variable personne_. " alt="" coords="120,75,347,101"/>
+<area shape="rect" href="$class_cellulaire.html#aa0bd881cc7593e40257227f3d6e45292" title="Modifie la variable position_ de la variable gps_. " alt="" coords="112,125,355,152"/>
+<area shape="rect" href="$class_maison.html#ad8ac4513f328c4ea51c909bd80a6add8" title="Ajoute un occupant à la maison. Si il est impossible d&#39;ajouter un occupant, il ne sera pas ajouté..." alt="" coords="132,176,335,203"/>
+<area shape="rect" href="$class_maison.html#a4a4d6253e863d63ef24b352d17c7c8f4" title="Ajoute un cellulaire observé à la maison. Si il est impossible d&#39;ajouter un cellulaire, il ne sera pas ajouté. " alt="" coords="133,227,333,253"/>
+<area shape="rect" href="$class_maison.html#a3ff6eda75f1fd0ca47f2d3aaa684bfb5" title="Analyse en boucle les cellulaires observés pour savoir si ils sont proches. Si un cellulaire est proc..." alt="" coords="124,328,343,355"/>
+<area shape="rect" href="$class_g_p_s.html#abb5727e7ef3018d92d542f4e0f81f648" title="GPS::modifierPosition" alt="" coords="439,75,612,101"/>
+<area shape="rect" href="$class_cellulaire.html#aac88456657601be9cdfa9f8c2e6f46c7" title="Accède à la variable personne_. " alt="" coords="417,125,633,152"/>
+<area shape="rect" href="$class_maison.html#a26269a0e50b0befba1e0ff7294e19871" title="Évalue si une personne est un occupant de la maison. " alt="" coords="440,176,611,203"/>
+<area shape="rect" href="$class_personne.html#abd4783c93846250df8272740b935b968" title="Accède à la variable estALaMaison_. " alt="" coords="403,227,648,253"/>
+<area shape="rect" href="$class_personne.html#a030f5db86207928d728cc34cacd84303" title="Accède à la variable prenom_. " alt="" coords="424,277,627,304"/>
+<area shape="rect" href="$class_personne.html#afe5d9c8329e628054abce4b2bac513d2" title="Accède à la variable nom_. " alt="" coords="435,328,616,355"/>
+<area shape="rect" href="$class_personne.html#a630f3e3490330350f42a7f74aebd58cd" title="Modifie la variable estALaMaison_. " alt="" coords="424,379,627,424"/>
+<area shape="rect" href="$class_chauffage.html#af58f75c1e38bec4dc8f19a017613d380" title="Accède à la variable estAllume_. " alt="" coords="411,448,640,475"/>
+<area shape="rect" href="$class_chauffage.html#a0e8ad3a5f8fe802304cc10149c5220ba" title="Allume le chauffage. Ne change rien si le chauffage est déjà allumé. " alt="" coords="447,499,604,525"/>
+<area shape="rect" href="$class_maison.html#a88acdd6f6bb1c2ca29032d443f71482b" title="Évalue si la maison est vide. " alt="" coords="459,549,592,576"/>
+<area shape="rect" href="$class_chauffage.html#afec7ea57e645f67ed00eab210c2b2b83" title="Éteint le chauffage. Ne change rien si le chauffage est déjà éteint. " alt="" coords="441,600,609,627"/>
+</map>

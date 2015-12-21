@@ -1,0 +1,80 @@
+extends layout
+
+block extraHeader
+ link(rel='stylesheet', href='/stylesheets/game.css')
+
+
+block content
+ #backpack_container
+  a(href='#')
+  .modalbox
+   header
+    //a(href='#').closemodal X
+    h2 Your backpack
+   each item in player_backpack
+    table.modal_table
+     tr 
+      th View
+      th Item
+      th Description
+     tr
+      td 
+       img(src='/images/backpack/'+ item + '.png').modal_image
+      td #{item}
+      td #{descriptions[item]}
+ #special_container
+  a(href='#')
+  .modalbox
+   header
+    //a(href='#').closemodal X
+    h2 Your special items
+   each item in player_special_items
+    table.modal_table
+     tr 
+      th View
+      th Item
+      th Description
+     tr
+      td 
+       img(src='/images/special/'+ item + '.png').modal_image
+      td #{item}
+      td #{descriptions[item]}
+ block event
+ #content
+  block page_content
+  #info_box
+   #infobox_header
+    h2  #{name}
+   ul.menu_without_puce
+     li.skills
+      img(src='/images/sword_box.png', alt='combat skills')
+      span #{combat_skill}
+     li.skills
+      img(src='/images/stamina.png',alt='stamina')
+      span #{endurance}
+     li.skills
+      img(src='/images/gold.png',alt='gold')
+      span #{gold}
+   .line-separator
+   p Your Kai disciplines : 
+    ul.menu_without_puce
+      each discipline in player_disciplines
+        li.kai
+         img(src='/images/Kai/'+ discipline + '.png')
+         span #{discipline}
+   .line-separator
+   p Your weapons :
+    ul.menu_without_puce
+      each item in player_weapons
+        li.weapons 
+         img(src='/images/weapons/'+ item + '.png')
+         span #{item}
+   .line-separator
+   .infobox_button
+    a(href='#backpack_container') 
+     button Sac à dos
+   .line-separator
+   .infobox_button
+    a(href='#special_container') 
+     button Objets Speciaux
+

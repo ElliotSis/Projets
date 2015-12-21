@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>TP3:  Fichier source de TP3/src/chauffage.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TP3
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_8f882c94ee092464a8e9f1652b786007.html">TP3</a></li><li class="navelem"><a class="el" href="dir_beb3c82d3614df74678e80f8eb8f049c.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">chauffage.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="chauffage_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="chauffage_8h.html">chauffage.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="class_chauffage.html#a1da43cc5ececc05c3272f48b6467431e">    5</a></span>&#160;<a class="code" href="class_chauffage.html#a1da43cc5ececc05c3272f48b6467431e">Chauffage::Chauffage</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keywordtype">id</span>) : <a class="code" href="class_objet_connecte.html">ObjetConnecte</a>(id), estAllume_(false), automatique_(false) {}</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="class_chauffage.html#a90c405d604a474e5dd032bb2566985d2">    7</a></span>&#160;<a class="code" href="class_chauffage.html#a90c405d604a474e5dd032bb2566985d2">Chauffage::~Chauffage</a>() {}</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_chauffage.html#af58f75c1e38bec4dc8f19a017613d380">    9</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_chauffage.html#af58f75c1e38bec4dc8f19a017613d380">Chauffage::obtenirEstAllume</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_chauffage.html#abb6461ca2d5a5358225e0a055ac41068">estAllume_</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_chauffage.html#a0e8ad3a5f8fe802304cc10149c5220ba">   13</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_chauffage.html#a0e8ad3a5f8fe802304cc10149c5220ba">Chauffage::allume</a>() {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">//if(!estAllume_) {</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">//  cout &lt;&lt; &quot;Le chauffage est maintenant allumé&quot; &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">//}</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_chauffage.html#abb6461ca2d5a5358225e0a055ac41068">estAllume_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_chauffage.html#afec7ea57e645f67ed00eab210c2b2b83">   20</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_chauffage.html#afec7ea57e645f67ed00eab210c2b2b83">Chauffage::eteindre</a>() {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//if(estAllume_) {</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//  cout &lt;&lt; &quot;Le chauffage est maintenant éteint&quot; &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//}</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_chauffage.html#abb6461ca2d5a5358225e0a055ac41068">estAllume_</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_chauffage.html#a14bf31b94eb9e709fa24ced6c94ed047">   27</a></span>&#160;<a class="code" href="class_chauffage.html">Chauffage</a>&amp; <a class="code" href="class_chauffage.html#a14bf31b94eb9e709fa24ced6c94ed047">Chauffage::operator++</a>() {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_chauffage.html#a0e8ad3a5f8fe802304cc10149c5220ba">allume</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_chauffage.html#a2f18a4aafe726e3d7a80b19fb3e77f0e">   32</a></span>&#160;<a class="code" href="class_chauffage.html">Chauffage</a>&amp; <a class="code" href="class_chauffage.html#a2f18a4aafe726e3d7a80b19fb3e77f0e">Chauffage::operator--</a>() {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_chauffage.html#afec7ea57e645f67ed00eab210c2b2b83">eteindre</a>();</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_chauffage.html#a2b91be15f426c9bb3f7f8d0422eb84a6">   37</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_chauffage.html#a2b91be15f426c9bb3f7f8d0422eb84a6">Chauffage::obtenirAutomatique</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_chauffage.html#a79e96683b2bab989f7bb07f003cd1933">automatique_</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_chauffage.html#a76bcab83b19102f473f10e35a076ee6c">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_chauffage.html#a76bcab83b19102f473f10e35a076ee6c">Chauffage::modifierAutomatique</a>(<span class="keywordtype">bool</span> automatique){</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_chauffage.html#a79e96683b2bab989f7bb07f003cd1933">automatique_</a> = automatique;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_chauffage.html#ada208e835e4440ba11215d69a3ad6193">   45</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_chauffage.html#ada208e835e4440ba11215d69a3ad6193">Chauffage::seConnecter</a>(<a class="code" href="class_routeur.html">Routeur</a>* routeur){</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    routeur-&gt;<a class="code" href="class_routeur.html#a3d07574102445306f4d894262ec9dd41">accepterConnexion</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_objet_connecte.html#a4a5b57e66884acf2a3760e57d87009a3">routeur_</a> = routeur;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_objet_connecte.html#af0f639d99a83c6f8bfe0941b2aab7fd1">connecte_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_chauffage.html#af7cdda3113b1a366a714e91bd5424c82">   51</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_chauffage.html#af7cdda3113b1a366a714e91bd5424c82">Chauffage::recevoirMessage</a>(<a class="code" href="class_message.html">Message</a>&amp; message){</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span>(message.<a class="code" href="class_message.html#a1f68d86b02a71cacc183673b517f1eb2">getType</a>() == <a class="code" href="message_8h.html#acb5e3cb2bf67e32c928c5d0816dd1c18abef5f2895d024c5b56b188ab9bdd206f">ALLUMER_CHAUFFAGE</a> &amp;&amp; !<a class="code" href="class_chauffage.html#abb6461ca2d5a5358225e0a055ac41068">estAllume_</a>){</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="class_chauffage.html#a0e8ad3a5f8fe802304cc10149c5220ba">allume</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Le chauffage id:&quot;</span> &lt;&lt; <a class="code" href="class_objet_connecte.html#a779e8cdfeef6553f9573ee7027ba8ab7">id_</a> &lt;&lt; <span class="stringliteral">&quot; est maintenant allumé&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(message.<a class="code" href="class_message.html#a1f68d86b02a71cacc183673b517f1eb2">getType</a>() == <a class="code" href="message_8h.html#acb5e3cb2bf67e32c928c5d0816dd1c18a144844d77fe01c9ec73f6bc78eb276b1">ETEINDRE_CHAUFFAGE</a> &amp;&amp; <a class="code" href="class_chauffage.html#abb6461ca2d5a5358225e0a055ac41068">estAllume_</a>){</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="class_chauffage.html#afec7ea57e645f67ed00eab210c2b2b83">eteindre</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Le chauffage id:&quot;</span> &lt;&lt; <a class="code" href="class_objet_connecte.html#a779e8cdfeef6553f9573ee7027ba8ab7">id_</a> &lt;&lt; <span class="stringliteral">&quot; est maintenant éteint&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(message.<a class="code" href="class_message.html#a1f68d86b02a71cacc183673b517f1eb2">getType</a>() == <a class="code" href="message_8h.html#acb5e3cb2bf67e32c928c5d0816dd1c18a8999fad719a2b0e49ce17dd2173dd0fd">ALLUMAGE_AUTOMATIQUE</a> &amp;&amp; <a class="code" href="class_chauffage.html#a79e96683b2bab989f7bb07f003cd1933">automatique_</a>){</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="class_chauffage.html#a0e8ad3a5f8fe802304cc10149c5220ba">allume</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Le chauffage id:&quot;</span> &lt;&lt; <a class="code" href="class_objet_connecte.html#a779e8cdfeef6553f9573ee7027ba8ab7">id_</a> &lt;&lt; <span class="stringliteral">&quot; est maintenant allumé de manière auto&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="ttc" id="class_chauffage_html_a1da43cc5ececc05c3272f48b6467431e"><div class="ttname"><a href="class_chauffage.html#a1da43cc5ececc05c3272f48b6467431e">Chauffage::Chauffage</a></div><div class="ttdeci">Chauffage(unsigned int id)</div><div class="ttdoc">Constructeur par paramètre. </div><div class="ttdef"><b>Definition:</b> <a href="chauffage_8cpp_source.html#l00005">chauffage.cpp:5</a></div></div>
+<div class="ttc" id="class_objet_connecte_html_a4a5b57e66884acf2a3760e57d87009a3"><div class="ttname"><a href="class_objet_connecte.html#a4a5b57e66884acf2a3760e57d87009a3">ObjetConnecte::routeur_</a></div><div class="ttdeci">Routeur * routeur_</div><div class="ttdef"><b>Definition:</b> <a href="objet_connecte_8h_source.html#l00051">objetConnecte.h:51</a></div></div>
+<div class="ttc" id="class_chauffage_html_af58f75c1e38bec4dc8f19a017613d380"><div class="ttname"><a href="class_chauffage.html#af58f75c1e38bec4dc8f19a017613d380">Chauffage::obtenirEstAllume</a></div><div class="ttdeci">bool obtenirEstAllume() const </div><div class="ttdoc">Accède à la variable estAllume_. </div><div class="ttdef"><b>Definition:</b> <a href="chauffage_8cpp_source.html#l00009">chauffage.cpp:9</a></div></div>
+<div class="ttc" id="class_routeur_html_a3d07574102445306f4d894262ec9dd41"><div class="ttname"><a href="class_routeur.html#a3d07574102445306f4d894262ec9dd41">Routeur::accepterConnexion</a></div><div class="ttdeci">void accepterConnexion(Maison *maison)</div><div class="ttdoc">Accepte une connexion pour une maison Renvoie un message d&#39;erreur et ne fait rien si une maison est d...</div><div class="ttdef"><b>Definition:</b> <a href="routeur_8cpp_source.html#l00059">routeur.cpp:59</a></div></div>
+<div class="ttc" id="class_chauffage_html_a2b91be15f426c9bb3f7f8d0422eb84a6"><div class="ttname"><a href="class_chauffage.html#a2b91be15f426c9bb3f7f8d0422eb84a6">Chauffage::obtenirAutomatique</a></div><div class="ttdeci">bool obtenirAutomatique() const </div><div class="ttdoc">Accède à la variable automatique. </div><div class="ttdef"><b>Definition:</b> <a href="chauffage_8cpp_source.html#l00037">chauffage.cpp:37</a></div></div>
+<div class="ttc" id="class_objet_connecte_html_a779e8cdfeef6553f9573ee7027ba8ab7"><div class="ttname"><a href="class_objet_connecte.html#a779e8cdfeef6553f9573ee7027ba8ab7">ObjetConnecte::id_</a></div><div class="ttdeci">unsigned int id_</div><div class="ttdef"><b>Definition:</b> <a href="objet_connecte_8h_source.html#l00049">objetConnecte.h:49</a></div></div>
+<div class="ttc" id="class_chauffage_html_abb6461ca2d5a5358225e0a055ac41068"><div class="ttname"><a href="class_chauffage.html#abb6461ca2d5a5358225e0a055ac41068">Chauffage::estAllume_</a></div><div class="ttdeci">bool estAllume_</div><div class="ttdoc">État du chauffage. </div><div class="ttdef"><b>Definition:</b> <a href="chauffage_8h_source.html#l00074">chauffage.h:74</a></div></div>
+<div class="ttc" id="class_chauffage_html_a14bf31b94eb9e709fa24ced6c94ed047"><div class="ttname"><a href="class_chauffage.html#a14bf31b94eb9e709fa24ced6c94ed047">Chauffage::operator++</a></div><div class="ttdeci">Chauffage &amp; operator++()</div><div class="ttdoc">Opérateur d&#39;incrémentation préfixe. Allume le chauffage. </div><div class="ttdef"><b>Definition:</b> <a href="chauffage_8cpp_source.html#l00027">chauffage.cpp:27</a></div></div>
+<div class="ttc" id="class_chauffage_html_a0e8ad3a5f8fe802304cc10149c5220ba"><div class="ttname"><a href="class_chauffage.html#a0e8ad3a5f8fe802304cc10149c5220ba">Chauffage::allume</a></div><div class="ttdeci">void allume()</div><div class="ttdoc">Allume le chauffage. Ne change rien si le chauffage est déjà allumé. </div><div class="ttdef"><b>Definition:</b> <a href="chauffage_8cpp_source.html#l00013">chauffage.cpp:13</a></div></div>
+<div class="ttc" id="class_chauffage_html_a2f18a4aafe726e3d7a80b19fb3e77f0e"><div class="ttname"><a href="class_chauffage.html#a2f18a4aafe726e3d7a80b19fb3e77f0e">Chauffage::operator--</a></div><div class="ttdeci">Chauffage &amp; operator--()</div><div class="ttdoc">Opérateur de décrémentation préfixe. Éteint le chauffage. </div><div class="ttdef"><b>Definition:</b> <a href="chauffage_8cpp_source.html#l00032">chauffage.cpp:32</a></div></div>
+<div class="ttc" id="class_message_html_a1f68d86b02a71cacc183673b517f1eb2"><div class="ttname"><a href="class_message.html#a1f68d86b02a71cacc183673b517f1eb2">Message::getType</a></div><div class="ttdeci">TYPE_MESSAGE getType() const </div><div class="ttdef"><b>Definition:</b> <a href="message_8cpp_source.html#l00030">message.cpp:30</a></div></div>
+<div class="ttc" id="class_objet_connecte_html"><div class="ttname"><a href="class_objet_connecte.html">ObjetConnecte</a></div><div class="ttdoc">Classe représentant un Objet Connecté. </div><div class="ttdef"><b>Definition:</b> <a href="objet_connecte_8h_source.html#l00012">objetConnecte.h:12</a></div></div>
+<div class="ttc" id="chauffage_8h_html"><div class="ttname"><a href="chauffage_8h.html">chauffage.h</a></div></div>
+<div class="ttc" id="class_chauffage_html_af7cdda3113b1a366a714e91bd5424c82"><div class="ttname"><a href="class_chauffage.html#af7cdda3113b1a366a714e91bd5424c82">Chauffage::recevoirMessage</a></div><div class="ttdeci">void recevoirMessage(Message &amp;message)</div><div class="ttdoc">Allume/eteint le chauffage en fonction du message. </div><div class="ttdef"><b>Definition:</b> <a href="chauffage_8cpp_source.html#l00051">chauffage.cpp:51</a></div></div>
+<div class="ttc" id="class_chauffage_html"><div class="ttname"><a href="class_chauffage.html">Chauffage</a></div><div class="ttdoc">Classe représentant le Chauffage d&#39;une Maison. </div><div class="ttdef"><b>Definition:</b> <a href="chauffage_8h_source.html#l00013">chauffage.h:13</a></div></div>
+<div class="ttc" id="class_objet_connecte_html_af0f639d99a83c6f8bfe0941b2aab7fd1"><div class="ttname"><a href="class_objet_connecte.html#af0f639d99a83c6f8bfe0941b2aab7fd1">ObjetConnecte::connecte_</a></div><div class="ttdeci">bool connecte_</div><div class="ttdef"><b>Definition:</b> <a href="objet_connecte_8h_source.html#l00050">objetConnecte.h:50</a></div></div>
+<div class="ttc" id="class_chauffage_html_afec7ea57e645f67ed00eab210c2b2b83"><div class="ttname"><a href="class_chauffage.html#afec7ea57e645f67ed00eab210c2b2b83">Chauffage::eteindre</a></div><div class="ttdeci">void eteindre()</div><div class="ttdoc">Éteint le chauffage. Ne change rien si le chauffage est déjà éteint. </div><div class="ttdef"><b>Definition:</b> <a href="chauffage_8cpp_source.html#l00020">chauffage.cpp:20</a></div></div>
+<div class="ttc" id="message_8h_html_acb5e3cb2bf67e32c928c5d0816dd1c18a8999fad719a2b0e49ce17dd2173dd0fd"><div class="ttname"><a href="message_8h.html#acb5e3cb2bf67e32c928c5d0816dd1c18a8999fad719a2b0e49ce17dd2173dd0fd">ALLUMAGE_AUTOMATIQUE</a></div><div class="ttdef"><b>Definition:</b> <a href="message_8h_source.html#l00014">message.h:14</a></div></div>
+<div class="ttc" id="class_message_html"><div class="ttname"><a href="class_message.html">Message</a></div><div class="ttdoc">Classe repr�sentant un Message. </div><div class="ttdef"><b>Definition:</b> <a href="message_8h_source.html#l00020">message.h:20</a></div></div>
+<div class="ttc" id="message_8h_html_acb5e3cb2bf67e32c928c5d0816dd1c18abef5f2895d024c5b56b188ab9bdd206f"><div class="ttname"><a href="message_8h.html#acb5e3cb2bf67e32c928c5d0816dd1c18abef5f2895d024c5b56b188ab9bdd206f">ALLUMER_CHAUFFAGE</a></div><div class="ttdef"><b>Definition:</b> <a href="message_8h_source.html#l00014">message.h:14</a></div></div>
+<div class="ttc" id="class_chauffage_html_ada208e835e4440ba11215d69a3ad6193"><div class="ttname"><a href="class_chauffage.html#ada208e835e4440ba11215d69a3ad6193">Chauffage::seConnecter</a></div><div class="ttdeci">void seConnecter(Routeur *routeur)</div><div class="ttdoc">Méthode de connection. </div><div class="ttdef"><b>Definition:</b> <a href="chauffage_8cpp_source.html#l00045">chauffage.cpp:45</a></div></div>
+<div class="ttc" id="message_8h_html_acb5e3cb2bf67e32c928c5d0816dd1c18a144844d77fe01c9ec73f6bc78eb276b1"><div class="ttname"><a href="message_8h.html#acb5e3cb2bf67e32c928c5d0816dd1c18a144844d77fe01c9ec73f6bc78eb276b1">ETEINDRE_CHAUFFAGE</a></div><div class="ttdef"><b>Definition:</b> <a href="message_8h_source.html#l00014">message.h:14</a></div></div>
+<div class="ttc" id="class_chauffage_html_a90c405d604a474e5dd032bb2566985d2"><div class="ttname"><a href="class_chauffage.html#a90c405d604a474e5dd032bb2566985d2">Chauffage::~Chauffage</a></div><div class="ttdeci">virtual ~Chauffage()</div><div class="ttdoc">Destructeur par défaut. </div><div class="ttdef"><b>Definition:</b> <a href="chauffage_8cpp_source.html#l00007">chauffage.cpp:7</a></div></div>
+<div class="ttc" id="class_routeur_html"><div class="ttname"><a href="class_routeur.html">Routeur</a></div><div class="ttdoc">Classe représentant un Routeur. </div><div class="ttdef"><b>Definition:</b> <a href="routeur_8h_source.html#l00018">routeur.h:18</a></div></div>
+<div class="ttc" id="class_chauffage_html_a76bcab83b19102f473f10e35a076ee6c"><div class="ttname"><a href="class_chauffage.html#a76bcab83b19102f473f10e35a076ee6c">Chauffage::modifierAutomatique</a></div><div class="ttdeci">void modifierAutomatique(bool automatique)</div><div class="ttdoc">Défini si le chauffage est auto ou non. </div><div class="ttdef"><b>Definition:</b> <a href="chauffage_8cpp_source.html#l00041">chauffage.cpp:41</a></div></div>
+<div class="ttc" id="class_chauffage_html_a79e96683b2bab989f7bb07f003cd1933"><div class="ttname"><a href="class_chauffage.html#a79e96683b2bab989f7bb07f003cd1933">Chauffage::automatique_</a></div><div class="ttdeci">bool automatique_</div><div class="ttdoc">Si le chauffage est automatique ou non. </div><div class="ttdef"><b>Definition:</b> <a href="chauffage_8h_source.html#l00075">chauffage.h:75</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

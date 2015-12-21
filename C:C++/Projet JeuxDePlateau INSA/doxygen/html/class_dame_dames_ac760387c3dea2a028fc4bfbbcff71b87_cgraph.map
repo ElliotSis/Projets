@@ -1,0 +1,6 @@
+<map id="DameDames::casesDeplacement" name="DameDames::casesDeplacement">
+<area shape="rect" id="node2" href="$class_piece.html#a08cb0520adc64748516c65e281779276" title="Accède à la variable caseContenante. " alt="" coords="272,5,451,32"/>
+<area shape="rect" id="node3" href="$class_case.html#a514e905a88691e3beb8767070efe2f74" title="Calcule la case adjacente dans une direction donnée. " alt="" coords="288,56,435,83"/>
+<area shape="rect" id="node5" href="$class_case.html#a7bb3995518c43d2e96a689facb2ac287" title="Indique si la case est libre. " alt="" coords="308,107,415,133"/>
+<area shape="rect" id="node4" href="$class_plateau.html#ae9c8350cced8ed91d443c42148d41088" title="Vérifie qu&#39;une coordonnée soit incluse dans les bornes du plateau. " alt="" coords="499,56,627,83"/>
+</map>

@@ -1,0 +1,13 @@
+mixin decision(decisions)
+    div(ng-show="showOptions")#decision
+        img(src="/images/decision.jpg")
+        div
+            each d in decisions
+                p #{d.text} #[a(name=d.page,value=d.page,ng-click="chargeNextPage(#{d.page})",ng-hide="controlDisciplines(#{d.page})") rendez-vous au #{d.page} ] 
+                 p#info {{info}}
+
+    div(ng-if="!showChoices")#decision
+        img(src="/images/decision.jpg")
+        div
+          p(ng-repeat="c in choices") {{c.text}}  
+           a(ng-show="c.valid",ng-click="chargeNextPage(c.page)") rendez-vous au {{c.page}}

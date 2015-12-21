@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title=title
+    block extraHeader
+  header
+    nav
+      ul.top_menu
+        li#index
+          a(href='/') Index
+        li#create
+          a(href='/create') Game
+        li#help 
+          a(href='/help') Help
+    #logo
+     img(src='/images/ui/lone-wolf.png')
+  body
+    block content
+   
+   footer
+    p Website made for the course LOG4420 Polytechnique Montréal . Copyleft Jérémy Cugmas and Elliot Sisteron.

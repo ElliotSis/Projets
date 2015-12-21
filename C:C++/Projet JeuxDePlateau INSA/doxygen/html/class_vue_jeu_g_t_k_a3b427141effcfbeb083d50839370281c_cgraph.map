@@ -1,0 +1,9 @@
+<map id="VueJeuGTK::dessinerCase" name="VueJeuGTK::dessinerCase">
+<area shape="rect" id="node2" href="$class_case.html#a1c535ae46dc31fa7606709969a79a193" title="Accède à la variable ligne. " alt="" coords="271,5,381,32"/>
+<area shape="rect" id="node3" href="$class_case.html#ab868177d5048aa94a6bdd409c96a4bf5" title="Accède à la variable colonne. " alt="" coords="263,56,389,83"/>
+<area shape="rect" id="node4" href="$_couleurs_8h.html#a47dcd5e889d1aceb87794d30f7d5a595" title="Calcule la couleur au format RGB double d&#39;une couleur au format entier. " alt="" coords="286,107,366,133"/>
+<area shape="rect" id="node5" href="$class_case.html#ad2bc359c85c5a529a5f84d099e1bd58d" title="Accède à la variable couleur. " alt="" coords="264,157,388,184"/>
+<area shape="rect" id="node6" href="$class_case.html#a7bb3995518c43d2e96a689facb2ac287" title="Indique si la case est libre. " alt="" coords="273,208,379,235"/>
+<area shape="rect" id="node7" href="$class_vue_jeu_g_t_k.html#a15f35b6253f3dd4ba9ad38dead94de60" title="Dessine une pièce. " alt="" coords="235,259,417,285"/>
+<area shape="rect" id="node8" href="$class_case.html#abaa6684a0e8458d61ce181082e368964" title="Accède à la variable piecePosee. " alt="" coords="251,309,401,336"/>
+</map>

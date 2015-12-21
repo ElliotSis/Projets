@@ -1,0 +1,16 @@
+Question : À quel moment faut-il définir les attributs d'une classe comme étant public, protected, private ?
+
+public : Les utilisateurs de cette classe auront accès à l'attribut directement et partout dans le programme. Cela va à l'encontre du principe d'encapsulation.
+
+protected : Seules les classes filles auront accès à l'élément protected, ce qui est pratique pour alléger le code de ces classes. De plus, cela ne contredit pas le principe d'encapsulation car cet élément n'est pas accessible directement ailleurs dans le programme.
+
+private : Seule la classe possédant l'attribut y a accès directement.
+
+Principe d'encapsulation :
+
+Permet de séparer la façon dont les utilisateurs de la classe intéragisse avec la classe de son fonctionnement intrinsèque.
+Cela permet une meilleure réutilisabilité, facilite les modifications de la classe en question et minimise les erreurs.
+
+Par exemple, on peut changer la façon dont on représente en machine un point (x, y) en utilisant des coordonées polaires (r, theta).
+Sans l'encapsulation, tout le code déjà fait par les utilisateurs de la classe devient inutilisable, il faut modifier tous les accès à x et y (qui n'existent plus).
+Avec l'encapsulation, nos utilisateurs peuvent continuer à utiliser les méthodes obtenirAbscisse() et obtenirOrdonnee() de la classe point, seul le concepteur devra changer ces méthodes pour qu'elles effectuent ce qui est demandé (x = r.cos(theta) et y = r.sin(theta)).

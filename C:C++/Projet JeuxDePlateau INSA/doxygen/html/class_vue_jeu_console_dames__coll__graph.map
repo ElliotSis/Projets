@@ -1,0 +1,12 @@
+<map id="VueJeuConsoleDames" name="VueJeuConsoleDames">
+<area shape="rect" id="node2" href="$class_vue_jeu_console.html" title="Classe dérivée de la classe VueJeu pour jouer dans un terminal. " alt="" coords="26,273,141,300"/>
+<area shape="rect" id="node3" href="$class_vue_jeu.html" title="Classe utilisée dans le cadre du patron de conception MVC. " alt="" coords="133,184,199,211"/>
+<area shape="rect" id="node10" href="$class_controlleur.html" title="Classe utilisée dans le cadre du patron de conception MVC. " alt="" coords="206,273,291,300"/>
+<area shape="rect" id="node4" href="$class_jeu.html" title="Classe représentant un état de jeu de plateau. " alt="" coords="389,5,431,32"/>
+<area shape="rect" id="node5" href="$class_joueur.html" title="Classe représentant un joueur du jeu. " alt="" coords="431,95,493,121"/>
+<area shape="rect" id="node7" href="$class_piece.html" title="Classe représentant une pièce du jeu. " alt="" coords="528,184,583,211"/>
+<area shape="rect" id="node6" href="$class_coup.html" title="Classe représentant un coup du jeu. " alt="" coords="529,363,582,389"/>
+<area shape="rect" id="node8" href="$class_case.html" title="Classe représentant une case du plateau du jeu. " alt="" coords="677,273,730,300"/>
+<area shape="rect" id="node9" href="$class_plateau.html" title="Classe représentant le plateau du jeu. " alt="" coords="747,363,814,389"/>
+<area shape="rect" id="node11" href="$class_vue_principale.html" title="Classe utilisée dans le cadre du patron de conception MVC. " alt="" coords="216,363,319,389"/>
+</map>

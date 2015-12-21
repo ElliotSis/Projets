@@ -1,0 +1,6 @@
+<map id="CoupDames::annuler" name="CoupDames::annuler">
+<area shape="rect" id="node2" href="$class_piece.html#a9761a06a2acdb71543c803e3308a6f7b" title="Pose la pièce sur une case. " alt="" coords="199,56,313,83"/>
+<area shape="rect" id="node3" href="$class_case.html#a7bb3995518c43d2e96a689facb2ac287" title="Indique si la case est libre. " alt="" coords="405,5,511,32"/>
+<area shape="rect" id="node4" href="$class_piece.html#a16068df00be96adc98641c38f0a223a6" title="Indique si la pièce est posée sur une case. " alt="" coords="361,56,555,83"/>
+<area shape="rect" id="node5" href="$class_case.html#aad00d67d15f20be65e54abc9f356c846" title="Modifie la variable piecePosee. " alt="" coords="383,107,533,133"/>
+</map>

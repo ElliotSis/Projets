@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title=title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  header
+    nav
+      ul
+        li 
+          a(href='/') Index
+        li 
+          a(href='/create') Create your player
+        li 
+          a(href='/help') Help
+  body
+    h1=title
+    block content
+   
+  footer
+    p Website made for the course LOG4420, Polytechnique Montréal.
+    p Copyleft Jérémy Cugmas and Elliot Sisteron.

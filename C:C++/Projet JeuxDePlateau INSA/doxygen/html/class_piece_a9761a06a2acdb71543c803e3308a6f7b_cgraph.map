@@ -1,0 +1,5 @@
+<map id="Piece::poserSur" name="Piece::poserSur">
+<area shape="rect" id="node2" href="$class_case.html#a7bb3995518c43d2e96a689facb2ac287" title="Indique si la case est libre. " alt="" coords="211,5,318,32"/>
+<area shape="rect" id="node3" href="$class_piece.html#a16068df00be96adc98641c38f0a223a6" title="Indique si la pièce est posée sur une case. " alt="" coords="168,56,361,83"/>
+<area shape="rect" id="node4" href="$class_case.html#aad00d67d15f20be65e54abc9f356c846" title="Modifie la variable piecePosee. " alt="" coords="190,107,339,133"/>
+</map>

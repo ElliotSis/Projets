@@ -1,0 +1,8 @@
+digraph "Graphe hiérarchique des classes"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GPS",height=0.2,width=0.4,color="black",URL="$class_g_p_s.html",tooltip="Classe représentant un système GPS. Elle permet de localiser une personne dans l&#39;espace, grâce à un simulateur de position. "];
+}

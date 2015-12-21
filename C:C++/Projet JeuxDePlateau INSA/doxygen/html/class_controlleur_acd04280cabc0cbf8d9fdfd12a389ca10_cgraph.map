@@ -1,0 +1,12 @@
+<map id="Controlleur::jouer" name="Controlleur::jouer">
+<area shape="rect" id="node2" href="$class_vue_jeu.html#a9f95332c892dc80abf9e3b3f715103dc" title="Affiche le jeu. " alt="" coords="436,5,575,32"/>
+<area shape="rect" id="node3" href="$class_jeu.html#a4856a0b6b9b5007dca14be8944cab1ab" title="Accède au joueur ayant le trait. " alt="" coords="425,56,585,83"/>
+<area shape="rect" id="node4" href="$class_joueur.html#ace515f29e4462bde12a4efac9e4a174b" title="Indique si le joueur est artificiel. " alt="" coords="438,107,573,133"/>
+<area shape="rect" id="node5" href="$class_controlleur.html#a2cd74ead050af04e602bf18d5f386550" title="Fait jouer le joueur ayant le trait et rend la main à l&#39;adversaire. " alt="" coords="193,158,352,199"/>
+<area shape="rect" id="node11" href="$class_jeu.html#acc2558d3c0673afbf36078c17c1b8e1e" title="Donne la pièce déplacée par défaut. " alt="" coords="175,224,371,251"/>
+<area shape="rect" id="node6" href="$class_jeu.html#af9ffff371139284b5fdc5cf0e8f720e9" title="Indique si le jeu est gagné par le joueur ayant le trait. " alt="" coords="452,360,559,387"/>
+<area shape="rect" id="node7" href="$class_jeu.html#ae841ac0a277a6def6dd12e6e4a1da295" title="Indique si l&#39;état du jeu est un match nul. " alt="" coords="461,157,550,184"/>
+<area shape="rect" id="node8" href="$class_joueur.html#accaaa52f2b0a41986f1f40cc3e3e5b86" title="Fait jouer le joueur. " alt="" coords="457,208,554,235"/>
+<area shape="rect" id="node9" href="$class_vue_jeu.html#adb5ccd8b9da7bb4badcb6dd0bff3bf07" title="Affiche le gagnant. " alt="" coords="422,259,589,285"/>
+<area shape="rect" id="node10" href="$class_vue_jeu.html#a05ee9f4ed93df46efd8fa4480c278285" title="Affiche le match nul. " alt="" coords="419,309,592,336"/>
+</map>

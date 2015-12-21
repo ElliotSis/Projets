@@ -1,0 +1,5 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$class_controlleur.html" title="Classe utilisée dans le cadre du patron de conception MVC. " alt="" coords="5,31,91,57"/>
+<area shape="rect" id="node2" href="$class_controlleur_console.html" title="Un controlleur pour jouer dans un terminal. " alt="" coords="139,5,272,32"/>
+<area shape="rect" id="node3" href="$class_controlleur_g_t_k.html" title="Un controlleur pour jouer dans une fenêtre, en utilisant la librairie GTKmm. " alt="" coords="149,56,261,83"/>
+</map>

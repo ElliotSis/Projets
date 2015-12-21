@@ -1,0 +1,4 @@
+<map id="VueJeuGTKDames::afficherGagnant" name="VueJeuGTKDames::afficherGagnant">
+<area shape="rect" id="node2" href="$class_jeu.html#a8b505c04821b6db6b174703b3172168d" title="Indique le joueur gagnant. " alt="" coords="279,5,413,32"/>
+<area shape="rect" id="node3" href="$class_joueur.html#ac70054bfad1d93fdc8a070b7a1c43bdb" title="Accède à la variable couleurDeSesPieces. " alt="" coords="240,56,452,83"/>
+</map>

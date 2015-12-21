@@ -1,0 +1,7 @@
+<map id="Joueur::gagnerPiece" name="Joueur::gagnerPiece">
+<area shape="rect" id="node2" href="$class_piece.html#aaa40473e760f4c7df7ede8de4a38e169" title="Indique si la pièce est appartient à un joueur. " alt="" coords="203,5,389,32"/>
+<area shape="rect" id="node3" href="$class_piece.html#a3521f3c147260fd0c7610d6d9b8bbf1c" title="Accède à la variable joueurPossedant. " alt="" coords="205,56,387,83"/>
+<area shape="rect" id="node4" href="$class_joueur.html#a85cf4b28cac20e9bd0daee765cdc48fc" title="Accède à la variable pieces. " alt="" coords="233,107,359,133"/>
+<area shape="rect" id="node5" href="$class_piece.html#aec777dcf8bc9f58a0d62272cabd77cd7" title="Modifie la variable joueurPossedant. " alt="" coords="205,157,387,184"/>
+<area shape="rect" id="node6" href="$class_jeu.html#a4a2f5f014cd33c6a3749e3c96d0929a4" title="Enlève une pièce aux pièces non attribuées. " alt="" coords="195,208,397,235"/>
+</map>

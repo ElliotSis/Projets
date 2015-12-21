@@ -1,0 +1,14 @@
+extends layout_page
+
+block page_content
+  h2 Ready to fight #{enemy_name} ?
+  p
+    - var s = '/images/' + images[enemy_name]
+    img(src=s)
+  p Opponent has #{enemies_combat_skill[enemy_name]} COMBAT SKILL and #{enemies_endurance[enemy_name]} ENDURANCE
+  p
+    a(href='/combat' + enemy_name) Attack
+    // TODO: Fight logic
+  p
+    a(href='/') Flee
+    // TODO: Flee

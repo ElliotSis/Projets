@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>TP1:  Fichier source de include/cellulaire.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TP1
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">cellulaire.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="cellulaire_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CELLULAIRE_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CELLULAIRE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gps_8h.html">gps.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// Forward declaration</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_personne.html">Personne</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_cellulaire.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cellulaire.html">Cellulaire</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="class_cellulaire.html#a2a952b02b26c58130433b8531c39f710">Cellulaire</a>(<span class="keyword">const</span> std::string numero = <span class="stringliteral">&quot;inconnu&quot;</span>, <a class="code" href="class_personne.html">Personne</a>* personne = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_cellulaire.html#a44b30e42392b8a99b60370eb9ed1041d">~Cellulaire</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keyword">const</span> std::string <a class="code" href="class_cellulaire.html#aeda8f03e7904583b95624b4acf6acaf9">obtenirNumero</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_cellulaire.html#ab7bc317d878ff339f51b7a79b94f52f2">modifierNumero</a>(<span class="keyword">const</span> std::string numero);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="class_personne.html">Personne</a>* <a class="code" href="class_cellulaire.html#aac88456657601be9cdfa9f8c2e6f46c7">obtenirPersonne</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_cellulaire.html#aa60d9614f002ca8d2037c524ec586edd">modifierPersonne</a>(<a class="code" href="class_personne.html">Personne</a>* personne);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="class_cellulaire.html#abb5490274e09ba03c86313da5c3e7c83">obtenirPositionGps</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_cellulaire.html#aa0bd881cc7593e40257227f3d6e45292">modifierPositionGps</a>(<span class="keywordtype">float</span> position);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_cellulaire.html#adefde3d0bfa581dfd83101243f5aed36">estProche</a>(<span class="keywordtype">float</span> position);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="class_cellulaire.html#a455b40be8ce1d00d2d0c6199d4f36b65">   63</a></span>&#160;        std::string <a class="code" href="class_cellulaire.html#a455b40be8ce1d00d2d0c6199d4f36b65">numero_</a>; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_cellulaire.html#a505be5bf8263a7585a89c3356e72724b">   65</a></span>&#160;        <a class="code" href="class_personne.html">Personne</a>* <a class="code" href="class_cellulaire.html#a505be5bf8263a7585a89c3356e72724b">personne_</a>; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_cellulaire.html#a1a2c662a0df9fde35416aa515024c802">   67</a></span>&#160;        <a class="code" href="class_g_p_s.html">GPS</a> <a class="code" href="class_cellulaire.html#a1a2c662a0df9fde35416aa515024c802">gps_</a>; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif // CELLULAIRE_H</span></div>
+<div class="ttc" id="class_cellulaire_html_aa0bd881cc7593e40257227f3d6e45292"><div class="ttname"><a href="class_cellulaire.html#aa0bd881cc7593e40257227f3d6e45292">Cellulaire::modifierPositionGps</a></div><div class="ttdeci">void modifierPositionGps(float position)</div><div class="ttdoc">Modifie la variable position_ de la variable gps_. </div><div class="ttdef"><b>Definition:</b> <a href="cellulaire_8cpp_source.html#l00031">cellulaire.cpp:31</a></div></div>
+<div class="ttc" id="class_cellulaire_html_aa60d9614f002ca8d2037c524ec586edd"><div class="ttname"><a href="class_cellulaire.html#aa60d9614f002ca8d2037c524ec586edd">Cellulaire::modifierPersonne</a></div><div class="ttdeci">void modifierPersonne(Personne *personne)</div><div class="ttdoc">Modifie la variable personne_. </div><div class="ttdef"><b>Definition:</b> <a href="cellulaire_8cpp_source.html#l00023">cellulaire.cpp:23</a></div></div>
+<div class="ttc" id="class_g_p_s_html"><div class="ttname"><a href="class_g_p_s.html">GPS</a></div><div class="ttdoc">Classe représentant un système GPS. Elle permet de localiser une personne dans l&#39;espace, grâce à un simulateur de position. </div><div class="ttdef"><b>Definition:</b> <a href="gps_8h_source.html#l00013">gps.h:13</a></div></div>
+<div class="ttc" id="class_cellulaire_html_ab7bc317d878ff339f51b7a79b94f52f2"><div class="ttname"><a href="class_cellulaire.html#ab7bc317d878ff339f51b7a79b94f52f2">Cellulaire::modifierNumero</a></div><div class="ttdeci">void modifierNumero(const std::string numero)</div><div class="ttdoc">Modifie la variable numero_. </div><div class="ttdef"><b>Definition:</b> <a href="cellulaire_8cpp_source.html#l00015">cellulaire.cpp:15</a></div></div>
+<div class="ttc" id="class_cellulaire_html_aac88456657601be9cdfa9f8c2e6f46c7"><div class="ttname"><a href="class_cellulaire.html#aac88456657601be9cdfa9f8c2e6f46c7">Cellulaire::obtenirPersonne</a></div><div class="ttdeci">Personne * obtenirPersonne() const </div><div class="ttdoc">Accède à la variable personne_. </div><div class="ttdef"><b>Definition:</b> <a href="cellulaire_8cpp_source.html#l00019">cellulaire.cpp:19</a></div></div>
+<div class="ttc" id="class_cellulaire_html_abb5490274e09ba03c86313da5c3e7c83"><div class="ttname"><a href="class_cellulaire.html#abb5490274e09ba03c86313da5c3e7c83">Cellulaire::obtenirPositionGps</a></div><div class="ttdeci">float obtenirPositionGps() const </div><div class="ttdoc">Accède à la variable position_ de la variable gps_. </div><div class="ttdef"><b>Definition:</b> <a href="cellulaire_8cpp_source.html#l00027">cellulaire.cpp:27</a></div></div>
+<div class="ttc" id="class_cellulaire_html_a505be5bf8263a7585a89c3356e72724b"><div class="ttname"><a href="class_cellulaire.html#a505be5bf8263a7585a89c3356e72724b">Cellulaire::personne_</a></div><div class="ttdeci">Personne * personne_</div><div class="ttdoc">Personne propriétaire du cellulaire. </div><div class="ttdef"><b>Definition:</b> <a href="cellulaire_8h_source.html#l00065">cellulaire.h:65</a></div></div>
+<div class="ttc" id="class_personne_html"><div class="ttname"><a href="class_personne.html">Personne</a></div><div class="ttdoc">Classe représentant une Personne. </div><div class="ttdef"><b>Definition:</b> <a href="personne_8h_source.html#l00011">personne.h:11</a></div></div>
+<div class="ttc" id="class_cellulaire_html"><div class="ttname"><a href="class_cellulaire.html">Cellulaire</a></div><div class="ttdoc">Classe représentant un Cellulaire. </div><div class="ttdef"><b>Definition:</b> <a href="cellulaire_8h_source.html#l00015">cellulaire.h:15</a></div></div>
+<div class="ttc" id="class_cellulaire_html_a2a952b02b26c58130433b8531c39f710"><div class="ttname"><a href="class_cellulaire.html#a2a952b02b26c58130433b8531c39f710">Cellulaire::Cellulaire</a></div><div class="ttdeci">Cellulaire(const std::string numero=&quot;inconnu&quot;, Personne *personne=nullptr)</div><div class="ttdoc">Constructeur de Cellulaire. </div><div class="ttdef"><b>Definition:</b> <a href="cellulaire_8cpp_source.html#l00005">cellulaire.cpp:5</a></div></div>
+<div class="ttc" id="gps_8h_html"><div class="ttname"><a href="gps_8h.html">gps.h</a></div></div>
+<div class="ttc" id="class_cellulaire_html_a455b40be8ce1d00d2d0c6199d4f36b65"><div class="ttname"><a href="class_cellulaire.html#a455b40be8ce1d00d2d0c6199d4f36b65">Cellulaire::numero_</a></div><div class="ttdeci">std::string numero_</div><div class="ttdoc">Numéro du cellulaire. </div><div class="ttdef"><b>Definition:</b> <a href="cellulaire_8h_source.html#l00063">cellulaire.h:63</a></div></div>
+<div class="ttc" id="class_cellulaire_html_aeda8f03e7904583b95624b4acf6acaf9"><div class="ttname"><a href="class_cellulaire.html#aeda8f03e7904583b95624b4acf6acaf9">Cellulaire::obtenirNumero</a></div><div class="ttdeci">const std::string obtenirNumero() const </div><div class="ttdoc">Accède à la variable numero_. </div><div class="ttdef"><b>Definition:</b> <a href="cellulaire_8cpp_source.html#l00011">cellulaire.cpp:11</a></div></div>
+<div class="ttc" id="class_cellulaire_html_adefde3d0bfa581dfd83101243f5aed36"><div class="ttname"><a href="class_cellulaire.html#adefde3d0bfa581dfd83101243f5aed36">Cellulaire::estProche</a></div><div class="ttdeci">bool estProche(float position)</div><div class="ttdoc">Évalue si le cellulaire est proche d&#39;une position. </div><div class="ttdef"><b>Definition:</b> <a href="cellulaire_8cpp_source.html#l00035">cellulaire.cpp:35</a></div></div>
+<div class="ttc" id="class_cellulaire_html_a44b30e42392b8a99b60370eb9ed1041d"><div class="ttname"><a href="class_cellulaire.html#a44b30e42392b8a99b60370eb9ed1041d">Cellulaire::~Cellulaire</a></div><div class="ttdeci">virtual ~Cellulaire()</div><div class="ttdoc">Destructeur par défaut. </div><div class="ttdef"><b>Definition:</b> <a href="cellulaire_8cpp_source.html#l00009">cellulaire.cpp:9</a></div></div>
+<div class="ttc" id="class_cellulaire_html_a1a2c662a0df9fde35416aa515024c802"><div class="ttname"><a href="class_cellulaire.html#a1a2c662a0df9fde35416aa515024c802">Cellulaire::gps_</a></div><div class="ttdeci">GPS gps_</div><div class="ttdoc">GPS intégré au cellulaire. </div><div class="ttdef"><b>Definition:</b> <a href="cellulaire_8h_source.html#l00067">cellulaire.h:67</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<map id="Humain::jouer" name="Humain::jouer">
+<area shape="rect" id="node2" href="$class_jeu.html#a3cd332c8d57aa634a100452161d0a781" title="Passe à l&#39;état suivant du jeu. " alt="" coords="156,5,331,32"/>
+<area shape="rect" id="node3" href="$class_coup.html#af69800a8b61886c70bd012069eb95bf4" title="Joue le coup. " alt="" coords="379,5,468,32"/>
+</map>

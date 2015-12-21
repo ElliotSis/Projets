@@ -1,0 +1,8 @@
+<map id="VueJeuGTKOthello::dessinerPiece" name="VueJeuGTKOthello::dessinerPiece">
+<area shape="rect" id="node2" href="$class_piece.html#a08cb0520adc64748516c65e281779276" title="Accède à la variable caseContenante. " alt="" coords="261,5,439,32"/>
+<area shape="rect" id="node3" href="$class_case.html#a1c535ae46dc31fa7606709969a79a193" title="Accède à la variable ligne. " alt="" coords="295,56,405,83"/>
+<area shape="rect" id="node4" href="$class_case.html#ab868177d5048aa94a6bdd409c96a4bf5" title="Accède à la variable colonne. " alt="" coords="287,107,413,133"/>
+<area shape="rect" id="node5" href="$class_piece.html#a3521f3c147260fd0c7610d6d9b8bbf1c" title="Accède à la variable joueurPossedant. " alt="" coords="259,157,441,184"/>
+<area shape="rect" id="node6" href="$class_joueur.html#ac70054bfad1d93fdc8a070b7a1c43bdb" title="Accède à la variable couleurDeSesPieces. " alt="" coords="244,208,456,235"/>
+<area shape="rect" id="node7" href="$_couleurs_8h.html#a47dcd5e889d1aceb87794d30f7d5a595" title="Calcule la couleur au format RGB double d&#39;une couleur au format entier. " alt="" coords="310,259,390,285"/>
+</map>

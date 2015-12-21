@@ -1,0 +1,13 @@
+<map id="Artificiel::meilleurCoupPossible" name="Artificiel::meilleurCoupPossible">
+<area shape="rect" id="node2" href="$class_jeu.html#ab7070b65e6cad1ef2f6e09e3cc3e3225" title="Accède à la variable coupsPossibles. " alt="" coords="402,5,566,32"/>
+<area shape="rect" id="node3" href="$class_jeu.html#a3cd332c8d57aa634a100452161d0a781" title="Passe à l&#39;état suivant du jeu. " alt="" coords="397,56,571,83"/>
+<area shape="rect" id="node5" href="$class_artificiel.html#aaf44536ea58bd476e13ea83c92dc2804" title="Algorithme alpha&#45;beta. " alt="" coords="207,157,341,184"/>
+<area shape="rect" id="node11" href="$class_jeu.html#ae65d8d88d81cdb0e259a6d2b0ddf64f4" title="Revient à l&#39;état précédent du jeu. " alt="" coords="389,360,579,387"/>
+<area shape="rect" id="node4" href="$class_coup.html#af69800a8b61886c70bd012069eb95bf4" title="Joue le coup. " alt="" coords="633,56,723,83"/>
+<area shape="rect" id="node6" href="$class_jeu.html#a4856a0b6b9b5007dca14be8944cab1ab" title="Accède au joueur ayant le trait. " alt="" coords="404,309,564,336"/>
+<area shape="rect" id="node7" href="$class_jeu.html#af9ffff371139284b5fdc5cf0e8f720e9" title="Indique si le jeu est gagné par le joueur ayant le trait. " alt="" coords="431,107,537,133"/>
+<area shape="rect" id="node8" href="$class_jeu.html#a8b505c04821b6db6b174703b3172168d" title="Indique le joueur gagnant. " alt="" coords="417,157,551,184"/>
+<area shape="rect" id="node9" href="$class_jeu.html#ae841ac0a277a6def6dd12e6e4a1da295" title="Indique si l&#39;état du jeu est un match nul. " alt="" coords="439,208,529,235"/>
+<area shape="rect" id="node10" href="$class_artificiel.html#a1fbdff5d73602fb3a7b7f2108ac8855f" title="Évalue l&#39;état du jeu joué. " alt="" coords="416,259,552,285"/>
+<area shape="rect" id="node12" href="$class_coup.html#a8d1de3be6c1be5918060e5427a0ac047" title="Annule le coup (après l&#39;avoir joué). " alt="" coords="627,360,729,387"/>
+</map>

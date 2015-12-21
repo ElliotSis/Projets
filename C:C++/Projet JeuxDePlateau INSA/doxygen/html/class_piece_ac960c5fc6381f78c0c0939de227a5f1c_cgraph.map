@@ -1,0 +1,9 @@
+<map id="Piece::disparaitre" name="Piece::disparaitre">
+<area shape="rect" id="node2" href="$class_piece.html#aaa40473e760f4c7df7ede8de4a38e169" title="Indique si la pièce est appartient à un joueur. " alt="" coords="180,5,365,32"/>
+<area shape="rect" id="node3" href="$class_joueur.html#ae8c66a1fb8f4dbddb72a15309220d4e7" title="Enlève une pièce au joueur. " alt="" coords="203,56,342,83"/>
+<area shape="rect" id="node7" href="$class_piece.html#a16068df00be96adc98641c38f0a223a6" title="Indique si la pièce est posée sur une case. " alt="" coords="176,107,369,133"/>
+<area shape="rect" id="node8" href="$class_case.html#aad00d67d15f20be65e54abc9f356c846" title="Modifie la variable piecePosee. " alt="" coords="198,157,347,184"/>
+<area shape="rect" id="node4" href="$class_piece.html#a3521f3c147260fd0c7610d6d9b8bbf1c" title="Accède à la variable joueurPossedant. " alt="" coords="425,5,608,32"/>
+<area shape="rect" id="node5" href="$class_piece.html#aec777dcf8bc9f58a0d62272cabd77cd7" title="Modifie la variable joueurPossedant. " alt="" coords="425,56,608,83"/>
+<area shape="rect" id="node6" href="$class_jeu.html#a7e6345e10a75cc7783798cf3a0faa959" title="Ajoute une pièce aux pièces non attribuées. " alt="" coords="417,107,616,133"/>
+</map>

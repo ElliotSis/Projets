@@ -1,0 +1,8 @@
+	\textbf{Moyenne} &   32.23 &  3.85\\
+	\hline
+	\textbf{Variance} &  1063.54 &  15.14\\
+	\hline
+	\textbf{Écart-type} &   32.61 &  3.89\\
+	\hline
+	\textbf{Médiane} &   22.50 &  2.68\\
+	\hline

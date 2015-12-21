@@ -1,0 +1,14 @@
+digraph "Chauffage::recevoirMessage"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Chauffage::recevoirMessage",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Message::getType",height=0.2,width=0.4,color="black",URL="$class_message.html#a1f68d86b02a71cacc183673b517f1eb2"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Chauffage::allume",height=0.2,width=0.4,color="black",URL="$class_chauffage.html#a0e8ad3a5f8fe802304cc10149c5220ba",tooltip="Allume le chauffage. Ne change rien si le chauffage est déjà allumé. "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Chauffage::eteindre",height=0.2,width=0.4,color="black",URL="$class_chauffage.html#afec7ea57e645f67ed00eab210c2b2b83",tooltip="Éteint le chauffage. Ne change rien si le chauffage est déjà éteint. "];
+}

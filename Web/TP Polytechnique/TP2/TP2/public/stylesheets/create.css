@@ -1,0 +1,102 @@
+body {
+  margin: 0  !important;
+  padding: 0  !important;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+body > h1{
+ font-family: "Purisa";
+ text-align: center;
+}
+
+header {
+  background-color: #2E2E2E;
+}
+
+header nav {
+  display: inline-block;
+  text-align: left;
+}
+
+#logo {
+ position: absolute;
+ display: inline-block;
+ width: 400px;
+ margin-left: 30px;
+}
+
+#logo img {
+ width: 80%;
+}
+.top_menu {
+ padding:30px;
+ margin-top:0px;
+ list-style-type:none;
+}
+
+#history{
+ width: 90%;
+ padding: 10px 10px;
+ border-style: solid;
+ border-width: 2px;
+ border-color: #2E2E2E;
+ margin: auto;
+ margin-top: 10px;
+}
+
+#history h2{
+ text-align: center;
+ font-family: "Purisa";
+}
+
+.top_menu li { 
+ margin-left: 50px;
+ display : inline-block;
+ padding : 0 0.5em; /* Pour espacer les boutons entre eux */
+}
+
+.top_menu li a {
+ text-decoration:none;
+ text-align:center;
+ font-size: 1.5em;
+ color: #fff;
+}
+
+.top_menu #create {
+ padding: 20px 20px;
+ background-color: #00A8E0;
+ border-radius: 5px;
+}
+
+
+#create a {
+ color: #fff;
+}
+
+.center_block {
+  display: table;
+  margin: auto;
+}
+
+.center_block button {
+ margin-top: 20px;
+ padding: 10px 10px;
+}
+
+#form_content select,input,button {
+}
+
+#form_content select {
+ margin-left: 10px;
+}
+
+footer {
+ background-color: #2E2E2E;
+ margin-top: 10px;
+ color: #fff;
+ padding: 10px 10px;
+ font-weight:bold;
+}
+

@@ -1,0 +1,7 @@
+<map id="VueJeuGTK::afficherJeu" name="VueJeuGTK::afficherJeu">
+<area shape="rect" id="node2" href="$class_jeu.html#acbb8c2881f2cc328ef940bb2dd0dd345" title="Accède à la variable plateau. " alt="" coords="253,5,367,32"/>
+<area shape="rect" id="node3" href="$class_plateau.html#a0b3b6907401c840ad0ed4a16e94b7ebd" title="Accède à la variable nbLignes. " alt="" coords="237,56,383,83"/>
+<area shape="rect" id="node4" href="$class_plateau.html#af702bae82bf3d9faa07070ccb441d1aa" title="Accède à la variable nbColonnes. " alt="" coords="228,107,392,133"/>
+<area shape="rect" id="node5" href="$class_jeu.html#a074c4921b43dd7436d746e310bace1db" title="Accède à la variable nbToursJoues. " alt="" coords="233,157,387,184"/>
+<area shape="rect" id="node6" href="$class_vue_jeu_g_t_k.html#ada982472b3517a9a6bfb395831ddc37b" title="Affiche le joueur devant jouer. " alt="" coords="219,209,401,250"/>
+</map>

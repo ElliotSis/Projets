@@ -1,0 +1,4 @@
+<map id="JeuOthello::piecesAMettreAJour" name="JeuOthello::piecesAMettreAJour">
+<area shape="rect" id="node2" href="$class_piece.html#aec777dcf8bc9f58a0d62272cabd77cd7" title="Modifie la variable joueurPossedant. " alt="" coords="229,5,412,32"/>
+<area shape="rect" id="node3" href="$class_jeu.html#a4856a0b6b9b5007dca14be8944cab1ab" title="Accède au joueur ayant le trait. " alt="" coords="241,56,401,83"/>
+</map>

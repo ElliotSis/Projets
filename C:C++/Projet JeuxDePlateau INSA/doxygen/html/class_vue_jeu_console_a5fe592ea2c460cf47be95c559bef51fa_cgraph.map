@@ -1,0 +1,24 @@
+<map id="VueJeuConsole::afficherJeu" name="VueJeuConsole::afficherJeu">
+<area shape="rect" id="node2" href="$class_jeu.html#acbb8c2881f2cc328ef940bb2dd0dd345" title="Accède à la variable plateau. " alt="" coords="514,120,627,146"/>
+<area shape="rect" id="node3" href="$class_plateau.html#a0b3b6907401c840ad0ed4a16e94b7ebd" title="Accède à la variable nbLignes. " alt="" coords="269,196,415,222"/>
+<area shape="rect" id="node4" href="$class_plateau.html#af702bae82bf3d9faa07070ccb441d1aa" title="Accède à la variable nbColonnes. " alt="" coords="260,246,424,273"/>
+<area shape="rect" id="node5" href="$class_jeu.html#a074c4921b43dd7436d746e310bace1db" title="Accède à la variable nbToursJoues. " alt="" coords="265,297,419,324"/>
+<area shape="rect" id="node6" href="$class_vue_jeu_console.html#ae1f25400e642d136c863f6c6d889d032" title="Affiche une pièce. " alt="" coords="243,348,441,374"/>
+<area shape="rect" id="node7" href="$class_vue_jeu_console.html#a596cb6af4f63d1aaffa967d49a00bc2d" title="Affiche le joueur devant jouer. " alt="" coords="240,399,444,440"/>
+<area shape="rect" id="node8" href="$class_jeu.html#a4856a0b6b9b5007dca14be8944cab1ab" title="Accède au joueur ayant le trait. " alt="" coords="948,94,1108,121"/>
+<area shape="rect" id="node9" href="$class_joueur.html#ace515f29e4462bde12a4efac9e4a174b" title="Indique si le joueur est artificiel. " alt="" coords="961,196,1095,222"/>
+<area shape="rect" id="node10" href="$class_vue_jeu_console.html#a04f0cf53bcead417aa8ead2ff616d0df" title="Récupère la case que l&#39;utilisateur choisit. " alt="" coords="257,145,427,172"/>
+<area shape="rect" id="node11" href="$class_controlleur.html#af723244e5cc52e8b69ccf6bccc644221" title="Traite un coup rentré par l&#39;utilisateur. " alt="" coords="492,239,649,280"/>
+<area shape="rect" id="node12" href="$class_case.html#a7bb3995518c43d2e96a689facb2ac287" title="Indique si la case est libre. " alt="" coords="742,414,849,441"/>
+<area shape="rect" id="node13" href="$class_case.html#abaa6684a0e8458d61ce181082e368964" title="Accède à la variable piecePosee. " alt="" coords="721,465,870,492"/>
+<area shape="rect" id="node14" href="$class_jeu.html#ab7070b65e6cad1ef2f6e09e3cc3e3225" title="Accède à la variable coupsPossibles. " alt="" coords="713,145,877,172"/>
+<area shape="rect" id="node15" href="$class_joueur.html#ad1054b9460afda7b1fc2c5980923e7b9" title="Modifie la variable coupAJouer. " alt="" coords="716,246,875,273"/>
+<area shape="rect" id="node16" href="$class_controlleur.html#a2cd74ead050af04e602bf18d5f386550" title="Fait jouer le joueur ayant le trait et rend la main à l&#39;adversaire. " alt="" coords="716,348,875,390"/>
+<area shape="rect" id="node23" href="$class_jeu.html#acc2558d3c0673afbf36078c17c1b8e1e" title="Donne la pièce déplacée par défaut. " alt="" coords="697,297,893,324"/>
+<area shape="rect" id="node17" href="$class_jeu.html#af9ffff371139284b5fdc5cf0e8f720e9" title="Indique si le jeu est gagné par le joueur ayant le trait. " alt="" coords="975,250,1081,277"/>
+<area shape="rect" id="node18" href="$class_jeu.html#ae841ac0a277a6def6dd12e6e4a1da295" title="Indique si l&#39;état du jeu est un match nul. " alt="" coords="983,301,1073,328"/>
+<area shape="rect" id="node19" href="$class_joueur.html#accaaa52f2b0a41986f1f40cc3e3e5b86" title="Fait jouer le joueur. " alt="" coords="979,352,1077,378"/>
+<area shape="rect" id="node20" href="$class_vue_jeu.html#a9f95332c892dc80abf9e3b3f715103dc" title="Affiche le jeu. " alt="" coords="959,402,1097,429"/>
+<area shape="rect" id="node21" href="$class_vue_jeu.html#adb5ccd8b9da7bb4badcb6dd0bff3bf07" title="Affiche le gagnant. " alt="" coords="945,453,1111,480"/>
+<area shape="rect" id="node22" href="$class_vue_jeu.html#a05ee9f4ed93df46efd8fa4480c278285" title="Affiche le match nul. " alt="" coords="941,504,1115,530"/>
+</map>

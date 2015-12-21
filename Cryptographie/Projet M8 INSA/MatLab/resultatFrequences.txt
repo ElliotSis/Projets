@@ -1,0 +1,54 @@
+	\textbf{A} &      72 &  8.59\\
+	\hline
+	\textbf{B} &       5 &  0.60\\
+	\hline
+	\textbf{C} &      31 &  3.70\\
+	\hline
+	\textbf{D} &      37 &  4.42\\
+	\hline
+	\textbf{E} &     140 &  16.71\\
+	\hline
+	\textbf{F} &       7 &  0.84\\
+	\hline
+	\textbf{G} &       7 &  0.84\\
+	\hline
+	\textbf{H} &       8 &  0.95\\
+	\hline
+	\textbf{I} &      66 &  7.88\\
+	\hline
+	\textbf{J} &      17 &  2.03\\
+	\hline
+	\textbf{K} &       0 &  0.00\\
+	\hline
+	\textbf{L} &      28 &  3.34\\
+	\hline
+	\textbf{M} &      36 &  4.30\\
+	\hline
+	\textbf{N} &      54 &  6.44\\
+	\hline
+	\textbf{O} &      53 &  6.32\\
+	\hline
+	\textbf{P} &      17 &  2.03\\
+	\hline
+	\textbf{Q} &      15 &  1.79\\
+	\hline
+	\textbf{R} &      46 &  5.49\\
+	\hline
+	\textbf{S} &      64 &  7.64\\
+	\hline
+	\textbf{T} &      49 &  5.85\\
+	\hline
+	\textbf{U} &      67 &  8.00\\
+	\hline
+	\textbf{V} &      15 &  1.79\\
+	\hline
+	\textbf{W} &       0 &  0.00\\
+	\hline
+	\textbf{X} &       1 &  0.12\\
+	\hline
+	\textbf{Y} &       1 &  0.12\\
+	\hline
+	\textbf{Z} &       2 &  0.24\\
+	\hline
+	\textbf{Total} &     838 &  100.00\\
+	\hline

@@ -1,0 +1,52 @@
+	\textbf{AA} &      10 &  0.00\\
+	\hline
+	\textbf{BB} &     122 &  0.01\\
+	\hline
+	\textbf{CC} &    1359 &  0.13\\
+	\hline
+	\textbf{DD} &      28 &  0.00\\
+	\hline
+	\textbf{EE} &      66 &  0.01\\
+	\hline
+	\textbf{FF} &    2588 &  0.25\\
+	\hline
+	\textbf{GG} &     631 &  0.06\\
+	\hline
+	\textbf{HH} &       6 &  0.00\\
+	\hline
+	\textbf{II} &     184 &  0.02\\
+	\hline
+	\textbf{JJ} &       0 &  0.00\\
+	\hline
+	\textbf{KK} &       0 &  0.00\\
+	\hline
+	\textbf{LL} &    7771 &  0.76\\
+	\hline
+	\textbf{MM} &    5063 &  0.50\\
+	\hline
+	\textbf{NN} &    4413 &  0.43\\
+	\hline
+	\textbf{OO} &     103 &  0.01\\
+	\hline
+	\textbf{PP} &    2360 &  0.23\\
+	\hline
+	\textbf{QQ} &       0 &  0.00\\
+	\hline
+	\textbf{RR} &    3954 &  0.39\\
+	\hline
+	\textbf{SS} &    6746 &  0.66\\
+	\hline
+	\textbf{TT} &    4349 &  0.43\\
+	\hline
+	\textbf{UU} &       2 &  0.00\\
+	\hline
+	\textbf{VV} &       0 &  0.00\\
+	\hline
+	\textbf{WW} &       0 &  0.00\\
+	\hline
+	\textbf{XX} &      60 &  0.01\\
+	\hline
+	\textbf{YY} &       0 &  0.00\\
+	\hline
+	\textbf{ZZ} &       0 &  0.00\\
+	\hline

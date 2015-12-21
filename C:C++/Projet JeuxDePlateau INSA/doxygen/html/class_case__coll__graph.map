@@ -1,0 +1,7 @@
+<map id="Case" name="Case">
+<area shape="rect" id="node2" href="$class_plateau.html" title="Classe représentant le plateau du jeu. " alt="" coords="17,95,84,121"/>
+<area shape="rect" id="node3" href="$class_piece.html" title="Classe représentant une pièce du jeu. " alt="" coords="153,363,207,389"/>
+<area shape="rect" id="node5" href="$class_coup.html" title="Classe représentant un coup du jeu. " alt="" coords="153,452,207,479"/>
+<area shape="rect" id="node6" href="$class_jeu.html" title="Classe représentant un état de jeu de plateau. " alt="" coords="29,184,72,211"/>
+<area shape="rect" id="node4" href="$class_joueur.html" title="Classe représentant un joueur du jeu. " alt="" coords="5,273,67,300"/>
+</map>

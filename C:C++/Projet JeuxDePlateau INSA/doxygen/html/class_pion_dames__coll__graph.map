@@ -1,0 +1,10 @@
+<map id="PionDames" name="PionDames">
+<area shape="rect" id="node2" href="$class_etat_piece_dames.html" title="Classe représentant un état d&#39;une pièce aux dames. " alt="" coords="42,5,163,32"/>
+<area shape="rect" id="node3" href="$class_piece_dames.html" title="Classe représentant une pièce du jeu de dames. " alt="" coords="121,95,218,121"/>
+<area shape="rect" id="node4" href="$class_piece.html" title="Classe représentant une pièce du jeu. " alt="" coords="350,5,405,32"/>
+<area shape="rect" id="node6" href="$class_coup.html" title="Classe représentant un coup du jeu. " alt="" coords="365,184,419,211"/>
+<area shape="rect" id="node7" href="$class_case.html" title="Classe représentant une case du plateau du jeu. " alt="" coords="499,95,552,121"/>
+<area shape="rect" id="node5" href="$class_joueur.html" title="Classe représentant un joueur du jeu. " alt="" coords="361,273,423,300"/>
+<area shape="rect" id="node9" href="$class_jeu.html" title="Classe représentant un état de jeu de plateau. " alt="" coords="423,363,465,389"/>
+<area shape="rect" id="node8" href="$class_plateau.html" title="Classe représentant le plateau du jeu. " alt="" coords="492,184,559,211"/>
+</map>

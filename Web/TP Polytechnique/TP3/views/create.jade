@@ -1,0 +1,38 @@
+extends layout
+
+block extraHeader
+ link(rel='stylesheet', href='/stylesheets/create.css')
+
+block content
+ #history
+  if error
+   div#error_alert
+    h3 ! Error !
+    p Please choose five unique disciplines, and two unique items
+  form(name='create_player', method='post')
+   #form_content
+    h2 Choose your name
+    .center_block
+     p Name : 
+      input(type='text', name='name', required)
+
+    h2 Pick your Kai disciplines
+    .center_block
+     - for(var n = 1; n <= 5; ++n)
+       select(name='discipline'+n)
+        - var i = 0;
+         each discipline in game_objects.disciplines
+          option(value=Object.keys(game_objects.disciplines)[i++])= discipline.title
+
+    h2 Choose your equipment
+    .center_block
+     - for(var n = 1; n <= 2; ++n)
+      select(name='item'+n)
+        each item_type in game_objects.items
+          - var i = 0;
+          each item in item_type
+            option(value=Object.keys(item_type)[i++])= item.title
+    .center_block
+     button(type='submit') Start the game
+      
+     

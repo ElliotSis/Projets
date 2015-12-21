@@ -1,0 +1,19 @@
+[TAILLEGRILLE=5]
+A I N T J 
+R F H S E 
+K A H N U 
+P A H O T 
+E S A C Y 
+[TROUVE=1]
+0 1 0 0 0 
+1 1 0 0 0 
+0 1 0 0 0 
+0 0 1 0 0 
+0 0 0 1 0 
+[TAILLEDICO=6]
+IF 1
+INT 0
+CHAR 1
+CASE 0
+CONST 0
+JEU 0

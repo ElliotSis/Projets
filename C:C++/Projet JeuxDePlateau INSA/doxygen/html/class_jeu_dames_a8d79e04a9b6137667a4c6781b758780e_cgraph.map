@@ -1,0 +1,4 @@
+<map id="JeuDames::piecesAMettreAJour" name="JeuDames::piecesAMettreAJour">
+<area shape="rect" id="node2" href="$class_jeu.html#a4856a0b6b9b5007dca14be8944cab1ab" title="Accède au joueur ayant le trait. " alt="" coords="264,5,424,32"/>
+<area shape="rect" id="node3" href="$class_joueur.html#a85cf4b28cac20e9bd0daee765cdc48fc" title="Accède à la variable pieces. " alt="" coords="281,56,407,83"/>
+</map>

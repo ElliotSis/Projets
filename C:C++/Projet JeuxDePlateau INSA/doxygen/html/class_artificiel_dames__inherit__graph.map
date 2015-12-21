@@ -1,0 +1,4 @@
+<map id="ArtificielDames" name="ArtificielDames">
+<area shape="rect" id="node2" href="$class_artificiel.html" title="Classe représentant un joueur artificiel. " alt="" coords="26,80,95,107"/>
+<area shape="rect" id="node3" href="$class_joueur.html" title="Classe représentant un joueur du jeu. " alt="" coords="30,5,91,32"/>
+</map>

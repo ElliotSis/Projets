@@ -1,0 +1,13 @@
+p Utilisez la Table de Hasard pour obtenir un chiffre.
+button(ng-click="getRandomValue()").button RANDOM
+p Votre chiffre aléatoire : {{randomNumber}}
+
+-
+    decisions = [
+    { page: 62, text: "Si vous tirez un chiffre entre 0 et 4," },
+    { page: 288, text: "Entre 5 et 9," }
+    ]
+
+include decision
++ decision(decisions)
+

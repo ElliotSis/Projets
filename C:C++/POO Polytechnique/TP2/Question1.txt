@@ -1,0 +1,11 @@
+Adrien LOGUT
+Elliot SISTERON
+
+Reponse ˆ la question du TP2 :
+
+Un constructeur par copie sert à l'inialisation d'un objet, avec un passage par paramètre. Il crée l'objet.
+L'opérateur d'affectation= et consiste en une affectation membre à membre des différents attributs. L'objet existe déjà.
+
+Il est primordial de les implémenter lorsqu'on traite avec des adresses(composition par pointeurs)
+et que l'on doit allouer de nouveaux espaces mémoires.
+(Tableaux dynamiques par exemple)

@@ -1,0 +1,49 @@
+p Dans l'obscurité balayée de neige, vous distinguez deux petits points rouges et brillants qui grandissent peu à peu. Puis soudain, une forme se dessine dans l'ombre : vous voyez alors apparaître une grande et hideuse créature quadrupède qui bondit sur vous. Elle a les yeux étincelants et ouvre une gueule hérissée de dents, exhibant en même temps une énorme langue couverte de poils rêches qu'elle pointe en direction de votre visage.
+
+p « Argh ! Un Languabarb ! » s'écrie Fenor. Il se précipite aussitôt à votre côté en brandissant une épée dont il essaie de frapper la langue de la créature. L'animal, cependant, est déjà sur vous et il vous faut le combattre.
+
+p Indifférente à l'attaque de Fenor, la bête monstrueuse ne semble s'intéresser qu'à vous. Fenor lui porte ses coups par-derrière et ne sera donc pas blessé.
+
+p En revanche, il fera perdre 3 points supplémentaires d'ENDURANCE à votre adversaire, et cela à chaque Assaut, enraison des blessures qu'il lui inflige.
+
+section(ng-init="initFight()")#combat
+    div#monstre
+        span#nomMonstre {{fight.nom}}:
+        | HABILETÉ
+        span#monstreAttaque {{fight.habilete}}
+        | ENDURANCE
+        span#monstreEndurance {{fight.endurance}}
+
+    div(ng-if="fightBegin",ng-repeat="round in rounds").rondeCombat
+        div(ng-if="!flee")
+            | Ronde combat:
+            span {{round.countRound}}
+        div(ng-if="!flee")
+            p Ratio de combat: {{round.ratio}}
+            p Chiffre aléatoire: {{round.random}}
+        div(ng-if="!flee")
+            p Ton ennemi subit {{round.degatJoueur}} dégâts !
+            p Il a maintenant {{round.ennemiLife}} points d'endurance.
+        div(ng-if="!flee")
+            p Loup Solitaire subit {{round.degatEnnemi}} dégâts !
+            p Tu as maintenant {{round.playerLife}} points d'endurance.
+        div(ng-if="flee")
+            p Tu fuis tel un lâche, tu peux continuer l'histoire mais tu perds {{round.degatEnnemi}} points d'endurance.
+    div#choixCombat
+        button(ng-click="roundFight(true)",ng-disable="disableFightButtons",ng-hide="disableFightButtons")#combattre.button  COMBATTRE
+        button(ng-click="fleeFight(true)",ng-disable="disableFightButtons",ng-hide="disableFightButtons")#fuir.button FUIR
+        button(ng-click="enablePsyField()",ng-disable="disableFightButtons",ng-show="psyField")#combattre.button  BOUCLIER PSY
+div(ng-if="win")#decision
+ h3 Bravo tu as gagné ce combat !
+div(ng-show="loose")#decision
+ p Vous avez perdu ce combat, votre aventure ce termine ici. Veuillez cliquer sur le bouton "Recommencer" pour refaire une partie
+ button(ng-click="restartGame()").button Recommencer
+
+-
+    decisions = [
+    { page: 70, text: "Si vous tuez la créature sans perdre aucun point d'ENDURANCE," },
+    { page: 129, text: "Si vous perdez des points d'ENDURANCE aucours du combat," }
+    ]
+
+include decision
++ decision(decisions)

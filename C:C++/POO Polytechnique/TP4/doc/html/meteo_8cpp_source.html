@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>TP4:  Fichier source de TP4/src/meteo.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TP4
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_57ae6393609339ec039e1c7b00a4dba6.html">TP4</a></li><li class="navelem"><a class="el" href="dir_8a5b51755a3a07476337d0e2ee99cbf1.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">meteo.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="meteo_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Created by adrien on 15-10-28.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="meteo_8h.html">meteo.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_meteo.html#a0d02c4ec920c64329d60c8380735aab1">    8</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_meteo.html#a0d02c4ec920c64329d60c8380735aab1">Meteo::obtenirTemp</a>() {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_meteo.html#a26bb62468d124a7b83ff53c54b273fd7">temp_</a>;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_meteo.html#a93c735b940bb21f42c44b5c976c82a44">   12</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_meteo.html#a93c735b940bb21f42c44b5c976c82a44">Meteo::modifierTemp</a>(<span class="keywordtype">int</span> temp) {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_meteo.html#a26bb62468d124a7b83ff53c54b273fd7">temp_</a> = temp;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_observable.html#ad36c008fd9968d70e622a448080c3cf4">notifierChangement</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_meteo.html#adbca66505d9be00380880e72dfce2f29">   17</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_meteo.html#adbca66505d9be00380880e72dfce2f29">Meteo::obtenirVitesseVents</a>() {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_meteo.html#aa78f08ab1fccba4c46c8092f6222860d">vitesseVents_</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_meteo.html#ab23eb935255d6bdd27ec4c7ec7cb5330">   21</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_meteo.html#ab23eb935255d6bdd27ec4c7ec7cb5330">Meteo::modifierVitesseVents</a>(<span class="keywordtype">int</span> vitesseVents) {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_meteo.html#aa78f08ab1fccba4c46c8092f6222860d">vitesseVents_</a> = vitesseVents;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_observable.html#ad36c008fd9968d70e622a448080c3cf4">notifierChangement</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_meteo.html#a2adccd7899bcbca0b83bad60fce9e0d2">   26</a></span>&#160;std::string <a class="code" href="class_meteo.html#a2adccd7899bcbca0b83bad60fce9e0d2">Meteo::obtenirNomClasse</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">typeid</span>(<a class="code" href="class_meteo.html">Meteo</a>).name();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="ttc" id="class_meteo_html_a93c735b940bb21f42c44b5c976c82a44"><div class="ttname"><a href="class_meteo.html#a93c735b940bb21f42c44b5c976c82a44">Meteo::modifierTemp</a></div><div class="ttdeci">void modifierTemp(int temp)</div><div class="ttdef"><b>Definition:</b> <a href="meteo_8cpp_source.html#l00012">meteo.cpp:12</a></div></div>
+<div class="ttc" id="class_meteo_html"><div class="ttname"><a href="class_meteo.html">Meteo</a></div><div class="ttdef"><b>Definition:</b> <a href="meteo_8h_source.html#l00011">meteo.h:11</a></div></div>
+<div class="ttc" id="class_meteo_html_adbca66505d9be00380880e72dfce2f29"><div class="ttname"><a href="class_meteo.html#adbca66505d9be00380880e72dfce2f29">Meteo::obtenirVitesseVents</a></div><div class="ttdeci">int obtenirVitesseVents()</div><div class="ttdef"><b>Definition:</b> <a href="meteo_8cpp_source.html#l00017">meteo.cpp:17</a></div></div>
+<div class="ttc" id="class_meteo_html_ab23eb935255d6bdd27ec4c7ec7cb5330"><div class="ttname"><a href="class_meteo.html#ab23eb935255d6bdd27ec4c7ec7cb5330">Meteo::modifierVitesseVents</a></div><div class="ttdeci">void modifierVitesseVents(int vitesseVents)</div><div class="ttdef"><b>Definition:</b> <a href="meteo_8cpp_source.html#l00021">meteo.cpp:21</a></div></div>
+<div class="ttc" id="class_meteo_html_a0d02c4ec920c64329d60c8380735aab1"><div class="ttname"><a href="class_meteo.html#a0d02c4ec920c64329d60c8380735aab1">Meteo::obtenirTemp</a></div><div class="ttdeci">int obtenirTemp()</div><div class="ttdef"><b>Definition:</b> <a href="meteo_8cpp_source.html#l00008">meteo.cpp:8</a></div></div>
+<div class="ttc" id="class_meteo_html_aa78f08ab1fccba4c46c8092f6222860d"><div class="ttname"><a href="class_meteo.html#aa78f08ab1fccba4c46c8092f6222860d">Meteo::vitesseVents_</a></div><div class="ttdeci">int vitesseVents_</div><div class="ttdef"><b>Definition:</b> <a href="meteo_8h_source.html#l00021">meteo.h:21</a></div></div>
+<div class="ttc" id="class_meteo_html_a26bb62468d124a7b83ff53c54b273fd7"><div class="ttname"><a href="class_meteo.html#a26bb62468d124a7b83ff53c54b273fd7">Meteo::temp_</a></div><div class="ttdeci">int temp_</div><div class="ttdef"><b>Definition:</b> <a href="meteo_8h_source.html#l00020">meteo.h:20</a></div></div>
+<div class="ttc" id="meteo_8h_html"><div class="ttname"><a href="meteo_8h.html">meteo.h</a></div></div>
+<div class="ttc" id="class_meteo_html_a2adccd7899bcbca0b83bad60fce9e0d2"><div class="ttname"><a href="class_meteo.html#a2adccd7899bcbca0b83bad60fce9e0d2">Meteo::obtenirNomClasse</a></div><div class="ttdeci">std::string obtenirNomClasse() const </div><div class="ttdef"><b>Definition:</b> <a href="meteo_8cpp_source.html#l00026">meteo.cpp:26</a></div></div>
+<div class="ttc" id="class_observable_html_ad36c008fd9968d70e622a448080c3cf4"><div class="ttname"><a href="class_observable.html#ad36c008fd9968d70e622a448080c3cf4">Observable::notifierChangement</a></div><div class="ttdeci">void notifierChangement()</div><div class="ttdef"><b>Definition:</b> <a href="observable_8cpp_source.html#l00014">observable.cpp:14</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

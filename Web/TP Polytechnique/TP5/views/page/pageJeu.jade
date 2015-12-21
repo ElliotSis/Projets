@@ -1,0 +1,15 @@
+extends ../layout
+
+block head
+    link(rel="stylesheet", href="/stylesheets/pageJeu.css")
+    script(type="text/javascript").
+     var current = !{JSON.stringify(joueur)}
+    
+block content
+    main(ng-controller="pageManager as pm", ng-init="initHtml(#{JSON.stringify(htmlPage)},#{numeroPage})")
+        div#title
+            img(src="/images/pageTitre.png")
+            p#numeroPage {{currentPage}}
+        section(compile-html="currentHtml")#histoire 
+          
+        include ./stats.jade

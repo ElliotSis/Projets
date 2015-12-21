@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>TP4:  Fichier source de TP4/include/routeur.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TP4
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_57ae6393609339ec039e1c7b00a4dba6.html">TP4</a></li><li class="navelem"><a class="el" href="dir_da506f0209b8ad7b85b741a50e585963.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">routeur.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="routeur_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ROUTEUR_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ROUTEUR_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="message_8h.html">message.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//Forward declaration</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="class_objet_connecte.html">ObjetConnecte</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_routeur.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_routeur.html">Routeur</a> {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_routeur.html#aeec351430a8b2204f270becee597c574">Routeur</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_routeur.html#acc8a7d1b7a4d855bab8560d58b33c7e4">retirerConnexion</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_routeur.html#a2d4f2f4b9a5f29f7c62240c2ce9393ad">acheminerMessage</a>(<a class="code" href="class_message.html">Message</a>&amp; message);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_routeur.html#a90b0a29364d53bfede7c60c42eee64cd">accepterConnexion</a>(<a class="code" href="class_objet_connecte.html">ObjetConnecte</a>* objetConnecte);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_routeur.html#aac4a5f02c78468c1b4012063e1d62feb">retirerElement</a>(std::vector&lt;ObjetConnecte*&gt;::iterator it);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_routeur.html#a37aab5275fc3bc3e79fb0c10d0d7f47e">   48</a></span>&#160;    std::vector&lt;ObjetConnecte*&gt; <a class="code" href="class_routeur.html#a37aab5275fc3bc3e79fb0c10d0d7f47e">objetsConnectes_</a>; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif //ROUTEUR_H</span></div>
+<div class="ttc" id="class_routeur_html_aeec351430a8b2204f270becee597c574"><div class="ttname"><a href="class_routeur.html#aeec351430a8b2204f270becee597c574">Routeur::Routeur</a></div><div class="ttdeci">Routeur()</div><div class="ttdoc">Constructeur par défaut. </div><div class="ttdef"><b>Definition:</b> <a href="routeur_8cpp_source.html#l00006">routeur.cpp:6</a></div></div>
+<div class="ttc" id="class_routeur_html_aac4a5f02c78468c1b4012063e1d62feb"><div class="ttname"><a href="class_routeur.html#aac4a5f02c78468c1b4012063e1d62feb">Routeur::retirerElement</a></div><div class="ttdeci">void retirerElement(std::vector&lt; ObjetConnecte * &gt;::iterator it)</div><div class="ttdoc">Retire l&#39;objetConnecte de la liste  it L&#39;itérateur qui pointe sur l&#39;objetConnecte à retirer it NE DOI...</div><div class="ttdef"><b>Definition:</b> <a href="routeur_8cpp_source.html#l00034">routeur.cpp:34</a></div></div>
+<div class="ttc" id="class_routeur_html_a2d4f2f4b9a5f29f7c62240c2ce9393ad"><div class="ttname"><a href="class_routeur.html#a2d4f2f4b9a5f29f7c62240c2ce9393ad">Routeur::acheminerMessage</a></div><div class="ttdeci">void acheminerMessage(Message &amp;message)</div><div class="ttdoc">Achemine le message, affiche aussi si le message a été acheminé de qui vers qui  message Le message à...</div><div class="ttdef"><b>Definition:</b> <a href="routeur_8cpp_source.html#l00023">routeur.cpp:23</a></div></div>
+<div class="ttc" id="class_routeur_html_a90b0a29364d53bfede7c60c42eee64cd"><div class="ttname"><a href="class_routeur.html#a90b0a29364d53bfede7c60c42eee64cd">Routeur::accepterConnexion</a></div><div class="ttdeci">void accepterConnexion(ObjetConnecte *objetConnecte)</div><div class="ttdoc">Accepte une connexion pour l&#39;objetConnecte  objetConnecte l&#39;objetConnecte à connecter. </div><div class="ttdef"><b>Definition:</b> <a href="routeur_8cpp_source.html#l00008">routeur.cpp:8</a></div></div>
+<div class="ttc" id="message_8h_html"><div class="ttname"><a href="message_8h.html">message.h</a></div></div>
+<div class="ttc" id="class_routeur_html_a37aab5275fc3bc3e79fb0c10d0d7f47e"><div class="ttname"><a href="class_routeur.html#a37aab5275fc3bc3e79fb0c10d0d7f47e">Routeur::objetsConnectes_</a></div><div class="ttdeci">std::vector&lt; ObjetConnecte * &gt; objetsConnectes_</div><div class="ttdoc">Liste des objets connectés. </div><div class="ttdef"><b>Definition:</b> <a href="routeur_8h_source.html#l00048">routeur.h:48</a></div></div>
+<div class="ttc" id="class_objet_connecte_html"><div class="ttname"><a href="class_objet_connecte.html">ObjetConnecte</a></div><div class="ttdef"><b>Definition:</b> <a href="objet_connecte_8h_source.html#l00008">objetConnecte.h:8</a></div></div>
+<div class="ttc" id="class_routeur_html_acc8a7d1b7a4d855bab8560d58b33c7e4"><div class="ttname"><a href="class_routeur.html#acc8a7d1b7a4d855bab8560d58b33c7e4">Routeur::retirerConnexion</a></div><div class="ttdeci">void retirerConnexion(unsigned int id)</div><div class="ttdoc">Retire la connexion au ID donné, ne fait rien si l&#39;id n&#39;est pas co  id l&#39;id à déconnecter. </div><div class="ttdef"><b>Definition:</b> <a href="routeur_8cpp_source.html#l00013">routeur.cpp:13</a></div></div>
+<div class="ttc" id="class_message_html"><div class="ttname"><a href="class_message.html">Message</a></div><div class="ttdef"><b>Definition:</b> <a href="message_8h_source.html#l00016">message.h:16</a></div></div>
+<div class="ttc" id="class_routeur_html"><div class="ttname"><a href="class_routeur.html">Routeur</a></div><div class="ttdef"><b>Definition:</b> <a href="routeur_8h_source.html#l00017">routeur.h:17</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>

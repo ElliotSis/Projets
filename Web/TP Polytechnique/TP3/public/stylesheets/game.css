@@ -1,0 +1,471 @@
+body {
+  margin: 0  !important;
+  padding: 0  !important;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+header {
+  background-color: #2E2E2E;
+}
+
+header nav {
+  display: inline-block;
+  text-align: left;
+}
+
+#logo {
+ position: absolute;
+ display: inline-block;
+ width: 400px;
+ margin-left: 30px;
+}
+
+#logo img {
+ width: 80%;
+}
+
+.top_menu {
+ padding:30px;
+ margin-top:0px;
+ list-style-type:none;
+}
+
+.top_menu li { 
+ margin-left: 50px;
+ display : inline-block;
+ padding : 0 0.5em; /* Pour espacer les boutons entre eux */
+}
+
+.top_menu li a {
+ text-decoration:none;
+ text-align:center;
+ font-size: 1.5em;
+ color: #fff;
+}
+
+.top_menu #create {
+ padding: 20px 20px;
+ background-color: #00A8E0;
+ border-radius: 5px;
+}
+
+
+#create a {
+ color: #fff;
+}
+
+#content {
+ margin-top: 10px;
+ display: inline-block;
+}
+
+#history{
+ width: 75%;
+ display: inline-block;
+ float: right;
+ padding: 10px 10px;
+ border-style: solid;
+ border-width: 2px;
+ border-color: #2E2E2E;
+ margin-top: 0px;
+}
+
+#history h2{
+ text-align: center;
+ font-family: "Purisa";
+}
+
+#history img{
+ float: left;
+}
+#info_box{
+ margin-left: 5px;
+ width: 20%;
+ display: inline-block;
+ border-style: solid;
+ border-width: 1px;
+ border-color: #2E2E2E;
+}
+
+#infobox_header {
+ background-color: #2E2E2E;
+ height: 40px;
+}
+
+#infobox_header h2 {
+ margin-top: 0px;
+ padding-top: 5px;
+ text-align: center;
+ color: #fff;
+}
+
+#info_box p {
+ padding: 5px 5px;
+ font-size: 1.3em;
+}
+
+.line-separator{
+ height:1px;
+ width: 80%;
+ margin: auto;
+ background:#717171;
+ border-bottom:1px solid #313030;
+}
+
+.menu_without_puce {
+ list-style-type:none;
+}
+
+.menu_without_puce li {
+ margin-bottom: 10px;
+}
+.skills img{
+ width: 20%;
+}
+.skills span{
+ position: relative;
+ font-size: 2em;
+ bottom: 13px;
+ left: 30px;
+}
+
+.kai img{
+ width: 20%;
+}
+
+.kai span{
+ position: relative;
+ font-size: 1.2em;
+ bottom: 13px;
+ left: 30px;
+}
+
+.weapons img{
+ width: 40%;
+}
+
+.weapons span{
+ position: relative;
+ font-size: 1.2em;
+ bottom: 8px;
+ left: 20px;
+}
+
+.backpack img{
+ width: 20%;
+}
+
+.backpack span{
+ position: relative;
+ font-size: 1em;
+ right: 50px;
+ bottom: 25px;
+}
+
+.infobox_button {
+ margin: 15px;
+ text-align: center;
+}
+
+.infobox_button button {
+ padding: 5px 5px;
+}
+
+
+
+
+#backpack_container {
+ display: none;
+ position: fixed;
+ width: 100%;
+ height: 1050px;
+ background-color: rgb(0, 0, 0);
+ background-color: rgba(0, 0, 0, 0.9);
+ color: #000;
+ z-index: 1;
+}
+
+#backpack_container a {
+ display: none;
+ position: fixed;
+ width: 100%;
+ height: 1050px;
+ z-index: -1;
+}
+
+#backpack_container:target  {
+ display: inline-block;
+ position: absolute;
+}
+
+#backpack_container:target a {
+ display: inline-block;
+ position: absolute;
+ z-index: -1;
+}
+
+#special_container {
+ display: none;
+ position: fixed;
+ width: 100%;
+ height: 1050px;
+ background-color: rgb(0, 0, 0);
+ background-color: rgba(0, 0, 0, 0.9);
+ color: #000;
+ z-index: 1;
+}
+
+#special_container:target  {
+ display: inline-block;
+ position: absolute;
+}
+
+#special_container a {
+ display: none;
+ position: fixed;
+ width: 100%;
+ height: 1050px;
+ z-index: -1;
+}
+
+#special_container:target a {
+ display: inline-block;
+ position: absolute;
+ z-index: -1;
+}
+
+
+.modalbox {
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+#newItems .modalbox {
+  display: block;
+  width: 50%;
+  margin: auto;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #000;
+  text-align: center;
+}
+
+#newItems .modalbox header{
+ height: 40px;
+ background-color: #00CF34;
+}
+
+
+#newItems .modalbox header h3{
+ margin-top: 0px;
+ padding: 5px 5px;
+}
+
+#newItems .modalbox button{
+ padding: 5px 5px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+
+#newItems .modalbox label{
+ margin-top: 5px;
+}
+
+#lessStamina .modalbox{
+  display: block;
+  width: 50%;
+  margin: auto;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #000;
+  text-align: center;
+}
+
+#lessStamina .modalbox header{
+  height: 40px;
+  background-color: #BF0407;
+}
+
+#lessStamina .modalbox header h3{
+ margin-top: 0px;
+ padding: 5px 5px;
+}
+
+#lessStamina .modalbox button{
+ padding: 5px 5px;
+ margin-bottom: 10px;
+}
+
+
+
+.modalbox header {
+ background-color: #B50000;
+ border-radius: 5px 5px 0px 0px;
+ color: #fff;
+}
+
+.modalbox header h2 {
+ padding: 5px 5px;
+ font-size: 1.3em;
+}
+
+.modalbox header img {
+ position: absolute;
+ padding: 5px 5px;
+ width: 3%;
+ right: 750px;
+}
+
+.closemodal {
+  text-decoration: none;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+  padding-right: 5px;
+  font-size: 1em;
+}
+
+.closemodal:hover,
+.closemodal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.combat_info {
+ width: 500px;
+}
+
+.combat_info,.combat_info th,.combat_info td {
+ border: 1px solid black;
+ border-collapse: collapse;
+}
+
+th, td {
+ padding: 5px;
+ text-align: center;
+}
+
+
+
+.modal_image{
+ width: 80%;
+}
+
+#combat_th{
+ background-color: #C40003;
+ color: #fff;
+}
+
+#stamina_th{
+ background-color: #0A941D;
+ color: #fff;
+}
+
+.combat_button {
+ width: 20%;
+ margin-top: 30px;
+}
+
+#attack_button {
+ width: 30%;
+}
+
+#flee_button {
+ width: 30%;
+}
+
+#info_combat{
+  display: block;
+  margin-top: 10px;
+  width: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #000;
+  margin-left: 400px;
+ text-align: center;
+}
+
+#info_combat header{
+ background-color: #fff;
+ margin-top: 5px;
+}
+
+#info_combat header h2{
+ margin-top: 0px;
+ padding: 5px 5px;
+ text-align: center;
+}
+
+#info_combat header img{
+ width: 8%;
+}
+#info_combat header .image_right {
+ float: right;
+ padding-top: 5px;
+ padding-right: 50px;
+}
+
+#info_combat header .image_left {
+ padding-top: 5px;
+ padding-left: 50px;
+}
+
+#info_combat img{
+ width: 10%;
+}
+
+#info_combat ul {
+ margin-right: 50px;
+}
+
+#info_combat ul li {
+ margin-bottom: 40px;
+}
+
+#info_combat ul li span {
+ position: relative;
+ bottom: 13px;
+ font-size: 1.3em;
+}
+
+#info_combat ul li img{
+ float: none;
+ padding-right: 15px;
+ 
+}
+
+#info_combat ul li h3{
+ font-size: 1.7em;
+ font-weight: bold; 
+}
+
+.endurance, .damage{
+ font-size: 1.5em;
+}
+
+.endurance{
+ color: #0A941D;
+}
+
+.damage{
+ color: #C40003;
+ padding-left: 15px;
+}
+
+footer {
+ background-color: #2E2E2E;
+ margin-top: 10px;
+ color: #fff;
+ padding: 10px 10px;
+ font-weight:bold;
+}
+

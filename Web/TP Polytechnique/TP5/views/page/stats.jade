@@ -1,0 +1,43 @@
+section#stats
+    p Feuille d'Aventure
+    h2 {{currentPlayer.pseudo}}
+    table
+        tbody
+            tr
+                td
+                    img(src="/images/points_endurance.png")
+                td
+                    p {{currentPlayer.enduranceBase}} + #[span#moreEndurance {{differenceEndurance}}] / {{totalEndurance}}
+            tr
+                td
+                    img(src="/images/points_habilete.png")
+                td(ng-if="lessHabilete")
+                    p#habilete {{currentPlayer.habileteBase}} - #[span#lessHabilete {{differenceHabilete}}]
+                td(ng-if="!lessHabilete")
+                    p#habilete {{currentPlayer.habileteBase}} + #[span#moreHabilete {{differenceHabilete}}]
+            tr
+                td
+                    img(src="/images/pieces_or.png")
+                td
+                    p #[span#pieceOr {{currentPlayer.pieceOr}}] / {{bourse}}
+    div
+        p Disciplines Kai
+        ul#disciplines
+            li(ng-repeat="disc in currentPlayer.disciplines") {{disc}} 
+             
+
+    p
+        a.button(href="#sacADos") Sac à dos
+    div#sacADos
+        a#fermerSacADos(href="#")
+        img(src="/images/backpack.png")
+        div
+            div
+                p Objets
+                ul
+                    li(ng-repeat="obj in currentPlayer.objets") {{obj.count}}  {{obj.name}} 
+            div
+                p Objets Spéciaux
+                ul
+                    li(ng-repeat="obj in currentPlayer.objetsSpeciaux") {{obj}}
+

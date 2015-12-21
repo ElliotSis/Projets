@@ -1,0 +1,5 @@
+<map id="PieceOthello::annulerLaMiseAJourDeLaCouronne" name="PieceOthello::annulerLaMiseAJourDeLaCouronne">
+<area shape="rect" id="node2" href="$class_case.html#a514e905a88691e3beb8767070efe2f74" title="Calcule la case adjacente dans une direction donnée. " alt="" coords="241,5,388,32"/>
+<area shape="rect" id="node4" href="$class_case.html#a7bb3995518c43d2e96a689facb2ac287" title="Indique si la case est libre. " alt="" coords="261,56,368,83"/>
+<area shape="rect" id="node3" href="$class_plateau.html#ae9c8350cced8ed91d443c42148d41088" title="Vérifie qu&#39;une coordonnée soit incluse dans les bornes du plateau. " alt="" coords="436,5,564,32"/>
+</map>

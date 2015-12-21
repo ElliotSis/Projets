@@ -1,0 +1,21 @@
+extends layout_page
+
+
+block page_content
+  #history
+   #newItems
+    .modalbox
+     header
+      h3 Information
+     p Vous devez choisir les objets avant de continuer votre aventure
+     div
+      label
+       input(type="checkbox" id="bone_sword" name="bone_sword" )
+       | Épée d'Os
+      label
+       input(type="checkbox" id="blue_stone" name="blue_stone" )
+       | Disque de Pierre Bleu
+     button Confirm
+     
+   div#decision
+    p #[a(href="/page/331/1") Rendez-vous au 331].

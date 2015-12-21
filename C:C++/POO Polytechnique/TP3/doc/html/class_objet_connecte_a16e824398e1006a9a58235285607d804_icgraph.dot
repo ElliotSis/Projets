@@ -1,0 +1,24 @@
+digraph "ObjetConnecte::obtenirId"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="ObjetConnecte::obtenirId",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Routeur::retirerConnexion",height=0.2,width=0.4,color="black",URL="$class_routeur.html#acc8a7d1b7a4d855bab8560d58b33c7e4",tooltip="Retire la connexion au ID donné, ne fait rien si l&#39;id n&#39;est pas co  id l&#39;id à déconnecter. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="ObjetConnecte::seDeconnecter",height=0.2,width=0.4,color="black",URL="$class_objet_connecte.html#a3b006c6abde199dd38b365561a80f7d5",tooltip="Se déconnecte du routeur. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="main",height=0.2,width=0.4,color="black",URL="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Routeur::accepterConnexion",height=0.2,width=0.4,color="black",URL="$class_routeur.html#a3d07574102445306f4d894262ec9dd41",tooltip="Accepte une connexion pour une maison Renvoie un message d&#39;erreur et ne fait rien si une maison est d..."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Cellulaire::seConnecter",height=0.2,width=0.4,color="black",URL="$class_cellulaire.html#a81031617a087e8f78fbe2811ec57a30f",tooltip="Méthode de connection. "];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Chauffage::seConnecter",height=0.2,width=0.4,color="black",URL="$class_chauffage.html#ada208e835e4440ba11215d69a3ad6193",tooltip="Méthode de connection. "];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Maison::seConnecter",height=0.2,width=0.4,color="black",URL="$class_maison.html#ad97d4ac274c7e9767457a37aaecc01d9",tooltip="Méthode de connection. "];
+  Node8 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

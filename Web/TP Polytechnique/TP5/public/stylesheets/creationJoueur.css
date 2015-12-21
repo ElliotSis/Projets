@@ -1,0 +1,113 @@
+#creationJoueur {
+    background-color: #808080;
+}
+
+#erreurs {
+    color: red;
+}
+
+#success {
+    color: green;
+}
+
+img {
+    width: 736px;
+    height: 200px;
+    margin: 20px auto 10px;
+    display: block;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border: 2px solid black;
+    border-color: gray;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
+}
+
+legend {
+    padding: 0 10px;
+    margin-left: 15px;
+    font-size: 1.5em;
+}
+
+form p {
+    margin: 20px 20px;
+}
+
+section label {
+    display: block;
+    margin: 0 0 10px 10px;
+}
+
+/*div#gauche, div#droite {
+    width: 250px;
+}*/
+#gauche > ul {
+list-style-type: none;
+}
+
+#gauche > #choosePlayer{
+ list-style-type: square;
+}
+#choosePlayer > li > h3 {
+   font-weight: bold;
+}
+
+
+#players > div > fieldset > p {
+ padding : 10px 10px;
+ font-size: 0.9em;
+}
+#choosePlayer > li > p {
+   font-size: 0.8em;
+}
+
+.deletePlayer{
+ text-align: center;
+}
+
+.trash{
+  font-size: 0.7em;
+  color: red;
+}
+
+.trash:hover{
+ text-decoration: underline;
+ cursor: pointer;
+}
+.trash > img{
+   display: inline;
+   vertical-align: middle;
+   margin: 0;
+   width: 5%;
+   height: 5%;
+}
+div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 20px;
+}
+
+form label input {
+    margin-right: 10px;
+}
+
+.button {
+  line-height: 55px;
+}
+
+#buttonFail{
+  border: 2px solid red;
+}
+
+#buttonSuccess{
+  border: 2px solid green;
+}
+
+#idPage{
+ font-weight: bold;
+ color: green;
+}
+

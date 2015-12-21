@@ -1,0 +1,80 @@
+extends layout
+
+block extraHeader
+ link(rel='stylesheet', href='/stylesheets/game.css')
+
+
+block content
+ #backpack_container
+  a(href='#')
+  .modalbox
+   header
+    //a(href='#').closemodal X
+    h2 Your backpack
+   each item in player.backpack
+    table.modal_table
+     tr 
+      th View
+      th Item
+      th Description
+     tr
+      td 
+       img(src=game_objects.items.backpack[item].image).modal_image
+      td #{game_objects.items.backpack[item].title}
+      td #{game_objects.items.backpack[item].desc}
+ #special_container
+  a(href='#')
+  .modalbox
+   header
+    //a(href='#').closemodal X
+    h2 Your special items
+   each item in player.special_items
+    table.modal_table
+     tr 
+      th View
+      th Item
+      th Description
+     tr
+      td 
+       img(src=game_objects.items.special[item].image).modal_image
+      td #{game_objects.items.special[item].title}
+      td #{game_objects.items.special[item].desc}
+ block event
+ #content
+  block page_content
+  #info_box
+   #infobox_header
+    h2  #{name}
+   ul.menu_without_puce
+     li.skills
+      img(src='/images/ui/sword_box.png', alt='combat skills')
+      span #{player.stats.combat_skill}
+     li.skills
+      img(src='/images/ui/stamina.png',alt='stamina')
+      span #{player.stats.stamina}
+     li.skills
+      img(src='/images/ui/gold.png',alt='gold')
+      span #{player.stats.gold}
+   .line-separator
+   p Your Kai disciplines : 
+    ul.menu_without_puce
+      each discipline in player.disciplines
+        li.kai
+         img(src=game_objects.disciplines[discipline].image)
+         span #{game_objects.disciplines[discipline].title}
+   .line-separator
+   p Your weapons :
+    ul.menu_without_puce
+      each item in player.weapons
+        li.weapons 
+         img(src=game_objects.items.weapons[item].image)
+         span #{game_objects.items.weapons[item].title}
+   .line-separator
+   .infobox_button
+    a(href='#backpack_container') 
+     button Backpack
+   .line-separator
+   .infobox_button
+    a(href='#special_container') 
+     button Special objects
+

@@ -1,0 +1,4 @@
+<map id="JeuOthello::JeuOthello" name="JeuOthello::JeuOthello">
+<area shape="rect" id="node2" href="$class_jeu.html#a7e6345e10a75cc7783798cf3a0faa959" title="Ajoute une pièce aux pièces non attribuées. " alt="" coords="208,5,407,32"/>
+<area shape="rect" id="node3" href="$class_jeu.html#a1a680e38cad7aa63c5b5bc121083decc" title="Met à jour la liste des coups possibles. " alt="" coords="217,57,398,98"/>
+</map>

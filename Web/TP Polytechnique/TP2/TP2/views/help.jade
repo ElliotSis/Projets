@@ -1,0 +1,46 @@
+extends layout
+
+block extraHeader
+ link(rel='stylesheet', href='/stylesheets/help.css')
+
+block content
+ #history
+  h2 The rules
+  p During your training as a Kai Lord you have developed fighting prowess—COMBAT SKILL and physical stamina—ENDURANCE. Those skills will be randomly given to you when you start your adventure, may the luck be with you!
+  p If you are wounded in combat you will lose ENDURANCE points. If at any time your ENDURANCE points fall to zero or below, you are dead and the adventure is over. Lost ENDURANCE points can be regained during the course of the adventure, but your number of ENDURANCE points can never go above the number with which you start your adventure.
+  
+  h2 Kai discipline
+  p Over the centuries, the Kai monks have mastered the skills of the warrior. These skills are known as the Kai Disciplines, and they are taught to all Kai Lords. You have learnt only five of the skills listed below. The choice of which five skills these are, is for you to make. As all of the Disciplines may be of use to you at some point on your perilous quest, pick your five with care. The correct use of a Discipline at the right time can save your life.
+  each discipline in disciplines
+    h3 #{discipline}
+    p #{descriptions[discipline]}
+
+  h2 Equipment
+  p Before leaving the northern port of Anskaven, you are escorted to the City Hall and equipped with special winter boots, a tunic, a fur-lined cloak, and mittens. You are given a Map of Kalte and a pouch of gold. The gold that you have in your pouch is randomly generated at the beginning of the game.
+  p Before you set sail, you are given the choice of the following items (in addition to those you already possess, but remember you may only carry two weapons). You may take any two of the following:
+  h3 Items
+  each item in items
+    h4 #{item}
+    p #{descriptions[item]}
+    p
+      - var s ='/images/all/' + images[item]
+      img(src=s)
+  h3 Weapons
+  p You can only carry 2 weapons. Weapons aid you in combat. If you have the Kai Discipline of Weaponskill and the correct weapon, it adds 2 points to your COMBAT SKILL. If you enter a combat with no weapons, you will be deducted 4 points from your COMBAT SKILL and fight with your bare hands. If you find a weapon during the adventure, you may pick it up and use it. (Remember you can only carry two Weapons at once.) You may only use one Weapon at a time in combat.
+  h3 Backpack
+  p During your travels you will discover various useful items which you may wish to keep. (Remember you can only carry eight items in your Backpack at once.) You may exchange or discard them at any point when you are not involved in combat.
+  h3  Special items
+  p Each Special Item has a particular purpose or effect. You may be told this when the item is discovered, or it may be revealed to you as the adventure progresses.
+  h3 Gold
+  p The currency of Sommerlund is the Crown, which is a small gold coin. Gold is especially valuable in Kalte, and you may find that your Gold Crowns will be useful, especially if used as a bribe.
+  h3 Food
+  p Stored on your ice-sledge, along with your tent and other equipment, is enough food for you to complete your mission. If this food, or any you may have in your Backpack, is unavailable to you when you are instructed to eat a Meal, you will lose 3 ENDURANCE points. As Kalte is an icy desert you will be unable to use the Kai Discipline of Hunting to obtain a Meal (see ‘Hunting’ in the Kai Disciplines section).
+  h3 Potion of Lampsur
+  p This is a healing potion that can restore 4 ENDURANCE points to your total when swallowed after combat. There is only enough for one dose. If you discover any other potions during the adventure, you will be informed of their effect. All potions are Backpack Items.
+
+  h2 Combat
+  h3 The action
+  p There will be occasions during your adventure when you have to fight an enemy. The enemy’s COMBAT SKILL and ENDURANCE points are given in the text. Lone Wolf’s aim in the combat is to kill the enemy by reducing his ENDURANCE points to zero while losing as few ENDURANCE points as possible himself.
+  p Combats are automatically handled by the website.
+  h3 Evasion
+  p During your adventure you may be given the chance to evade combat. If you have already engaged in a round of combat and decide to evade, calculate the combat for that round in the usual manner. All points lost by the enemy as a result of that round are ignored, and you make your escape. Only Lone Wolf may lose ENDURANCE points during that round, but then that is the risk of running away! You may only evade if the text of the particular section allows you to do so.

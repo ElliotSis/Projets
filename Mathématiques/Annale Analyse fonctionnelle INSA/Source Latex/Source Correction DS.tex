@@ -1,0 +1,767 @@
+%%% Template originaly created by Karol Kozioł (mail@karol-koziol.net) and modified for ShareLaTeX use
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\usepackage[defaultmono]{droidmono}
+
+\usepackage{amsmath,amssymb,amsthm,textcomp}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{hyperref}
+
+\usepackage{geometry}
+\geometry{total={210mm,297mm},
+left=25mm,right=25mm,%
+bindingoffset=0mm, top=20mm,bottom=20mm}
+\usepackage{tikz,tkz-tab}
+
+%\linespread{1.3}
+
+\newcommand{\linia}{\rule{\linewidth}{0.5pt}}
+
+% my own titles
+\makeatletter
+\renewcommand{\maketitle}{
+\begin{center}
+\vspace{2ex}
+{\huge \textsc{\@title}}
+\vspace{1ex}
+\\
+\linia\\
+\@author \hfill \@date
+\vspace{4ex}
+\end{center}
+}
+\makeatother
+%%%
+
+% custom footers and headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{Correction DS Analyse Fonctionnelle}
+\cfoot{}
+\rfoot{Page \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+%
+
+\theoremstyle{plain}
+\newtheorem*{defith}{Définition/Théorème}
+\newtheorem*{theo}{Théorème}
+\newtheorem*{coro}{Corollaire}
+
+\theoremstyle{definition}
+\newtheorem*{defi}{Définition}
+\newtheorem*{expl}{Exemple}
+\DeclareMathOperator{\arginf}{arginf}
+\renewcommand{\Re}{\operatorname{\mathfrak{Re}}}
+
+\begin{document}
+\renewcommand{\proofname}{Preuve}
+
+\title{Correction DS Analyse Fonctionnelle}
+
+\author{Elliot S.}
+
+\date{2013/2014}
+
+\maketitle
+
+\section*{Partie 1}
+\subsection*{Question 1 : Espaces compacts}
+Il était possible de donner plusieurs définitions selon l'espace dans lequel on travaille.
+La définition la plus générale est celle de Borel-Lebesgue :
+\begin{defi} (Recouvrement)
+Soit $E$ un ensemble quelconque et $A$ une partie de $E$. Soit $(U_i)_{i \in I}$ une famille de parties de $E$.
+On dira que $(U_i)_{i \in I}$ recouvre $A$ si et seulement si $A \subset \bigcup_{i \in I} U_i$.
+\end{defi}
+
+\begin{defi} (Compact au sens de Borel-Lebesgue)
+Soit $T$ un espace topologique (i.e. un espace dans lequel on peut parler d'ouverts et de fermés). Soit $X$ une partie de $T$.
+On dit que $X$ est compact dans $T$ si et seulement si chaque fois qu'il est recouvert par des ouverts de $T$, on peut le recouvrir par un nombre fini d'entre eux.
+\end{defi}
+
+Dans un espace métrique (qui est un cas particulier d'espace topologique), on a une autre définition qui est équivalente :
+
+\begin{defith} (Compact au sens de Bolzano-Weierstrass)
+Soit $(M, d)$ un espace métrique. Soit $X$ une partie de $(M, d)$.
+Alors, $X$ est compact dans $M$ si est seulement si toute suite de $X$ admet une valeur d'adhérence dans $X$ (i.e. on peut trouver une suite extraite convergente vers un élément de $X$).
+\end{defith}
+
+Enfin, lorsque l'on se restreint uniquement à un espace vectoriel réel ou complexe de dimension finie, on a la caractérisation suivante :
+\begin{defith} (Caractérisation des compacts dans un espace vectoriel de dimension finie)
+Soit $V$ un espace vectoriel réel ou complexe de dimension finie.
+Soit $X$ une partie de $V$.
+Alors, $X$ est compact dans $V$ si et seulement si $X$ est un fermé borné.
+\end{defith}
+
+On avait deux exemples à traiter :
+\begin{expl}
+$X_{1} = \left\{1, \frac{1}{2}, \frac{2}{3}, \frac{3}{4}, ... , \frac{n}{n+1}, ...\right\}$ est-il compact ?
+\end{expl}
+$X_{1}$ est une partie de $\mathbb{R}$ qui est un espace vectoriel de dimension finie. 
+Cela revient donc à se demander si $X_{1}$ est un fermé borné.
+C'est clairement un borné car $X_{1} \subset \left[\frac{1}{2}, 1\right]$.
+On remarque que le complémentaire de $X_{1}$ s'exprime de la manière suivante : 
+\[
+	X_{1}^{c} = \left]-\infty, \frac{1}{2}\right[\cup \left(\bigcup_{n \in \mathbb{N}^*} \left]\frac{n}{n+1}, \frac{n+1}{n+2}\right[\right) \cup \left]1, +\infty\right[
+\]
+C'est une réunion infinie d'ouverts, donc c'est un ouvert.
+Ainsi, comme son complémentaire est un ouvert, $X_{1}$ est un fermé et donc un compact.
+
+\begin{expl}
+$X_{2} = \left\{1, \frac{1}{2}, \frac{1}{3}, \frac{1}{4}, ... , \frac{1}{n}, ...\right\}$ est-il compact ?
+\end{expl}
+Non, car il n'est pas fermé.
+En effet, on a $\left(\frac{1}{n}\right)_{n \in \mathbb{N}^*}$ qui est une suite de $X_{2}$ mais qui converge vers la valeur $0$ qui n'est pas un élément de $X_{2}$.
+
+\subsection*{Question 2 : Opérateur continu}
+Commençons par définir cette notion. Soient $\left(E, ||\cdot||_{E}\right)$ et $\left(F, ||\cdot||_{F}\right)$ deux espaces vectoriels normés de corps $\mathbb{K}$ :
+\begin{defi} (Application linéaire)
+Une application $L : E \to F$ est dite linéaire si et seulement si $\forall \lambda \in \mathbb{K}, \ \forall \left(x,y\right) \in E^2, \ L\left(\lambda x + y\right) = \lambda L\left(x\right) + L\left(y\right)$.
+\end{defi}
+
+\begin{defi} (Application continue dans des espaces vectoriels normés)
+Une application $C : E \to F$ est dite continue sur $E$ si et seulement si :
+\[
+\forall x \in E, \ \forall \varepsilon > 0, \ \exists \delta > 0 \ / \ \forall y \in E, \ \left(||x-y||_{E} \leq \delta \Rightarrow ||C(x) - C(y)||_{F} \leq \varepsilon \right)
+\]
+On dira que $C$ est uniformément continue si et seulement si :
+\[
+\forall \varepsilon > 0, \ \exists \delta > 0 \ / \ \forall x,y \in E, \ \left(||x-y||_{E} \leq \delta \Rightarrow ||C(x) - C(y)||_{F} \leq \varepsilon \right)
+\]
+\end{defi}
+
+\begin{defi} (Opérateur continu)
+On appelle opérateur toute application entre deux espaces vectoriels topoplogiques.
+En particulier, si cette application est linéaire ou continue (ou les deux), on qualifiera l'opérateur de linéaire ou continu (ou les deux).
+\end{defi}
+
+On alors un théorème pour caractériser la continuité des applications linéaires :
+\begin{theo} (Caractérisation de la continuité des applications linéaires)
+Soit $O : E \to F$ un opérateur linéaire.
+On a équivalence entre ces différentes propositions :
+\begin{enumerate}
+	\item $O$ est continu en $0$
+	\item $O$ est continu
+	\item $O$ est uniformément continu
+	\item $O$ est lipschitzien
+	\item $O$ est borné sur la boule unité fermée, i.e. $\exists M > 0 \ / \ \forall x \in E, \ ||x||_E \leq 1 \Rightarrow ||O(x)||_{F} \leq M$
+	\item $O$ est borné, i.e. $\exists M > 0 \ / \ \forall x \in E, \ ||O(x)||_{F} \leq M||x||_{E}$
+\end{enumerate}
+\end{theo}
+On devait alors démontrer que la deuxième proposition est équivalente à la dernière :
+\begin{proof}
+	\begin{itemize}
+		\item Supposons que $O$ est continu. Alors $O$ est continu en $0$ et donc :
+		\[
+			\forall \varepsilon > 0, \ \exists \delta > 0 \ / \ \forall y \in E, \ \left(||y||_{E} \leq \delta \Rightarrow ||O(y)||_{F} \leq \varepsilon \right)
+		\]
+		Choisissons par exemple $\varepsilon = 1$.
+		Soit $x \in E$ tel que $||x||_{E} \leq 1$.
+		Alors $||\delta x|| \leq \delta$.
+		Posons $y = \delta x$.
+		Dès lors : 
+		\[
+			||x||_{E} \leq 1 \Rightarrow ||y||_{E} \leq \delta \Rightarrow ||O(y)||_{F} \leq \varepsilon = 1 \Rightarrow ||O(x)||_{F} \leq \frac{1}{\delta}
+		\]
+		Posons $M = \frac{1}{\delta}$.
+		Ainsi $O$ est borné par $M$ sur la boule unité fermée, en effet :
+		\[
+			\forall x \in E, \ ||x||_{E} \leq 1 \Rightarrow ||O(x)||_{F} \leq M
+		\]	
+
+		Soit $x \in E$, si $x = 0_{E}$ la proposition 6 est vérifiée, supposons donc $x \neq 0_{E}$.
+		On a donc :
+		\[
+			||\frac{x}{||x||_{E}}||_{E} = 1 \leq 1 \Rightarrow ||O\left(\frac{x}{||x||_{E}}\right)||_{F} \leq M \Rightarrow ||O(x)||_{F} \leq M||x||_{E}
+		\]
+		\item Supposons maintenant que $O$ est borné, i.e. :
+		\[
+			\exists M > 0 \ / \ \forall x \in E, \ ||O(x)||_{F} \leq M||x||_{E}
+		\]
+		Soit $\varepsilon > 0$, posons $\delta = \frac{\varepsilon}{M}$, alors :
+		\[
+			\forall x \in E, \ ||x||_{E} \leq \delta = \frac{\varepsilon}{M} \Rightarrow ||O(x)||_{F} \leq M||x||_{E} \leq \varepsilon
+		\]
+		Donc $O$ est continu en $0$.
+		En particulier, on a donc :
+		\[
+			\forall x,y \in E, \ ||x - y||_{E} \leq \delta \Rightarrow ||O(x -y)||_{F} = ||O(x) - O(y)||_{F} \leq \varepsilon
+		\]
+		D'où la continuité (et même la continuité uniforme).
+	\end{itemize}
+\end{proof}
+
+On avait l'exemple suivant à étudier :
+
+\begin{expl}
+L'opérateur :
+\[\begin{array}{ccccc}
+O & : & \mathcal{C}^{\infty}\left([0,1] \to \mathbb{R}\right) &\longrightarrow  & \mathcal{C}^{\infty}\left([0,1] \to \mathbb{R}\right)\\
+	& & f &\longmapsto& f'\\
+\end{array}\] est-il continu ?
+\end{expl}
+Et bien, la réponse est… oui et non !
+En effet, le sujet ne donnant pas la norme utilisée, la réponse varie selon celle que l'on prend.
+Il fallait d'abord montrer que l'opérateur est linéaire, ce qui est évident par la linéarité de la dérivée.
+\begin{itemize}
+\item Pour la norme infinie, par exemple, l'opérateur n'est pas continu.
+\[\begin{array}{ccccc}
+O & : & \left(\mathcal{C}^{\infty}\left([0,1] \to \mathbb{R}\right), ||\cdot||_{\infty}\right) &\longrightarrow  & \left(\mathcal{C}^{\infty}\left([0,1] \to \mathbb{R}\right), ||\cdot||_{\infty}\right)\\
+	& & f &\longmapsto& f'\\
+\end{array}\] 
+En effet, posons $(f_n)_{n \in \mathbb{N}}$ la suite de fonctions définie pour tout $n \in \mathbb{N}$ et pour tout $x \in [0,1]$ par :
+\[
+	f_{n}(x) = \sin(nx)
+\]
+D'où :
+\[
+	f'_{n}(x) = n\cos(nx)
+\]
+Ainsi, $||f_{n}||_{\infty} = 1 \leq 1$ pour tout $n$, mais $||O(f_{n})||_{\infty} = ||f'_{n}||_{\infty} = n$.
+En faisant tendre $n$ vers l'infini, on se rend compte que $O$ n'est pas borné sur la boule unité fermée et donc $O$ n'est pas continu pour la norme infinie.
+\item Pour la norme suivante :
+\[
+	||f|| = ||f||_{\infty} + ||f'||_{\infty}
+\]
+L'opérateur 
+\[\begin{array}{ccccc}
+O & : & \left(\mathcal{C}^{\infty}\left([0,1] \to \mathbb{R}\right), ||\cdot||\right) &\longrightarrow  & \left(\mathcal{C}^{\infty}\left([0,1] \to \mathbb{R}\right), ||\cdot||_{\infty}\right)\\
+	& & f &\longmapsto& f'\\
+\end{array}\] 
+est continu.\\
+En effet, 
+\[
+\forall f \in \mathcal{C}^{\infty}\left([0,1] \to \mathbb{R}\right), \ ||O(f)||_{\infty} = ||f'||_{\infty} \leq ||f|| = ||f||_{\infty} + ||f'||_{\infty}
+\]
+Ainsi, $O$ est borné (par la constante $1$) et donc il est continu.
+\end{itemize}
+
+\subsection*{Question 3 : Espace de Hilbert}
+Donnons la définition de cet espace :
+\begin{defi} (Espace pré-hilbertien)
+Soit $E$ un espace vectoriel de corps $\mathbb{K} = \mathbb{R}$ ou $\mathbb{C}$.
+Soit $\left<\cdot,\cdot\right> \ : E^2 \to \mathbb{K}$ une forme vérifiant :
+\begin{enumerate}
+	\item $\left<\cdot,\cdot\right>$ est linéaire à gauche, i.e. $\forall \lambda \in \mathbb{K}, \ \forall (x,y,z) \in E^3, \ \left<\lambda x + y,z\right> = \lambda\left<x,z\right> + \left<y,z\right>$;
+	\item $\left<\cdot,\cdot\right>$ est symétrique hermitienne, i.e. $\forall (x,y) \in E^2, \ \left<x,y\right> = \overline{\left<y,x\right>}$;
+	\item $\left<\cdot,\cdot\right>$ est définie, i.e. $\forall x \in E, \ \left<x,x\right> = 0 \Leftrightarrow x = 0_{E}$;
+	\item $\left<\cdot,\cdot\right>$ est positive, i.e. $\forall x \in E, \ \left<x,x\right> \ \geq 0$.
+\end{enumerate}
+On dira alors que $\left<\cdot,\cdot\right>$ est un produit scalaire hermitien et on qualifiera l'espace $(E, \left<\cdot,\cdot\right>)$ de pré-hilbertien.
+\end{defi}
+
+\begin{defi} (Espace complet)
+Soit $(E,d)$ un espace métrique.
+On dira que $E$ est complet si et seulement si toute suite de Cauchy $(x_{i})_{i \in \mathbb{N}}$ de $E$ admet une limite $x \in E$ pour la distance $d$.
+En particulier, si $E$ est un espace vectoriel normé, on le qualifiera d'espace de Banach.
+\end{defi}
+
+\begin{defi} (Espace de Hilbert)
+Soit $(H, \left<\cdot,\cdot\right>)$ un espace pré-hilbertien.
+Si $H$ est aussi de Banach avec la norme induite par son produit scalaire $||\cdot|| = \sqrt{\left<\cdot,\cdot\right>}$, alors on dira que $H$ est un espace de Hilbert.
+\end{defi}
+
+Deux exemples étaient à traiter :
+\begin{expl}
+$H_{1} = \left(\mathcal{C}\left([0,\frac{\pi}{2}] \to \mathbb{R}\right), ||\cdot||_{\infty}\right)$ est-il de Hilbert ?
+\end{expl}
+
+On sait que tout espace de la forme $\left(\mathcal{C}\left([a,b] \to \mathbb{R}\right), ||\cdot||_{\infty}\right)$ est de Banach.
+Donc, $H_{1}$ est de Banach.
+Est-il pré-hilbertien ?
+On a le théorème du cours suivant :
+\begin{theo} (Fréchet-von Neumann-Jordan)
+Soit $(E, ||\cdot||)$ un espace vectoriel normé.
+La norme $||\cdot||$ découle d'un produit scalaire (i.e. elle s'exprime sous la forme $||\cdot|| = \sqrt{\left<\cdot,\cdot\right>}$) si et seulement si elle vérifie la \og règle du parallélogramme \fg{} :
+\[
+	\forall x,y \in E^2, \ 2||x||^2 + 2||y||^2 = ||x + y||^2 + ||x -y||^2
+\]
+De plus, ce produit scalaire est unique.
+\end{theo}
+Ainsi $H_{1}$ est pré-hilbertien si et seulement si la norme infinie vérifie la règle du parallélogramme.
+Trouvons un contre-exemple, soient $f$ et $g$ deux fonctions telles que, $\forall x \in \left[0, \frac{\pi}{2}\right]$:
+\[\begin{aligned}
+f(x) = \cos(x) + \sin(x)\\
+g(x) = \cos(x) - \sin(x)
+\end{aligned}
+\]
+On remarque que $f' = g$ et que $g' = -f$.
+On cherche le maximum de $f$,
+\[
+\begin{aligned}
+	f'(x) = 0 & \Leftrightarrow \cos(x) = \sin(x)\\
+			& \Leftrightarrow x = \frac{\pi}{4}
+\end{aligned}
+\]
+D'où le tableau de variation suivant :
+\[
+\begin{tikzpicture}
+\tkzTabInit{$x$/1,$f'(x)$/1,$f(x)$/2}{$0$,$\frac{\pi}{4}$,$\frac{\pi}{2}$}
+\tkzTabLine{,+,z,-}
+\tkzTabVar{-/$1$,+/$\sqrt{2}$,-/$1$}
+\end{tikzpicture}
+\]
+Par le même raisonnement, pour $g$ on a :
+\[
+\begin{tikzpicture}
+\tkzTabInit{$x$/1,$g'(x)$/1,$g(x)$/2}{$0$,$\frac{\pi}{2}$}
+\tkzTabLine{,-,}
+\tkzTabVar{+/$1$,-/$-1$}
+\end{tikzpicture}
+\]
+Ainsi, 
+\[
+2 \left(||f||_{\infty}^2 + ||g||_{\infty}^2\right) = 6
+\]
+Et,
+\[
+||f + g||_{\infty}^2 + ||f -g||_{\infty}^2 = 4 + 4 = 8
+\]
+Donc la règle du parallélogramme n'est pas vérifiée : $H_{1}$ n'est pas pré-hilbertien, donc pas de Hilbert.
+\begin{expl}
+$H_{2} = \left(l^2\left(\mathbb{K}\right), ||\cdot||_{2}\right)^{'} = \mathcal{L}_{c}\left(l^2\left(\mathbb{K}\right), \mathbb{K}\right)$ (l'espace dual topologique de $l^2\left(\mathbb{K}\right)$, i.e. l'ensemble des formes linéaires continues de $l^2\left(\mathbb{K}\right)$) est-il de Hilbert ?
+\end{expl}
+
+On sait, d'après le cours et les TD, que l'espace $\left(l^2\left(\mathbb{K}\right), ||\cdot||_{2}\right)$ est de Hilbert, donc de Banach.
+Et, $\mathbb{K}$ est clairement de Banach.
+Or,
+\begin{theo}
+Soient $E$ et $F$ deux espaces de Banach.
+Alors $\mathcal{L}_{c}(E,F)$ est lui aussi de Banach.
+\end{theo}
+Ainsi, $\mathcal{L}_{c}\left(l^2\left(\mathbb{K}\right), \mathbb{K}\right)$ est de Banach.
+De plus, l'espace dual d'un espace de Hilbert est muni d'une norme dérivant du même produit scalaire hermitien (cf. théorème de Riesz-Fréchet).
+Ainsi, $H_2$ est de Hilbert.
+
+\subsection*{Question 4 : Théorème de Riesz-Fréchet}
+Rappelons le théorème de Riesz-Fréchet :
+\begin{theo} (Riesz-Fréchet)
+Soit $H$ un espace de Hilbert de corps $\mathbb{K}$.
+Soit $f$ une application linéaire continue de $H$ dans $\mathbb{K}$, autrement dit $f$ est un élément du dual topologique de $H$ : $f \in H^{'} = \mathcal{L}_{c} \left(H,\mathbb{K}\right)$.
+Alors il existe un unique $y \in H$ tel que 
+\[
+	\forall x \in H, \ f(x) = \left<y,x\right>
+\]
+De plus, $|||f||| = ||y||$.
+\end{theo}
+
+Il fallait alors démontrer l'unicité :
+\begin{proof}
+Soit $f \in H^*$.
+Supposons que l'on ait $y_1$ et $y_2$ deux éléments distincts de $H$ tels que $\forall x \in H,$
+\[\begin{aligned}
+ f(x) = \left<y_1,x\right>\\
+ f(x) = \left<y_2,x\right>
+\end{aligned}
+\]
+Ainsi, 
+\[
+	\forall x \in H, \ \left<y_1-y_2,x\right> = 0
+\]
+En particulier pour $x = y_1 - y_2$, 
+\[
+	||y_1 - y_2||^2 = 0
+\]
+Par définition de la norme on a donc $y_1 = y_2$.
+C'est absurde par supposition, d'où l'unicité.
+\end{proof}
+
+\subsection*{Question 5 : Opérateur compact}
+Donnons la définition :
+\begin{defi} (Partie relativement compacte)
+Soit $T$ un espace topologique.
+Soit $A \subset T$.
+On dira que $A$ est relativement compacte si et seulement si $\overline{A}$ est compact (i.e. son adhérence est compacte).
+\end{defi}
+
+\begin{defi} (Opérateur compact)
+Soit $H$ un espace de Hilbert.
+Soit $O \in \mathcal{L}(H)$.
+On dira que $O$ est compact si et seulement si $O\left(\mathcal{B}_f(0_H,1)\right)$ est relativement compact (i.e. si l'image de la boule unité fermée par $O$ est relativement compacte).
+\end{defi}
+
+Il fallait alors décrire tous les opérateurs compacts en dimension finie.
+Procédons par analyse-synthèse :
+\begin{itemize}
+\item \emph{Analyse} : Prenons $H$ un espace de Hilbert de dimension finie, $O$ un opérateur linéaire de $H$ dans $H$.
+Pour que $O$ soit compact, il faut que l'adhérence de l'image de la boule unité fermée soit un fermé borné (car on est en dimension finie).
+Comme l'adhérence est un fermé, on doit juste trouver une condition pour que $\overline{O\left(\mathcal{B}_f(0_H,1)\right)}$ soit borné.
+Or, $O\left(\mathcal{B}_f(0_H,1)\right)$ est borné (et donc son adhérence aussi) si et seulement si $O$ est continu.
+On a donc vu que dès qu'un opérateur est compact, il doit être continu : c'est la condition recherchée.
+\item \emph{Synthèse} : Prenons maintenant $O$ un opérateur linéaire continu de $H$. Comme il est continu, l'image de la boule unité fermé par $O$ est bornée (donc son adhérence aussi). Or, l'adhérence est un fermé. Donc $\overline{O\left(\mathcal{B}_f(0_H,1)\right)}$ est un fermé borné en dimension finie. Ainsi, c'est un compact. Finalement, $O$ est bien compact.
+\end{itemize}
+Ce qui démontre que, en dimension finie, $O$ compact $\Leftrightarrow$ $O$ linéaire continu.
+
+\section*{Partie 2}
+\subsection*{Question 1 : Continuité et norme d'opérateurs}
+Soit $\left(E,||\cdot||_E\right)$ et $\left(F,||\cdot||_F\right)$ deux espaces vectoriels normés.
+Soit $O \in \mathcal{L}_c\left(E,F\right)$.
+\begin{defith} (Norme d'opérateur continu)
+L'application définie par :
+\[\begin{aligned}
+	|||O||| & = \sup_{||x||_E \neq 0} \frac{||O(x)||_F}{||x||_E} \\
+			& = \sup_{||x||_E \leq 1} ||O(x)||_F\\
+			& = \sup_{||x||_E = 1} ||O(x)||_F
+\end{aligned}
+\]
+est une norme et elle est appelée norme de l'opérateur $O$, subordonnée à $||\cdot||_E$ et $||\cdot||_F$.
+\end{defith}
+On rapelle que pour calculer la norme d'un opérateur, on utilise la méthode suivante :
+\begin{enumerate}
+\item On essaie de trouver une constante $M$ par lequel l'opérateur est borné :
+\[
+	\forall x \in E, \ ||O(x)||_F \leq M||x||_E
+\]
+D'où :
+\[
+	\frac{||O(x)||_F}{||x||_E} \leq M
+\]
+On en déduit alors que $|||O||| \leq M$ car $|||O|||$ est le plus petit majorant de cette expression et $M$ est un majorant.
+Si $M$ est correctement choisie, on peut alors montrer que $|||O||| = M$.
+\item On a deux cas de figure : 
+\begin{itemize}
+\item Soit le sup est atteint, auquel cas on doit trouver un certain vecteur $u$ pour lequel le sup est atteint.
+Par exemple, tel que $||u||_E \leq 1$ et $||O(u)||_F = M$.
+Ou encore, tel que $||u||_E \neq 0$ et :
+\[
+	\frac{||O(u)||_F}{||u||_E} = M
+\]
+\item Soit le sup n'est pas atteint, et là il nous faut trouver une suite (ou une famille) de vecteurs $u_n$ qui converge vers le sup.
+Par exemple, telle que à partir d'un certain rang $||u_n||_E \leq 1$ et :
+\[
+	\lim_{n \to +\infty} ||O(u_n)||_F = M
+\]
+Ou encore, telle que à partir d'un certain rang $||u_n||_E \neq 0$ et :
+\[
+	\lim_{n \to +\infty} \frac{||O(u_n)||_F}{||u_n||_E} = M
+\]
+\end{itemize}
+Ce qui montre que $|||O||| = M$.
+\end{enumerate}
+
+Deux exemples étaient donnés :
+\begin{expl}
+Soit $p \in [1, +\infty]$.
+Démontrer que l'opérateur :
+\[\begin{array}{ccccc}
+O_1 & : & \left(l^p\left(\mathbb{K}\right), ||\cdot||_p\right) &\longrightarrow  & \left(l^p\left(\mathbb{K}\right), ||\cdot||_p\right)\\
+	& & (x_1,x_2, ...) &\longmapsto& (x_1, x_1,x_2, ...)\\
+\end{array}\] 
+est continu, calculer sa norme.
+\end{expl}
+
+On doit tout d'abord se demander si cet opérateur est linéaire.
+Soit $\lambda \in \mathbb{K}$, et $x, y \in l^p\left(\mathbb{K}\right)$.
+\[
+\begin{aligned}
+O_1(\lambda x + y) & = (\lambda x_1 + y_1, \lambda x_1 + y_1, \lambda x_2 + y_2, ...) \\
+				   & = \lambda (x_1, x_1, x_2, ...) + (y_1, y_1, y_2, ...) \\
+				   & = \lambda O_1(x) + O_1(y)
+\end{aligned}
+\]
+Ainsi $O_1$ est bien linéaire.
+
+On va distinguer deux cas : le cas où $p \in [1, +\infty[$ et le cas où $p = +\infty$.
+\begin{itemize}
+\item $p \in [1, +\infty[$ :
+\begin{itemize}
+\item \emph{Continuité} : Soit $x = (x_1, x_2, ...) \in l^p\left(\mathbb{K}\right)$.
+Alors,
+\[
+||O_1(x)||_p = \left(|x_1|^p + \sum_{i = 1}^{\infty}|x_i|^p\right)^\frac{1}{p} \leq \left(2\sum_{i = 1}^{\infty}|x_i|^p\right)^\frac{1}{p} \leq 2^{\frac{1}{p}}||x||_p
+\]
+Ainsi, $O_1$ est borné, donc $O_1$ est continu.
+\item \emph{Norme} : On a vu que, $\forall x \in l^p\left(\mathbb{K}\right), \ ||O_1(x)||_p \leq 2||x||_p$.
+D'où $|||O_1||| \leq 2$.
+Pour montrer que $|||O_1||| = 2$, il nous suffit donc de trouver un certain $u$ pour lequel la valeur $2$ est atteinte.
+Posons $u = (1, 0, 0, ...)$, alors on a bien $||u||_p = 1 \leq 1$ et $||O_1(u)||_p = \left(1 + 1\right)^{\frac{1}{p}} = 2^{\frac{1}{p}}$.
+Ainsi, $|||O_1||| = 2^{\frac{1}{p}}$.
+\end{itemize}
+\item $p = +\infty$ :
+\begin{itemize}
+\item \emph{Continuité} : Soit $x = (x_1, x_2, ...) \in l^\infty\left(\mathbb{K}\right)$.
+Alors,
+\[
+||O_1(x)||_\infty = ||x||_\infty \leq ||x||_\infty
+\]
+Ainsi, $O_1$ est borné, donc $O_1$ est continu.
+\item \emph{Norme} : On a vu que, $\forall x \in l^p\left(\mathbb{K}\right), \ ||O_1(x)||_\infty = ||x||_\infty$.
+Il suffit de prendre n'importe quel vecteur $u$ tel que $||u||_\infty = 1 \leq 1$ et on a immédiatement $||O_1(u)||_\infty = ||u||_\infty = 1$.
+Par exemple, $u = (1, 0, 0, ...)$… Donc $|||O_1||| = 1$.
+\end{itemize}
+\end{itemize}
+
+Passons à l'autre exemple :
+\begin{expl}
+Soit $k \in \mathcal{C}\left([0,1] \to \mathbb{R}\right)$.
+Démontrer que l'opérateur :
+\[\begin{array}{ccccc}
+O_2 & : & \mathcal{C}\left([0,1] \to \mathbb{R}\right) &\longrightarrow  &  \mathbb{R}\\
+	& & f &\longmapsto& \int_0^1 k(t)f(t)dt\\
+\end{array}\] 
+est continu, calculer sa norme.
+\end{expl}
+Cet opérateur est clairement linéaire par linéarité de l'intégrale.
+Là encore on ne nous donne pas la norme utilisée… On va donc prendre la norme \og usuelle \fg{} dans cet espace qui est la norme infinie.
+
+\begin{itemize}
+\item \emph{Continuité} : Soit $f \in \mathcal{C}\left([0,1] \to \mathbb{R}\right)$.
+Alors, en utilisant l'inégalité triangulaire :
+\[
+\begin{aligned}
+	|O_2(f)| = \left|\int_0^1 k(t)f(t)dt\right| & \leq \int_0^1 \left|k(t)f(t)\right|dt\\
+	& \leq \int_0^1 |k(t)|\sup_{x \in [0,1]}|f(x)|dt\\
+	& = \left(\int_0^1 |k(t)|dt\right) ||f||_\infty\\
+	& = ||k||_1 ||f||_\infty
+\end{aligned}
+\]
+Ainsi $O_2$ est borné par $||k||_1$ et donc $O_2$ est continu.
+\item \emph{Norme} : On a donc $|||O_2||| \leq ||k||_1$.
+On a vu tout a l'heure qu'il fallait trouver une fonction atteignant le sup ou une suite de fonctions tendant vers le sup.
+Nous allons considérer la famille de fonctions continues $\left(u_\varepsilon\right)_{\varepsilon > 0}$ définie par, $\forall x \in [0,1]$ :
+\[
+ u_\varepsilon(x) = \left\{ 
+  \begin{array}{l l l}
+    -1 & \quad \text{si $k(x) \leq -\varepsilon$}\\
+    \frac{k(x)}{\varepsilon} & \quad \text{si $k(x) \in ]-\varepsilon,\varepsilon[$}\\
+    1 & \quad \text{si $k(x) \geq \varepsilon$}
+  \end{array} \right.
+\]
+On a, $\forall \varepsilon > 0, \ ||u_\varepsilon||_\infty = 1$.
+Soit $x \in [0,1]$.
+On remarque que $k(x)u_\varepsilon(x) \geq 0$ donc que $O_2(u_\varepsilon) \geq 0$.
+Considérons l'expression $|k(x)| - k(x)u_\varepsilon(x)$.
+On va essayer de majorer cette expression.
+Deux cas se présentent :
+\begin{itemize}
+\item Si $|k(x)| < \varepsilon$, alors :
+\[
+	0 \leq |k(x)| - k(x)u_\varepsilon(x) \leq \varepsilon - \frac{k^2(x)}{\varepsilon} \leq \varepsilon
+\]
+\item Si $|k(x)| \geq \varepsilon$, alors :
+\[
+	|k(x)| - k(x)u_\varepsilon(x) = |k(x)| - |k(x)| = 0 \leq \varepsilon
+\]
+\end{itemize}
+Ainsi :
+\[
+\begin{aligned}
+	0 \leq |k(x)| - k(x)u_\varepsilon(x) \leq \varepsilon & \Leftrightarrow 0 \leq \int_0^1 |k(t)| - k(t)u_\varepsilon(t)dt \leq \varepsilon\\
+	& \Leftrightarrow 0 \leq ||k||_1 - O_2(u_\varepsilon) \leq \varepsilon\\
+	& \Leftrightarrow ||k||_1 \geq O_2(u_\varepsilon) \geq ||k||_1 - \varepsilon \\
+\end{aligned}
+\]
+Finalement :
+\[
+ \lim_{\varepsilon \to 0} |O_2(u_\varepsilon)| = ||k||_1
+\]
+Ainsi, en posant par exemple $\varepsilon_n = \frac{1}{n}$, on peut créer une suite $u_n = u_{\varepsilon_n}$ qui vérifie $\forall n \in \mathbb{N}, \ ||u_n||_\infty = 1 \leq 1$ et :
+\[
+ \lim_{n \to +\infty} |O_2(u_n)| = ||k||_1
+\]
+On peut enfin conclure que $|||O_2||| = ||k||_1$.
+\end{itemize}
+
+%Donc selon la norme choisie, cela peut être plus ou moins difficile.
+%Pour l'espace d'arrivée, qui est $\mathbb{R}$, ce n'est pas génant car la norme est toujours la valeur absolue (à une constante près).
+%Il fallait donc choisir la norme de l'espace de départ.
+%Ce n'est pas la seule façon de procéder, mais j'ai choisi la norme $2$, définie par :
+%\[
+%	\forall f \in \mathcal{C}\left([0,1] \to \mathbb{R}\right), \ ||f||_2 = \left(\int_0^1 \left|f(x)\right|^2\right)^\frac{1}{2}
+%\]
+%\begin{itemize}
+%\item \emph{Continuité} : Soit $f \in \mathcal{C}\left([0,1] \to \mathbb{R}\right)$.
+%Alors :
+%\[
+%	|O_2(f)| = \left|\int_0^1 k(x)f(x)dx\right|
+%\]
+%On remarque que $\left(\mathcal{C}\left([0,1] \to \mathbb{R}\right),||\cdot||_2\right)$ est pré-hilbertien avec le produit scalaire définit %par, $\forall f,g \in \mathcal{C}\left([0,1] \to \mathbb{R}\right)$ :
+%\[
+%	\left<f,g\right> = \int_0^1 f(x)g(x)dx 
+%\]
+%On utilise maintenant l'inégalité de Cauchy-Schwarz :
+%\[
+%	|O_2(f)| = \left|\left<k,f\right>\right| \leq ||k||_2 ||f||_2
+%\]
+%Ainsi, $O_2$ est borné, donc $O_2$ est continu.
+%\item \emph{Norme} : On a donc $|||O_2||| \leq ||k||_2$.
+%On a vu tout a l'heure qu'il fallait trouver une fonction atteignant le sup.
+%Si $k$ est la fonction nulle, alors clairement $|||O_2||| = 0$ et donc $|||O_2||| = ||k||_2$.
+%Supposons maintenant $k$ non identiquement nulle.
+%Alors, $||k||_2 \neq 0$.
+%Prenons la fonction $u$ définie par $\forall x \in [0,1], \ u(x) = k(x)$.
+%Alors, 
+%\[
+%	\frac{|O_2(u)|}{||u||_2} = \frac{||k||_2^2}{||k||_2} = ||k||_2
+%\]
+%Ainsi, le sup est atteint en $u$.
+%D'où $|||O_2||| = ||k||_2$.
+%\end{itemize}
+
+\subsection*{Question 2 : Opérateur auto-adjoint}
+Rappelons ce qu'est un opérateur auto-adjoint :
+\begin{defi} (Opérateur adjoint)
+Soient $H_1$ et $H_2$ deux espaces de Hilbert.
+Soit $O : H_1 \to H_2$ un opérateur linéaire continu.
+On dira que l'opérateur $O^* : H_2 \to H_1$ est adjoint à $O$ si et seulement si :
+\[
+	\forall x \in H_1, \ \forall y \in H_2, \ \left<O(x),y\right>_{H_2} = \left<x,O^*(y)\right>_{H_1} 
+\]
+\end{defi}
+
+\begin{defi} (Opérateur auto-adjoint)
+Soit $H$ un espace de Hilbert.
+Soit $O \in \mathcal{L}_c(H)$.
+Si $O^* = O$, alors on dira que $O$ est auto-adjoint.
+\end{defi}
+
+On devait alors démontrer le théorème suivant :
+\begin{theo} (Caractérisation des opérateurs auto-adjoints)
+Soit $H$ un espace de Hilbert.
+Soit $O$ un opérateur linéaire continu de $H$ dans $H$.
+Alors :
+\[
+	O^* = O \Leftrightarrow \left<O(x),x\right> \in \mathbb{R}
+\]
+\end{theo}
+
+\begin{proof}
+Soit $H$ un espace de Hilbert.
+Soit $O \in \mathcal{L}_c(H)$.
+\begin{itemize}
+\item \emph{$\Rightarrow$} : Supposons que $O$ est auto-adjoint.
+Alors, 
+\[
+	\forall x, y \in H, \ \left<O(x),y\right> = \left<x,O(y)\right>
+\]
+En particulier,
+\[
+	\forall x \in H, \ \left<O(x),x\right> = \left<x,O(x)\right>
+\]
+D'où, par symétrie hermitienne :
+\[
+	\left<O(x),x\right> = \left<x,O(x)\right> = \overline{\left<O(x),x\right>}
+\]
+En posant $z = \left<O(x),x\right>$, on a $z = \overline{z}$.
+Ainsi, $z \in \mathbb{R}$.
+Finalement, on a bien :
+\[
+	\left<O(x),x\right> \in \mathbb{R}
+\]
+\item \emph{$\Leftarrow $} : Supposons maintenant que $\forall x \in H, \ \left<O(x),x\right> \in \mathbb{R}$. On a donc $\left<O(x),x\right> = \overline{\left<O(x),x\right>} = \left<x,O(x)\right>$.
+Soit $x, y \in H$.
+\[
+\begin{aligned}
+	4\left<O(x),y\right> & = \left<O(x + y), x + y\right> - \left<O(x - y), x - y\right> + i\left<O(x + iy), x + iy\right> -i\left<O(x - iy), x - iy\right>\\
+	& = \left<x + y, O(x + y)\right> - \left<x - y, O(x - y)\right> + i\left<x + iy, O(x + iy)\right> -i\left<x - iy, O(x - iy)\right>\\
+	& = 4\left<x,O(y)\right>
+\end{aligned}
+\]
+Ainsi $\left<O(x),y\right> = \left<x,O(y)\right>$ et donc $O$ est bien auto-adjoint.
+\end{itemize}
+
+\end{proof}
+
+\subsection*{Question 3 : Projections orthogonales sur un sous-espace fermé}
+Soit $H$ un espace de Hilbert. On rappelle le théorème du cours :
+\begin{theo} (Projection orthogonale sur un convexe fermé)
+Soit $C$ un convexe fermé non vide de $H$.
+Alors,
+\[
+	\forall x \in H, \ \exists ! P_C(x) \in C \ / \ ||x - P_C(x)|| = \inf_{y \in C} ||x - y|| 
+\]
+De plus, ceci est équivalent à :
+\[
+	\forall y \in C, \ \Re\left<x - P_C(x), y - P_C(x)\right> \leq 0 
+\]
+$P_C(x)$ s'appelle alors le projeté orthogonal de $x$ sur $C$.
+\end{theo}
+\begin{coro} (Projection orthogonale sur un sous-espace vectoriel fermé)
+Soit $F$ un sous-espace vectoriel fermé non vide de $H$.
+$F$ est clairement convexe, donc $\forall x \in H, \ \exists ! P_F(x) \in F \ / \ P_F(x) = \arginf_{y \in F} ||x - y||$ et c'est équivalent à :
+\[
+	\forall y \in F, \ \Re\left<x - P_F(x), y\right> = 0 
+\]
+\end{coro}
+
+Soit $(X, ||\cdot||_X)$ de Banach. On choisit $Y \subset X$ fermé et $x_0 \in X$.
+On nous demandait si il était possible de trouver $y_1, y_2$ distincts dans $Y$ tels que $\inf_{y \in Y} ||x_0 - y||_X  = ||x_0 - y_1||_X = ||x_0 - y_2 ||_X$.
+Deux exemples étaient donnés,
+\begin{expl}
+$X_1 = (l^2\left(\mathbb{K}\right), ||\cdot||_2)$.
+\end{expl}
+Dans ce cas, on sait que $X_1$ est un espace de Hilbert (cf. cours et TD).
+On peut donc utiliser le corollaire précédent et en déduire l'unicité de $\arginf_{y \in Y} ||x_0 - y||_2$.
+Ainsi, on ne peut pas trouver $y_1$ et $y_2$ distincts.
+
+\begin{expl}
+$X_2 = (l^1\left(\mathbb{K}\right), ||\cdot||_1)$.
+\end{expl}
+Nous sommes ici dans un cas clairement différent : on a démontré en cours et en TD que $(l^p\left(\mathbb{K}\right), ||\cdot||_p)$ n'est pas de Hilbert lorsque $p \neq 2$…
+On ne peut donc plus utiliser le théorème précédent et, intuitivement, on se doute bien que l'on peut trouver un contre-exemple.
+
+Prenons $\mathbb{K} = \mathbb{R}$.
+Soit $B = (e_1, e_2, ...)$ la base canonique de $X_2$.
+Choisissons $a$ et $b$ deux réels avec $a < b$.
+Définissons le vecteur :
+\[
+x_0 = (a, b, 0, ...) = ae_1 + be_2
+\]
+Prenons maintenant 
+\[
+Y = \left\{y \in X_2 \ | \ y = (\alpha, \alpha, 0, ...), \ \alpha \in \mathbb{R}\right\} = \mathbb{R}.(e_1+e_2)
+\]
+$Y$ est-il bien fermé ?
+$Y$ est un $\mathbb{R}-$evn de dimension finie, il est donc complet.
+Or tout sous-espace complet est un sous-espace fermé, donc $Y$ est fermé.
+
+Cherchons 
+\[
+\inf_{y \in Y} ||x_0 - y||_1
+\]
+Soit $y = (\alpha, \alpha, 0, ...) \in Y$.
+On a :
+\[
+	||x_0 - y||_1 = |a - \alpha| + |b - \alpha|
+\]
+Posons $f(u) = ||x_0 - y||_1$.
+$f$ est continue et elle est dérivable sur $\mathbb{R}\backslash\left(\{a\}\cup\{b\}\right)$.
+Alors,
+\[ f'(\alpha) = \left\{ 
+  \begin{array}{l l l}
+    -2 & \quad \text{si $\alpha < a$}\\
+    0 & \quad \text{si $\alpha \in ]a,b[$}\\
+    2 & \quad \text{si $\alpha > b$}
+  \end{array} \right.\]
+On en déduit que $f$ atteint son minimum pour tout $\alpha_{min} \in ]a,b[$ et ce minimum est $f(\alpha_{min}) = -(a - \alpha_{min}) + b - \alpha_{min} = b - a$.
+On remarque qu'il est aussi atteint en $a$ et en $b$, donc sur tout l'intervalle $[a,b]$.
+
+Ainsi, en posant par exemple $y_1 = (a, a, 0, ...)$ et $y_2 = (b, b, 0, ...)$ on a deux éléments qui sont distincts et pourtant :
+\[
+	\inf_{y \in Y} ||x_0 - y||_1  = ||x_0 - y_1||_1 = ||x_0 - y_2 ||_1 = b - a
+\]
+
+
+\section*{Remarques}
+Je sais que l'analyse fonctionnelle n'est pas une matière facile, c'est pourquoi j'ai rappelé le cours et détaillé toutes les étapes de mon raisonnement au maximum.
+Bien sûr, il est inutile de faire ces rappels et de détailler autant ses réponses en examen (sauf si c'est explicitement demandé).
+N'hésitez pas à me contacter pour des questions/remarques (à l'adresse \href{mailto:elliot.sisteron@insa-rouen.fr}{elliot.sisteron@insa-rouen.fr}).
+Bonne révisions et bonne chance pour votre futur examen,\\
+
+Elliot.
+
+
+\end{document}

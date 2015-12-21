@@ -1,0 +1,10 @@
+<map id="ControlleurConsole.cpp" name="ControlleurConsole.cpp">
+<area shape="rect" id="node2" href="$_controlleur_console_8h.html" title="ControlleurConsole.h" alt="" coords="5,80,149,107"/>
+<area shape="rect" id="node4" href="$_vue_jeu_console_dames_8h.html" title="VueJeuConsoleDames.h" alt="" coords="174,80,341,107"/>
+<area shape="rect" id="node8" href="$_vue_jeu_console_othello_8h.html" title="VueJeuConsoleOthello.h" alt="" coords="365,80,531,107"/>
+<area shape="rect" id="node9" href="$_vue_principale_console_8h.html" title="VuePrincipaleConsole.h" alt="" coords="555,80,717,107"/>
+<area shape="rect" id="node3" href="$_controlleur_8h.html" title="Controlleur.h" alt="" coords="29,155,125,181"/>
+<area shape="rect" id="node5" href="$_vue_jeu_console_8h.html" title="VueJeuConsole.h" alt="" coords="289,155,415,181"/>
+<area shape="rect" id="node6" href="$_vue_jeu_8h.html" title="VueJeu.h" alt="" coords="268,229,345,256"/>
+<area shape="rect" id="node10" href="$_vue_principale_8h.html" title="VuePrincipale.h" alt="" coords="579,155,693,181"/>
+</map>

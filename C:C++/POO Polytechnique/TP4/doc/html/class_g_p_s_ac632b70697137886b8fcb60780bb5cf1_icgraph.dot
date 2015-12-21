@@ -1,0 +1,14 @@
+digraph "GPS::simulateurDePosition"
+{
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="GPS::simulateurDePosition",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="GPS::estProche",height=0.2,width=0.4,color="black",URL="$class_g_p_s.html#acb33cb9feb5cdc3e12c8c6ffdce2a3ed",tooltip="Évalue si le GPS est proche d&#39;une position. La notion de proximité est définie par une la variable co..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Cellulaire::estProche",height=0.2,width=0.4,color="black",URL="$class_cellulaire.html#adefde3d0bfa581dfd83101243f5aed36",tooltip="Évalue si le cellulaire est proche d&#39;une position. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Maison::mettreAJour",height=0.2,width=0.4,color="black",URL="$class_maison.html#aa272f9ae2e68a080bb2217e6c82966c5"];
+}
