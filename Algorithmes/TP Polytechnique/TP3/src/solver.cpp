@@ -16,10 +16,9 @@ using namespace std;
  *****************************************/
 
 // Functor : compares pair by second member
-template<typename S> 
 class ComparePairBySecondMember {
 	public:
-		template<typename T>
+		template<typename T, typename S>
 		bool operator() (const pair<T, S>& p1, const pair<T, S>& p2) const {
 			return p1.second < p2.second;
 		}
@@ -47,7 +46,7 @@ bool metropolis_criteria(int delta, double theta) {
 
 double step_1_solver(int employees, const vector<vector<int>>& zoo, vector<int>& solution) {
 	int zones = zoo.size(); // The number of zones
-	priority_queue<pair<int, double>, vector<pair<int, double>>, ComparePairBySecondMember<double>> greedy_values; // The values that we want to minimize (increment heuristic)
+	priority_queue<pair<int, double>, vector<pair<int, double>>, ComparePairBySecondMember> greedy_values; // The values that we want to minimize (increment heuristic)
 	vector<int> sum(zones, 0); // The sum of the animal values in each zone
 	int current_employees = zones; // The number of employees currently assigned by the greedy algorithm
 	double res = 0.0; // The final minimized value
