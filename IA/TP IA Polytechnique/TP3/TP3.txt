@@ -1,0 +1,13 @@
+Dans le rush des derniers instants, on a oublié de penser à la taille de l'archive du projet, et bien évidement elle est trop grosse.
+Vous trouverez donc dans l'archive que le projet en StandAlone.
+En le lançant vous verrez la voiture apprendre toute seule sur un nouveau set (cela génèrera le fichier QLearningTest2.dat)
+Si vous voulez voir le set déjà entrainé, renommez le fichier QLearningTest_save.dat par QLearningTest2.dat
+
+Pour vous prouver notre bonne foi, vous trouverez aussi les scripts utiles pour l'IA dans l'archive, que vous pourrez
+comparer à ceux du projet complet Unity qui est disponible ici :
+
+https://dl.dropboxusercontent.com/u/3793848/TP3_IntroIA.zip
+
+Désolé du dérangement et n'hésitez pas si vous avez un quelconque problème
+
+Bonne correction !
